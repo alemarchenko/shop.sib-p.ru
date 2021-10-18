@@ -1,0 +1,316 @@
+.bx-filter-horizontal {
+	.bx-filter {
+		&-params {
+			@extend %clearfix;
+		}
+
+		&-title {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&.bx-filter {
+			padding: map-get($spacers, 5) map-get($spacers, 4) map-get($spacers, 4);
+		}
+
+		.bx-filter {
+			&-title {
+				display: block;
+				// font-weight: normal;
+				// margin-bottom: #{map-get($spacers, 4) + map-get($spacers, 2)};
+			}
+
+			&-parameters {
+				&-box {
+					float: left;
+					padding: 0;
+
+					.bx-filter {
+						&-block {
+							position: absolute;
+							box-shadow: $dropdown-box-shadow;
+							z-index: 9999;
+						}
+					}
+
+					&-container {
+						width: 280px;
+					}
+
+					&.bx-filter-using {
+						.bx-filter {
+							&-parameters {
+								&-box {
+									&-title {
+										color: theme-color('primary');
+										border-color: theme-color('primary');
+									}
+
+									&-drop-all {
+										display: inline;
+									}
+
+									&-angle {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+
+					&-title {
+						display: inline-block;
+						padding: $input-padding-y map-get($spacers, 6) $input-padding-y $input-padding-x;
+						margin-right: map-get($spacers, 3);
+						margin-bottom: map-get($spacers, 3);
+						font-size: $font-size-sm;
+						color: $extra;
+						border: $input-border-width solid $input-border-color;
+						@include transition($btn-transition);
+
+						&:hover,
+						&:active,
+						&:focus {
+							color: theme-color('primary');
+							border-color: theme-color('primary');
+						}
+
+						@if $enable-rounded {
+							// Manually use the if/else instead of the mixin to account for iOS override
+							border-radius: $input-border-radius;
+						} @else {
+							// Otherwise undo the iOS default
+							border-radius: 0;
+						}
+					}
+
+					&-angle {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 2.5rem;
+						height: 100%;
+						top: 0;
+						right: -3px;
+
+						@include caret('down');
+
+						&:after {
+							position: relative;
+							top: 2px;
+						}
+
+						& > .icon-svg {
+							display: none;
+						}
+					}
+
+					&-drop-all {
+						top: map-get($spacers, 2);
+						right: map-get($spacers, 4);
+						display: none;
+						margin-right: 1px;
+						color: theme-color('primary');
+						cursor: pointer;
+					}
+
+					&.bx-active {
+						& .bx-filter {
+							&-parameters {
+								&-box {
+									&-angle {
+										&:after {
+											transform: rotate(180deg);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&-block {
+				width: 260px;
+
+				&--right {
+					right: 0;
+				}
+			}
+
+			&-button-box-inner {
+				padding: map-get($spacers, 4) 0 0 0;
+			}
+		}
+
+		.dropdown {
+			&.show {
+				.bx-filter {
+					&-parameters {
+						&-box {
+							&-angle {
+								// transform: rotate(180deg);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.dropdown-menu {
+			&:not(.show),
+			&.show.showing {
+				.bmd-custom-checkbox > label .checkbox-decorator .check:before,
+				label.bmd-custom-checkbox-inline .checkbox-decorator .check:before {
+					animation: none;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.bx-filter {
+			&-block {
+				position: static;
+				// display: block;
+				float: none;
+				margin: 0;
+				box-shadow: none;
+				transform: none;
+				transition: none;
+			}
+
+			&-params {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			&-parameters {
+				&-box {
+					flex: 0 0 100%;
+					max-width: 100%;
+
+					&-angle {
+						&:after {
+							display: none;
+						}
+					}
+					
+					&-finded-count {
+						display: none;
+					}
+				}
+			}
+
+			&-button-box-inner {
+				& .btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.bx-filter-horizontal {
+	.bx-filter {
+		&-chosed-box {
+			display: none;
+		}
+	}
+
+	//@include media-breakpoint-up(md) {
+		.bx-filter {
+			&-chosed-box {
+				display: block;
+				font-size: $font-size-sm;
+				margin: map-get($spacers, 3) 0 map-get($spacers, 3);
+
+				&__conainer {
+					display: inline-block;
+				}
+
+				&__title,
+				&__name,
+				&__value,
+				&__reset,
+				&__modef-products {
+					margin-right: map-get($spacers, 2);
+				}
+
+				&__title {
+					
+				}
+
+				&__values {
+					.bx-filter-chosed-box__reset {
+						&:last-child {
+							margin-right: #{map-get($spacers, 3) + map-get($spacers, 2)};
+						}
+					}
+				}
+
+				&__reset + .bx-filter-chosed-box__name {
+					margin-left: map-get($spacers, 3);
+				}
+
+				&__name {
+
+				}
+
+				&__value,
+				&__reset {
+					color: $extra;
+				}
+
+				&__reset {
+					cursor: pointer;
+					margin-bottom: 0;
+					transition: $transition-base;
+
+					&:hover {
+						color: $body-color;
+					}
+
+					&-icon {
+						position: relative;
+						bottom: 2px;
+					}
+				}
+
+				&__modef {
+					&-value {
+						color: theme-color('primary');
+					}
+	
+					&-reset {
+						display: inline;
+						padding: 0;
+						color: theme-color('primary');
+						background: transparent;
+						outline: none;
+						border: none;
+
+						&:hover,
+						&:active,
+						&:focus {
+							color: theme-color('primary');
+						}
+					}
+				}
+			}
+		}
+	//}
+	@include media-breakpoint-down(sm) {
+		.bx-filter {
+			&-chosed-box {
+				display: none !important;
+				/*
+				background: #fff;
+				margin: 0;
+				padding: #{map-get($spacers, 3) + map-get($spacers, 2)} map-get($spacers, 4);
+				*/
+			}
+		}
+	}
+}

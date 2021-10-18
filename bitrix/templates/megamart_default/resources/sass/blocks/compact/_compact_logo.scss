@@ -1,0 +1,23 @@
+.b-compact-logo {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.13rem;
+	color: $body-color;
+
+
+	@include hover {
+		color: $body-color;
+		text-decoration: none;
+	}
+
+	.icon-svg {
+		margin-right: map-get($spacers, 2);
+		font-size: 1.63rem;
+		min-width: 1.63rem;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

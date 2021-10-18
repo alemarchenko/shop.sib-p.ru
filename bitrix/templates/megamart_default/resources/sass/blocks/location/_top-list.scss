@@ -1,0 +1,12 @@
+.location-top-list {
+
+	&__link {
+		display: inline-block;
+		color: $link-color;
+		cursor: pointer;
+
+		@include hover-focus {
+			text-decoration: underline;
+		}
+	}
+}

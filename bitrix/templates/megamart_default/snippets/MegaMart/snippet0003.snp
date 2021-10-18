@@ -1,0 +1,19 @@
+<div class="block-margin-y block-spacing-negative-x text-center text-lg-left">
+   <div class="d-lg-flex align-items-center">
+      <div class="d-block flex-grow-0 flex-shrink-0">
+         <img src="https://via.placeholder.com/600x380">
+         <div class="block-spacing py-3">
+            Название или описание изображение<br>
+            <span class="text-muted small">Источник фото: агенство новостей ART</span>
+         </div>
+      </div>
+      <div class="d-block block-spacing-x pb-lg-7 flex-grow-1 flex-shrink-1">
+         <h3>Текст смотрится хорошо</h3>
+         <hr class="mx-auto mx-lg-0 title-delimiter">
+         <span class="text-muted font-size-big">Подзаголовок тоже может присутствовать</span>
+         <p class="mt-3">
+            Слова копии убедили маленький одинокий текст, и он остался в Закладке. Только одна озорная строка по имени Lora Ipsum не послушалась и убежала гулять по проектам веб-студий по всему миру.
+         </p>
+      </div>
+   </div>
+</div>

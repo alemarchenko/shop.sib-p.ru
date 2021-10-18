@@ -1,0 +1,136 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+
+
+.l-timeline {
+
+	&__items {
+		position: relative;
+		padding: 1px 0;
+	}
+
+	&__items:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 10px;
+		height: 100%;
+		width: .19rem;
+		margin-left: -1px;
+		background: theme-color('primary');
+	}
+
+	@include media-breakpoint-up(lg) {
+		&__items:after {
+			left: 50%;
+		}
+	}
+}
+
+.b-timeline-descr {
+	margin-bottom: 3rem;
+	max-width: 40rem;
+}
+
+.b-timeline-item {
+	position: relative;
+	margin-bottom: 3.75rem;
+	padding-left: 3.75rem;
+	font-size: $font-size-base;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__date {
+		display: inline-block;
+		font-size: .88rem;
+		padding: .25rem 1rem;
+		margin-top: 1.25rem;
+		background-color: #b01e21;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	&__title {
+		font-weight: bold;
+		margin: .63rem 0;
+		font-size: 1.25rem;
+	}
+
+	&__text {
+		// color: $extra;
+		// font-style: italic;
+	}
+
+	&__title:after {
+		content: "";
+		position: absolute;
+		width: 2rem;
+		height: 2rem;
+		background: #fff;
+		left: -5.5px;
+		border-radius: 50%;
+		border: .25rem solid theme-color('primary');
+		z-index: 2;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 16rem;
+		padding-left: 0;
+		overflow: hidden;
+
+		&__picture,
+		&__content {
+			max-width: 50%;
+		}
+
+		&__picture {
+			padding-right: 3rem;
+			text-align: right;
+		}
+
+		&__content {
+			padding-left: 3rem;
+		}
+
+		&__content {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+		}
+
+		&__title:after {
+			left: 0;
+			margin-left: -.91rem;
+		}
+
+		&--inverted &__picture {
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-align: left;
+			padding-left: 3rem;
+			padding-right: 0;
+			width: 50%;
+		}
+
+		&--inverted &__content {
+			position: static;
+			text-align: right;
+			padding-right: 3rem;
+		}
+
+		&--inverted &__title:after {
+			left: 50%;
+		}
+	}
+}

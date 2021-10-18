@@ -1,0 +1,11 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+table.sale-personal-profile-table {
+	thead th {
+		background: $extra-gray;
+		border-top: 0;
+		border-bottom-width: 1px;
+	}
+}

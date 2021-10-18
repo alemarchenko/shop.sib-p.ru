@@ -1,0 +1,22 @@
+.rs-banners-container--mozaic .rs-banners_banner {
+  height: 0;
+  padding: 0 0 122.44% !important;
+  position: relative;
+  width: 100%; }
+
+.rs-banners-container--mozaic .rs-banners_banner--side {
+  padding: 0 0 59.86%; }
+
+.absolute-center {
+  bottom: -2000px;
+  left: -2000px;
+  margin: auto;
+  position: absolute;
+  right: -2000px;
+  top: -2000px; }
+
+@media (min-width: 768px) {
+  .rs-banners-container--mozaic .rs-banners_banner--side {
+    padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */

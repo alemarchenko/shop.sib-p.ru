@@ -1,0 +1,48 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/mixins/all';
+@import '../../../../resources/sass/snippets/all';
+
+div.blog-post-edit-form,
+div.blog-comment-fields {
+	background-color: theme-color('light');
+}
+
+.blog-post-tag a,
+.blog-comment-meta a,
+.blog-mainpage-meta a {
+	color: $link-color !important;
+}
+
+.blog-author-acronym {
+	align-items: center;
+	border-radius: 50%;
+	color: $white;
+	display: inline-flex;
+	font-size: $font-size-lg;
+	height: 3.75rem;
+	justify-content: center;
+	max-height: 100%;
+	max-width: 100%;
+	text-transform: uppercase;
+	width: 3.75rem;
+}
+
+.blog-comment {
+	padding-top: 0;
+	font-size: 0.0625rem;
+	
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-base;
+	}
+}
+
+.blog-add-comment {
+	padding-bottom: 0;
+}
+
+.blog-comment-border {
+	border-top: 1px solid $body-bg;
+}

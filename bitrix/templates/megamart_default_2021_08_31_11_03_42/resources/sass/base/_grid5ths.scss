@@ -1,0 +1,19 @@
+// @import 'bootstrap/scss/bootstrap/mixins/grid';
+
+$columns: 5;
+$gutter: $grid-gutter-width;
+$breakpoints: $grid-breakpoints;
+
+@each $breakpoint in map-keys($breakpoints) {
+	$infix: breakpoint-infix($breakpoint, $breakpoints);
+
+	.col#{$infix}-5ths {
+		@extend %grid-column;
+	}
+
+	@include media-breakpoint-up($breakpoint, $breakpoints) {
+		.col#{$infix}-5ths {
+			@include make-col(1, $columns);
+		}
+	}
+}

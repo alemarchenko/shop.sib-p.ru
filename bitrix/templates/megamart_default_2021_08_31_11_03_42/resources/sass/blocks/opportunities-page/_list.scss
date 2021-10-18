@@ -1,0 +1,40 @@
+.opportunity-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+
+	&__item {
+		border-right: 5px solid $body-bg;
+		border-bottom: 5px solid $body-bg;
+	}
+
+	@include media-breakpoint-down(xs) {
+		&__item {
+			width: 50%;
+
+			&:nth-child(2n) {
+				border-right-color: transparent;
+			}
+		}
+	}
+
+	@include media-breakpoint-between(sm, lg) {
+		&__item {
+			width: 33.333%;
+
+			&:nth-child(3n) {
+				border-right-color: transparent;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+		&__item {
+			width: 20%;
+
+			&:nth-child(5n) {
+				border-right-color: transparent;
+			}
+		}
+	}
+}

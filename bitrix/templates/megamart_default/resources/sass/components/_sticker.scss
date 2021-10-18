@@ -1,0 +1,33 @@
+$sticker-corner-height: 0.63rem;
+
+.c-sticker {
+    position: relative;
+    display: inline-block;
+    font-size: $small-font-size;
+    color: theme-color('primary');
+    padding: map-get($spacers, 2) map-get($spacers, 4);
+    margin-bottom: $sticker-corner-height;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    background-color: theme-color('primary');
+
+    &:before {
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: $sticker-corner-height solid transparent;
+        border-top: $sticker-corner-height solid currentColor;
+        content: " ";
+        position: absolute;
+        left: 0px;
+        top: 100%;
+    }
+
+    &__name {
+        color: $primary-yiq;
+    }
+
+    & + & {
+        margin-left: map-get($spacers, 3);
+    }
+}

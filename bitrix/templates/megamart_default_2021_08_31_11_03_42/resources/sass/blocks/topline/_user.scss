@@ -1,0 +1,24 @@
+.b-topline-user {
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		font-size: 1rem;
+		line-height: 0;
+		color: $icon-300;
+
+		@include hover-focus {
+			color: $icon-300;
+		}
+	}
+
+
+	&__personal {
+		font-size: $font-size-sm;
+	}
+
+	& &__letter,
+	& &__icon {
+		margin: 0px map-get($spacers, 2);
+	}
+}

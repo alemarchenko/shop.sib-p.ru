@@ -1,0 +1,316 @@
+
+// cart
+@import '../../../components/bitrix/sale.basket.basket/main/style.scss';
+
+.block-store-cart {
+	.landing-block {
+		background: transparent !important;
+		padding: 0 !important;
+	}
+
+	.basket-items-list {
+		padding: 0;
+	}
+
+	.basket-checkout-container,
+	.basket-items-list-wrapper {
+		border: none;
+		border-bottom: 1px solid #f2f2f2;
+		margin-bottom: 0 !important;
+	}
+
+	.basket-item-block-image {
+		max-width: 3.75rem;
+		padding: 0;
+		
+		@include media-breakpoint-up(lg) {
+			max-width: 11.25rem
+		}
+	}
+
+	.basket-items-list-item-descriptions {
+		order: -2;
+		width: 100% !important;
+
+		
+		@include media-breakpoint-up(lg) {
+			width: auto !important;
+		}
+	}
+
+	.basket-items-list-item-descriptions-inner {
+		flex-direction: row;
+	}
+
+	.basket-items-list-item-remove {
+		order: 10;
+
+		
+		@include media-breakpoint-up(md) {
+			display: table-cell !important;
+		}
+	}
+
+	.basket-item-block-actions {
+		@include media-breakpoint-up(md) {
+			opacity: 1;
+		}
+	}
+
+	.basket-items-list-table {
+		@extend .table;
+		@extend .basket-items-list-table.table;
+
+		td {
+			// vertical-align: top;
+		}
+	}
+
+	.basket-items-list-item-container {
+		@extend .basket-items-list-item-container;
+
+		& > td {
+			border: 0;
+			padding-bottom: .75rem;
+			width: auto;
+			flex: initial;
+
+			@include media-breakpoint-up(lg) {
+				padding-left: map-get($spacers, 4);
+				padding-right: map-get($spacers, 4);
+			}
+		}
+	}
+
+	.basket-item-block-info {
+		align-self: center;
+	}
+
+	@include media-breakpoint-up(lg) {
+		.basket-item-block-info {
+			padding-top: 24px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.basket-items-list-item-amount,
+	.basket-items-list-item-price,
+	.basket-items-list-item-remove {
+		display: table-cell;
+	}
+
+	.basket-item-block-amount {
+		display: inline-flex;
+	}
+
+	.basket-item-block-amount,
+	.basket-item-block-price {
+		padding: 20px 0 30px;
+	}
+
+	.basket-item-price-title,
+	.basket-item-price-difference {
+		// bottom: 0;
+		position: absolute;
+		right: 0;
+	}
+
+	.basket-item-block-price .basket-item-price-difference {
+		padding: 3px;
+	}
+
+	.basket-item-price-title {
+		bottom: 15px;
+	}
+
+	.basket-items-list-item-price-for-one {
+		display: none;
+		
+		@include media-breakpoint-up(sm) {
+			display: table-cell;
+		}
+	}
+
+	.basket-item-price-current {
+		text-align: right;
+	}
+
+	.basket-item-price-current-text {
+		font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+		letter-spacing: normal;
+		transition: none;
+	}
+
+	// amount
+	.basket-item-amount-filed,
+	.basket-item-block-amount.disabled.basket-item-amount-filed:hover {
+		font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+
+	}
+
+	.basket-items-list-item-amount {
+		min-width: auto;
+		order: -1;
+	}
+
+	.basket-item-amount-btn-plus,
+	.basket-item-amount-btn-minus {
+		background: transparent;
+		border: none;
+	}
+
+	.basket-item-amount-btn-plus:before,
+	.basket-item-amount-btn-plus:after,
+	.basket-item-amount-btn-minus:after {
+		height: auto;
+		margin: 0;
+		width: auto;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	.basket-item-amount-field-description {
+		top: auto;
+		bottom: 15px;
+	}
+
+	// total
+	.basket-checkout-block-total-title,
+	.basket-checkout-block-total-description,
+	.basket-coupon-block-total-price-old,
+	.basket-coupon-block-total-price-current,
+	.basket-coupon-block-total-price-difference {
+		font-family: $font-family-base;
+	}
+	
+	.basket-coupon-block-total-price-difference {
+		background: transparent;
+		color: $body-color;
+		font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+		padding: 0;
+	}
+
+	
+	@include media-breakpoint-up(lg) {
+		.basket-checkout-block-total-inner {
+			text-align: right;
+		}
+	
+		.basket-checkout-block-total-title {
+			color: $body-color;
+			font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+		}
+	
+		.basket-checkout-block-total-description {
+			color: $body-color;
+			font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+		}
+	
+		.basket-checkout-block-total,
+		.basket-checkout-block-total-price-inner {
+			padding-top: map-get($spacers, 5);
+		}
+	
+		.basket-coupon-block-total-price-old {
+			font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+		}
+	
+		.basket-coupon-block-total-price-current {
+			font: $font-weight-bold #{$font-size-base}/#{$line-height-base} $font-family-base;
+			margin: 0;
+		}
+	
+		.basket-coupon-alert-section {
+			flex-basis: 100%;
+		}	
+	}
+
+	//
+	.basket-item-info-name-link {
+		font-weight: inherit;
+	}
+
+	.basket-item-property,
+	.basket-item-property-custom {
+		padding-bottom: 0;
+	}
+
+	.basket-item-property-value {
+		font-family: $font-family-base;
+	}
+
+	.basket-item-property-name,
+	.basket-item-property-custom-name {
+		font: $font-weight-normal #{$font-size-sm}/#{$line-height-base} $font-family-base;
+	}
+
+	.basket-item-property-scu-image .basket-item-property-value,
+	.basket-item-property-scu-text .basket-item-property-value {
+		display: block;
+	}
+
+	.basket-item-property-scu-text {
+		.basket-item-scu-item {
+			@extend .btn;
+			@extend .btn-outline-secondary;
+
+			color: $body-color;
+
+			&.selected {
+				border-color: var(--theme-color-primary);
+			}
+		}
+		
+		.basket-item-scu-item-inner {
+			font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+			padding: 0;
+		}
+	}
+
+	
+
+	.basket-item-property-scu-image .basket-item-scu-item {
+		border-radius: 50%;
+	}
+
+	.basket-item-actions-remove {
+		@extend %svg-icon-background;
+		
+		color: $secondary;
+		display: inline-block;
+		margin: 20px 0 30px;
+
+		
+		&:before {
+			bottom: 0;
+			font-size: 1.25rem;
+			left: 0;
+			margin: auto;
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-trash-view);
+			right: 0;
+			transform: none;
+			top: 0;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.basket-item-block-info .basket-item-actions-remove {
+		height: 2.375rem;
+		width: 2.375rem;
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(189, 189, 189, 0.5);
+		border-radius: 50%;
+		color: #bdbdbd;
+		font-size: 2.25rem;
+	}
+}
+
+
+.basket-item-block-properties {
+	// display: none;
+}

@@ -1,0 +1,124 @@
+.sale-acountpay-block {
+  margin-bottom: 2rem; }
+
+.sale-acountpay-title {
+  font-size: .88rem; }
+
+.sale-acountpay-fixedpay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*pay*/
+.sale-acountpay-pp-company {
+  padding-bottom: 1.25rem;
+  z-index: 100;
+  position: relative; }
+
+.sale-acountpay-pp .sale-acountpay-pp-company {
+  padding: .44rem;
+  border: 1px solid transparent;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease; }
+
+.sale-acountpay-pp-company-graf-container {
+  border: 0.13rem solid #7d8698;
+  border-radius: .13rem;
+  position: relative;
+  background: #fff;
+  width: auto;
+  height: 0;
+  padding-top: 50%; }
+
+.sale-acountpay-pp-company.bx-selected .sale-acountpay-pp-company-graf-container {
+  border-color: #ff5605; }
+
+.sale-acountpay-pp-company.bx-warning .sale-acountpay-pp-company-graf-container {
+  border-color: #ffae00; }
+
+input[type=checkbox].sale-acountpay-pp-company-checkbox {
+  position: absolute;
+  top: .44rem;
+  left: .44rem;
+  margin: 0;
+  padding: 0;
+  z-index: 100; }
+
+.sale-acountpay-pp-company-image {
+  position: absolute;
+  top: .31rem;
+  right: .31rem;
+  bottom: .31rem;
+  left: .31rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sale-acountpay-pp-company-smalltitle {
+  padding-top: .56rem;
+  color: #a3a3a3;
+  font-size: .69rem;
+  text-align: center;
+  padding-bottom: .31rem; }
+
+.sale-acountpay-pp-company-title {
+  font-size: 1.19rem;
+  font-weight: bold; }
+
+.sale-acountpay-pp-company-selected {
+  padding: .25rem 0; }
+
+ul.sale-acountpay-pp-list {
+  margin: .63rem 0;
+  padding: 0;
+  list-style: none;
+  font-size: .81rem;
+  color: #000; }
+
+ul.sale-acountpay-pp-list li {
+  clear: both;
+  padding: .31rem 0; }
+
+.sale-acountpay-pp-list-termin {
+  color: #8d8d8d;
+  display: block; }
+
+.sale-acountpay-pp-list-description {
+  display: block; }
+
+.sale-acountpay-pp-delivery-cost {
+  position: absolute;
+  font-size: .88rem;
+  line-height: .88rem;
+  color: #fff;
+  padding: .13rem .25rem;
+  right: -.13rem;
+  bottom: -.13rem;
+  border-radius: 1px;
+  background: rgba(0, 0, 0, 0.5); }
+
+.sale-acountpay-pp-field .form-control {
+  background: #fff; }
+
+.sale-acountpay-pp-price {
+  text-align: right;
+  padding: .25rem 0; }
+
+.sale-acountpay-service-small {
+  color: #a3a3a3;
+  font-size: .69rem; }
+
+#loading_screen {
+  position: fixed;
+  z-index: 1150;
+  left: 50%;
+  top: 50%;
+  margin-left: -2rem;
+  margin-top: -2rem;
+  width: 4rem;
+  height: 4rem; }
+
+.sale-acountpay-input {
+  text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

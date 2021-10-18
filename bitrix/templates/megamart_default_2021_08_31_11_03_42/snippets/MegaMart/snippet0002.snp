@@ -1,0 +1,7 @@
+<div class="block-spacing-negative-x block-margin-y">
+   <img src="https://via.placeholder.com/1200x560">
+   <div class="block-spacing py-3">
+      Название или описание изображение<br>
+      <span class="text-muted small">Источник фото: агенство новостей ART</span>
+   </div>
+</div>

@@ -1,0 +1,77 @@
+
+.simple-basket-item-amount {
+	display: flex;
+	align-items: center;
+
+	&__btn-plus,
+	&__btn-minus {
+		position: relative;
+		display: inline-block;
+		min-width: 22px;
+		height: 22px;
+		vertical-align: middle;
+		text-align: center;
+		cursor: pointer;
+		transition: background 300ms ease, opacity 300ms ease;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: "";
+			opacity: .8;
+			transition: opacity 300ms ease, background 300ms ease;
+		}
+
+		.disabled {
+			opacity: .3 !important;
+			cursor: default;
+
+			@include hover-focus {
+				background-color: #f2f2f2;
+			}
+		}
+	}
+
+	&__btn-minus:after {
+		background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj4gIDxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSI2IiB5PSIxMiIgZmlsbD0iIzUyNUM2OCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat center;
+		background-size: 10px;
+	}
+
+	&__btn-plus:after {
+		background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj4gIDxwYXRoIGZpbGw9IiM1MjVDNjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE4LDEyIEwxOCwwIEwxMiwwIEwxMiwxMiBMMCwxMiBMMCwxOCBMMTIsMTggTDEyLDMwIEwxOCwzMCBMMTgsMTggTDMwLDE4IEwzMCwxMiBMMTgsMTIgWiIvPjwvc3ZnPg==) no-repeat center;
+		background-size: 10px;
+	}
+
+	&__field {
+		-moz-appearance: textfield;
+
+		&.form-control:focus {
+			border-color: $input-border-color;
+			box-shadow: none;
+		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			/* display: none; <- Crashes Chrome on hover */
+			-webkit-appearance: none;
+			margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+		}
+	}
+
+	& .input-group > &__field {
+		border-right-color: transparent;
+		text-align: center;
+		width: 4.25rem;
+	}
+
+	&__measure {
+		.input-group-text {
+			background: $input-bg;
+			border-left-color: transparent;
+			padding: $input-padding-y $input-padding-x;
+		}
+	}
+}

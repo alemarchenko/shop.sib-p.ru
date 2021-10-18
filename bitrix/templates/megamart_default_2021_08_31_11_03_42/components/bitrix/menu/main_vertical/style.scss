@@ -1,0 +1,177 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+@import "family.scss/source/src/family";
+
+@mixin mmenu-vertical-color($modifier, $bg-color, $hover-bg-color, $text-color, $hover-text-color) {
+	&--#{$modifier} > &__link {
+		background-color: $bg-color;
+		color: $text-color;
+	}
+
+	&--#{$modifier}:active > &__link,
+	&--#{$modifier}:focus > &__link,
+	&--#{$modifier}:hover > &__link {
+		background-color: $hover-bg-color;
+		color: $hover-text-color;
+	}
+}
+
+.mmenu-vertical-item {
+	position: relative;
+	width: $outer-sidebar-width;
+
+	&__link {
+		padding: 1.13rem 1rem;
+		display: block;
+		font-weight: bold;
+		white-space: nowrap;
+		transition: $transition-base;
+		letter-spacing: 0.2px;
+		max-height: 3.75rem;
+
+		@include hover-focus-active {
+			text-decoration: none;
+		}
+	}
+
+	&__dropdown {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: $zindex-dropdown;
+		display: none; // none by default, but block on "open" of the menu
+		float: left;
+		min-width: $dropdown-min-width;
+		padding: $dropdown-padding-y 0;
+		font-size: $font-size-base;
+		color: $body-color;
+		text-align: left;
+		list-style: none;
+		background-color: $dropdown-bg;
+		background-clip: padding-box;
+		box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+		min-width: 15.25rem;
+		width: 100%;
+	}
+
+	&:hover > &__dropdown {
+		display: block;
+	}
+
+	&__dropdown &__dropdown {
+		left: 100%;
+		top: 0;
+		margin-top: -$dropdown-padding-y;
+	}
+
+	&--dd-item > &__link {
+		display: block;
+		width: 100%; // For `<button>`s
+		padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+		clear: both;
+		font-weight: $font-weight-normal;
+		color: $dropdown-link-color;
+		white-space: normal;
+		transition: unset;
+		max-height: none;
+	}
+
+	&--dd-item:hover > &__link {
+		color: $dropdown-link-hover-color;
+		text-decoration: none;
+		@include gradient-bg($dropdown-link-hover-bg);
+	}
+
+	&--dd-item.has-children > &__link:after {
+		content: "";
+		position: absolute;
+		width: 0.8rem;
+		height: 0.8rem;
+		right: 1.25rem;
+		top: 1.13rem;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+ICAgIDxwYXRoIGQ9Ik04LDE4YTEsMSwwLDAsMSwuMjktLjcxTDEzLjU5LDEyLDguMjksNi43MUExLDEsMCwwLDEsOS43MSw1LjI5bDYsNmExLDEsMCwwLDEsMCwxLjQybC02LDZhMSwxLDAsMCwxLTEuNDIsMEExLDEsMCwwLDEsOCwxOFoiLz48L3N2Zz4=");
+	}
+
+	.icon-svg {
+		font-size: 1.5rem;
+		margin-right: map-get($spacers, 4);
+	}
+
+	&__link {
+		display: flex;
+	}
+	&__chevron-down {
+		position: absolute;
+		right: 0;
+	}
+
+	.more-item  {
+		display: none;
+	}
+
+	& .more-item &__link {
+		color: theme-color('primary');
+	}
+
+	& .more-item &__link .icon-chevron {
+		content: "";
+		position: absolute;
+		width: 1rem;
+		height: 1rem;
+		right: .25rem;
+	    top: 1.13rem;
+	}
+
+	&.level-1 &__link {
+		display: flex;
+		align-items: center;
+		padding-left: 1rem;
+	}
+
+	&.level-1 &__icon {
+		flex-shrink: 0;
+		margin-right: map-get($spacers, 4);
+		width: 1.5rem;
+	}
+
+	@include mmenu-vertical-color('primary', $primary-hover, $primary-hover, $primary-yiq, $primary-hover-yiq);
+	@include mmenu-vertical-color('dark', darken(theme-color('dark'), 10%), $primary-hover, theme-color('light'), theme-color('light'));
+	@include mmenu-vertical-color('light', theme-color('primary'), $primary-hover, theme-color('light'), $body-color);
+	@include mmenu-vertical-color('transparent', transparent, transparent,  $body-color, theme-color('primary'));
+
+	@include media-breakpoint-up(lg) {
+		.has-banner &--is-open > &__dropdown {
+			display: block !important;
+			opacity: 1 !important;
+			transform: none !important;
+			min-height: 31.38rem; // 502px
+		}
+
+		.has-banner &--is-open > &__dropdown > &:not(.more-item) {
+			@include after-first(9) {
+				display: none;
+			}
+		}
+
+		.has-banner &--is-open > &__dropdown > & {
+			@include after-first(9) {
+				& ~ .more-item {
+					display: block;
+				}
+			}
+		}
+
+		.has-banner &--is-open:hover > &__dropdown > &:not(.more-item) {
+			@include after-first(9) {
+				display: block;
+			}
+		}
+
+		.has-banner &--is-open:hover > &__dropdown > &.more-item {
+			display: none;
+		}
+	}
+}

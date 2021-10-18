@@ -1,0 +1,10 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import '../../../../resources/sass/mixins/spacings';
+@import 'bootstrap/scss/variables';
+
+.b-search-page-item {
+	@include make-block-spacing();
+	border-bottom: 1px solid $body-bg;
+}

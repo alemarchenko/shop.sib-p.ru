@@ -1,0 +1,98 @@
+@import 'variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'mixins/all';
+@import 'snippets/all';
+
+.shop-list-items {
+	margin: 0;
+}
+
+.shop-list-item {
+	@include make-block-spacing();
+
+	border-bottom: 1px solid $body-bg;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 68rem;
+	}
+
+	&__picture {
+		flex: 0 1;
+		margin-bottom: 1rem;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+
+	&__icon {
+		font-size: 1.5rem;
+		color: theme-color('primary');
+	}
+
+	&__data {
+		flex: 1 1 auto;
+		font-size: $font-size-base;
+	}
+
+	&__name {
+		margin-bottom: 1rem;
+
+		a {
+			color: $body-color;
+			font-weight: 700;
+
+			@include hover-focus {
+				color: $body-color;
+			}
+		}
+	}
+
+	&__prop {
+		margin: .38rem 0;
+		position: relative;
+		padding-left: 1.63rem;
+		// display: flex;
+		// align-items: center;
+
+		.icon-svg {
+			margin-right: .56rem;
+			margin-top: .19rem;
+			color: theme-color('primary');
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	&__prop--custom {
+	}
+
+	@include media-breakpoint-up(lg) {
+
+		&__container {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		&__picture {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__picture {
+			flex-basis:  16.25rem;
+			flex-shrink: 0;
+			margin-bottom: 0;
+		}
+
+		&__data {
+			padding-left: 2rem;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+// Button sizes
+@mixin badge-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+	border-radius: $border-radius;
+	font-size: $font-size;
+	line-height: $line-height;
+	padding: $padding-y $padding-x;
+	}
+
+.badge-md {
+  @include badge-size($badge-padding-y-md, $badge-padding-x-md, $badge-font-size-md, $badge-line-height-md, $badge-border-radius-md);
+}

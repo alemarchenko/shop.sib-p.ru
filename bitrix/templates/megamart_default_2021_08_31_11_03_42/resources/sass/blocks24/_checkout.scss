@@ -1,0 +1,73 @@
+// checkout
+@import '../../../components/bitrix/sale.order.ajax/main/style.scss';
+
+.block-store-order {
+
+	.landing-block {
+		background: transparent !important;
+		padding: 0 !important;
+	}
+
+	.bx-soa-wrapper,
+	.bx-soa-item-title {
+		font-size: $font-size-base;
+	}
+
+	.bx-soa-section {
+		border: none;
+	}
+	
+	.bx-soa-section-title {
+		font-family: $font-family-base;
+		font-weight: $headings-font-weight;
+		position: relative;
+	}
+
+	.bx-soa-section-title-count {
+		@extend %svg-icon-background;
+
+		background: transparent !important;
+		border-color: transparent !important;
+		left: -2.63rem;
+		line-height: 1;
+		position: absolute;
+
+		&:before {
+			background-color: var(--theme-color-primary);
+			font-size: 1.25rem;
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-select-circle-view);
+		}
+
+		&:after {
+			display: none;
+		}
+
+	}
+
+	.bx-soa-more,
+	.bx-soa-coupon {
+		border-top: none;
+	}
+
+	#bx-soa-orderSave {
+		text-align: center;
+	}
+
+	.bx-soa,
+	.bx-soa-sidebar {
+		@include make-col(12);
+	}
+
+	.bx-soa {
+		@include media-breakpoint-up(lg) {
+			@include make-col(9);
+		}
+	}
+
+	.bx-soa-sidebar {
+		@include media-breakpoint-up(lg) {
+			@include make-col(3);
+		}
+	}
+
+}

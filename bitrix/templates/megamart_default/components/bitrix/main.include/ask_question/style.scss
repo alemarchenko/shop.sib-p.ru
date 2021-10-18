@@ -1,0 +1,74 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/mixins/all';
+
+.b-ask-question {
+	&--line {
+		position: relative;
+		overflow: hidden;
+
+		@include make-spacings(1rem, (padding));
+	}
+
+	&--line &__container {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	&--line &__mark {
+		font-size: 2.5rem;
+		color: theme-color('primary');
+	}
+
+	&--line &__content {
+		@include make-spacings(1rem, (padding), (left, right));
+		width: 100%;
+		max-width: 30.63rem;
+		margin-bottom: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		h3 {
+			margin-bottom: .25rem;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&--line {
+			@include make-spacings(1.25rem, (padding), (top, bottom));
+			@include make-spacings(2rem, (padding), (left, right));
+		}
+
+		&--line &__container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&--line &__mark {
+			flex: 1 1 auto;
+			text-align: left;
+			margin-top: -.63rem;
+		}
+
+		&--line &__content {
+			text-align: left;
+			flex: 3 3 auto;
+			margin-bottom: .63rem;
+		}
+
+		&__btns {
+			flex: 1 1 auto;
+			text-align: right;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+		&--line {
+			@include make-spacings(5.13rem, (padding), (left, right));
+		}
+	}
+}

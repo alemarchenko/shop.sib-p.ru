@@ -1,0 +1,16 @@
+.c-letter {
+	width: 1.56rem;
+	height: 1.56rem;
+	font-size: 1rem;
+	background: theme-color('primary');
+	color: $primary-yiq;
+	font-weight: bold;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+
+	@include hover-focus {
+		color: theme-color('light');
+		text-decoration: none;
+	}
+}

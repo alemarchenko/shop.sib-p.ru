@@ -1,0 +1,128 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.main-user-consent-request {
+	a {
+		cursor: pointer;
+	}
+
+	&-popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.5);
+		overflow: hidden;
+		z-index: 99992;
+	}
+
+	&-popup-cont {
+		min-height: 21.25rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: 0 auto;
+		min-width: 320px;
+		background: $white;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		overflow-y: auto;
+	}
+
+	&-popup-header {
+		font-size: 1.5rem;
+		background-color: $white;
+		min-height: 5.63rem;
+		position: relative;
+		z-index: 2;
+		font-weight: 600;
+		color: $body-color;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $body-bg;
+		padding: 2.38rem 3rem 3rem;
+		text-align: left;
+	}
+
+	&-popup-body {
+		padding: 0.63rem 3rem 2rem;
+	}
+
+	&-textarea-block {
+		margin: 0 0 1rem 0;
+	}
+
+	&-popup-buttons {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-top: 2rem;
+	}
+
+	&-popup-text {
+		min-height: 15rem;
+	}
+}
+
+
+/** LOADER **/
+.main-user-consent-request-loader {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	-webkit-transform: translate(0, 50%);
+	transform: translate(0, 50%);
+}
+
+.main-user-consent-request-path {
+	stroke: #80868e;
+	stroke-dasharray: 100, 200;
+}
+
+.main-user-consent-request-loader:before {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.main-user-consent-request-circular {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: inherit;
+	width: inherit;
+	-webkit-animation: rotate 1s linear infinite;
+	animation: rotate 1s linear infinite;
+	-webkit-transform-origin: center center;
+	transform-origin: center center;
+}
+
+.main-user-consent-request-path {
+	stroke: #ccc;
+	stroke-dasharray: 60, 200;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 1.5s ease-in-out infinite;
+	animation: dash 1.5s ease-in-out infinite;
+	stroke-linecap: round;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,11 @@
+.color-item {
+	@extend %color-item;
+}
+
+.color-item__btn {
+	@extend %color-item__btn;
+}
+
+.color-item__icon {
+	@extend %color-item__icon;
+}

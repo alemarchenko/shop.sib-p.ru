@@ -1,0 +1,22 @@
+
+.popover {
+	box-shadow: $popover-box-shadow;
+
+	&-header {
+		border-bottom: none;
+		padding-top: 0.875rem;
+		margin-bottom: -0.875rem;
+	}
+
+	&-close {
+		cursor: pointer;
+		margin: map-get($spacers, 2);
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&-body {
+		padding-right: 1.375rem;
+	}
+}

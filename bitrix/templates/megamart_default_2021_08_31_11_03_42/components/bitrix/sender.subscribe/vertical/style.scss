@@ -1,0 +1,57 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+
+.l-subscribe {
+	&-vertical {
+		padding: 1.25rem;
+
+		@include media-breakpoint-down(lg) {
+			margin: 0 auto;
+		}
+
+		&__zebra {
+			position: relative;
+			max-width: 100%;
+			height: 0.5rem;
+			margin: 0 auto;
+			background-image: repeating-linear-gradient(-45deg,#54a5d2 9px,#54a5d2 24px, transparent 1px,transparent 34px, #da6e6e 1px,#da6e6e 48px, transparent 1px,transparent 59px);
+			overflow: hidden;
+			opacity: 0.5;
+		}
+
+		&__icon-inbox {
+			width: 100%;
+			margin: map-get($spacers, 5) 0 1.88rem;
+			float: right;
+			text-align: center;
+
+			&__picture {
+				display: block;
+				max-height: 100%;
+				max-width: 100%;
+				margin: auto;
+			}
+		}
+
+		&__texts {
+			// margin: map-get($spacers, 4) 0;
+		}
+
+		&__text {
+			line-height: 1.2;
+			margin: .5rem 0;
+		}
+
+		&__body {
+			margin: 2rem 0 1rem;
+			padding: 0;
+		}
+
+		&__buttons {
+			width: 100%;
+		}
+	}
+}

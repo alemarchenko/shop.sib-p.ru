@@ -1,0 +1,58 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/mixins/spacings';
+
+
+.shop-list-map {
+	@include make-block-spacing(('padding'), ('top', 'bottom'));
+	border-bottom: 1px solid $body-bg;
+
+	&__container {
+		min-height: 25rem;
+	}
+}
+
+.shop-list-filter {
+	@include make-block-spacing(('padding'), ('top', 'left', 'right'));
+	display: flex;
+	flex-direction: column;
+
+	&__group + &__group {
+		margin-top: 1rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		flex-direction: row;
+		align-items: flex-end;
+
+		&__group + &__group {
+			margin-left: 1rem;
+			margin-top: 0;
+		}
+	}
+}
+
+.shop-list-filter-dropdown {
+	width: 14.38rem;
+	position: relative;
+
+	.dropdown-toggle {
+		width: 100%;
+		overflow: hidden;
+		text-align: left;
+		position: relative;
+	}
+
+	& .dropdown-toggle:after {
+		position: absolute;
+		top: 50%;
+		right: 0.75rem;
+		transform: translateY(-50%);
+	}
+
+	& .dropdown-menu {
+		width: 100%;
+	}
+}

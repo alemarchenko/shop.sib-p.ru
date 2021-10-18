@@ -1,0 +1,247 @@
+@import 'bootstrap/scss/functions';
+
+//body
+$body-color: 			#202020;
+$body-bg:				#f1f1f1;
+
+$white:    #fff;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// Theme colors
+$primary:       		#ff5605; 
+$primary-hover:			darken($primary, 10%);
+$secondary: 			#bdbdbd;
+$success: 				#5ea13d;
+$warning:				#ffae00;
+$danger:				#cc0a00;
+
+$light:         		#ffffff;
+$dark:          		#222428;
+
+$extra: 				#7d8698;
+$extra-gray:			#e8edf0;
+$compact:				#e5e6ea;
+
+$icon-base:				$secondary;
+$icon-bg:				#e4e6ea;
+$icon-100:				#999999;
+$icon-200:				#b5bac5;
+$icon-300:				#202020;
+
+$yiq-contrasted-threshold:  150 ;
+$yiq-text-dark:             $gray-900;
+$yiq-text-light:            $white;
+
+$primary-yiq:			color-yiq($primary);
+$primary-hover-yiq:		$primary-yiq;
+$secondary-yiq:			#fff;
+// $primary-yiq:			$white;
+// $primary-hover-yiq:		$white;
+
+$font-size-base:        1rem;
+$font-size-lg:          ($font-size-base * 1.125);
+$font-size-sm:          ($font-size-base * .875);
+
+$small-font-size:             75%;
+
+$display4-size:               2.5rem;
+
+$line-height-base:            1.5;
+$line-height-computed:        $font-size-base * $line-height-base;
+
+$headings-line-height:	1.25;
+$headings-margin-bottom: 1rem;
+
+// border
+$border-color:  		#bdbdbd;
+$border-color-active: 	$extra;
+
+$outline-base:			$border-color;
+$outline-active:		$extra;
+$outline-disabled:		rgba($outline-base, .5);
+
+$theme-colors:  (
+	// "body-bg":			$body-bg,
+	// "extra":			$extra,
+	// "compact":			$compact,
+);
+
+$price-economy-bg:					#fff6e5;
+
+$local-colors:  (
+	'economy': $price-economy-bg,
+);
+
+$grid-gutter-width:		20px;
+
+$spacer: 				1rem;
+$spacers: (
+  0: 0,
+  1: 1px,
+  2: ($spacer * .25),
+  3: ($spacer * .5),
+  4: $spacer,
+  5: ($spacer * 1.5),
+  6: ($spacer * 2),
+  7: ($spacer * 3),
+  'gutter': $grid-gutter-width,
+);
+
+$spacers-grid: (
+  // 0: 0,
+  1: 1,
+);
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 380px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Bootstrap Material Deisgn
+$bmd-animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$bmd-animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$bmd-animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$bmd-animation-curve-default: 		$bmd-animation-curve-fast-out-slow-in;
+
+// Grid containers
+$container-max-widths: (
+  xl: 1366px
+);
+
+
+// sidebar
+$outer-sidebar-width: 				260px;
+$inner-sidebar-width: 				260px;
+
+// Components
+$border-radius:						.125rem;
+$border-radius-sm:					.25rem;
+$border-radius-lg:					.375rem;
+
+
+// Options
+$enable-rounded:					true;
+$enable-shadows:					false;
+
+// Buttons + Forms
+$btn-focus-box-shadow:				none;
+$btn-active-box-shadow:				none;
+$btn-focus-width: 					0px;
+
+$link-color:						#3483b8;
+$link-hover-color:					#3483b8;
+
+$block-shadow-default:				0 12px 30px -15px rgba(61, 72, 81, 0.75);
+$block-shadow-hover:				0 10px 32px 0 rgba(84, 133, 169, 0.3);
+$block-shadow-2:					0 1px 10px 0 $border-color;
+
+$border-radius-rounded:				3.125rem;
+
+// Dropdown
+$dropdown-padding-y: 				0;
+$dropdown-item-padding-y:           .8rem;
+$dropdown-item-padding-x:           1.5rem;
+$dropdown-link-hover-bg:			      $compact;
+$dropdown-link-active-bg:			      $compact;
+$dropdown-link-active-color:		    $body-color;
+$dropdown-box-shadow:               $block-shadow-hover;
+$dropdown-scu-max-show-items:       8;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown:                   900;
+$zindex-sticky:                     890;
+$zindex-fixed:                      930;
+$zindex-modal-backdrop:             940;
+$zindex-modal:                      950;
+$zindex-popover:                    960;
+$zindex-tooltip:                    970;
+$zindex-topline:	            	900;
+$zindex-title-search:	            980;
+
+
+// Main menu
+$menu-base-height: 3.75rem;
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding:           .63rem;
+
+$breadcrumb-margin-bottom:          0;
+
+$breadcrumb-bg:                     transparent;
+$breadcrumb-text-color:				#999999;
+$breadcrumb-divider-color:          #999999;
+$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-divider:                quote("|");
+
+$breadcrumb-border-radius:          $border-radius !default;
+
+
+// Pagination
+$pagination-color:                  $body-color;
+
+// table
+$table-border-color: $body-bg;
+$table-hover-bg:              $gray-200;
+$table-active-bg:             $gray-100;
+
+// Badges
+$badge-border-radius:               0.5rem;
+
+$badge-padding-y-md: 0.25rem;
+$badge-padding-x-md: 0.467773rem;
+$badge-font-size-md: $font-size-base;
+$badge-line-height-md: $line-height-base;
+$badge-border-radius-md: 1rem;
+
+// Cards
+
+$card-border-color:                 #E8ECEF;
+$card-cap-bg:                       #F8F9FB;
+
+
+// compact
+$compact-height:                    3.75rem;
+
+// Tooltips
+
+$tooltip-max-width:                 300px;
+$tooltip-bg:                        rgba($dark, .8);
+$tooltip-border-radius:             $border-radius;
+$tooltip-opacity:                   1;
+$tooltip-padding-y:                 .5rem;
+$tooltip-padding-x:                 1rem;
+
+// Popovers
+
+$popover-bg:                        $white;
+$popover-box-shadow:                0 3px 5px $border-color;
+
+$popover-header-bg:                 $popover-bg;
+
+// Section
+$section-head-height: map-get($spacers, 5) * 2 + 2.125;
+
+
+// $product-item-class: '.product-cat';
+// $product-item-detail-class: '.product-detail';

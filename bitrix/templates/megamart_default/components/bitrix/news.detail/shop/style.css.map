@@ -1,0 +1,1 @@
+{"version":3,"sources":["bitrix/news.detail/shop/style.scss"],"names":[],"mappings":"AAEC;;EAEC,sBAAsB,EAAA;;AAGvB;EACC,eAAe,EAAA","file":"style.css","sourcesContent":["\r\n.shops-detail {\r\n\t&__map .bx-yandex-map,\r\n\t&__map .bx-google-map {\r\n\t\twidth: 100% !important;\r\n\t}\r\n\r\n\t&__content img {\r\n\t\tmax-width: 100%;\r\n\t}\r\n}\r\n"]}

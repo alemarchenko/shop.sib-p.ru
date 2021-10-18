@@ -1,0 +1,51 @@
+.title-search-item {
+	display: flex;
+	margin: 28px 16px;
+	align-items: center;
+
+	&__picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 3.75rem;
+		width: 3.75rem;
+
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__data {
+		margin-left: 1rem;
+	}
+
+	&--no-picture {
+		padding-left: 3.75rem;
+	}
+
+	&__price {
+		color: theme-color('extra');
+		font-size: $small-font-size;
+	}
+
+	&__price-current {
+		font-weight: 600;
+		color: theme-color('dark');
+		font-size: $font-size-lg;
+	}
+
+	&__price-discount {
+		text-decoration: line-through;
+		font-size: $font-size-sm;
+	}
+
+	&__name {
+		color: theme-color('dark');
+
+		@include hover-focus {
+			text-decoration: none;
+			color: theme-color('dark');
+		}
+	}
+}

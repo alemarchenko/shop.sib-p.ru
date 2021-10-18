@@ -1,0 +1,45 @@
+.footer-menu {
+
+	&__group {
+		margin-bottom: map-get($spacers, 3);
+	}
+
+	&--columns-2 {
+		column-count: 2;
+	}
+
+	&--columns-3 {
+		column-count: 3;
+	}
+
+	&--columns-2 &__group,
+	&--columns-3 &__group {
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+
+	&__item {
+		display: block;
+	}
+
+	&__item--lvl1 {
+		color: theme-color('light');
+		font-weight: bold;
+
+		@include hover-focus {
+			color: theme-color('light');
+		}
+	}
+
+	&__item--lvl2,
+	&__item--lvl3 {
+		font-size: .75rem;
+		color: $extra;
+		margin: .25rem 0;
+
+		@include hover-focus {
+			color: $extra;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.bx_popup {
+  display: none; }
+
+.bx_item_detail_inc_two {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow: inherit;
+  overflow-x: inherit; }
+  .bx_item_detail_inc_two::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+  @media (max-width: 700px) {
+    .bx_item_detail_inc_two {
+      white-space: nowrap;
+      overflow-x: auto; } }
+
+/*# sourceMappingURL=style.css.map */

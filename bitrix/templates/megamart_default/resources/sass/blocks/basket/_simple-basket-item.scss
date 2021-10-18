@@ -1,0 +1,60 @@
+.simple-basket-item {
+
+	&__cell {
+		position: relative;
+	}
+
+	&__cell:not(&__cell-picture) {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	&__cell--info {
+		width: 100%;
+	}
+
+	&__cell-quantity {
+		text-align: center;
+	}
+
+	&__img-block {
+		width: 3.75rem;
+		text-align: center;
+	}
+
+	&__img {
+		max-height: 3.75rem;
+		max-width: 100%;
+	}
+
+	&__name {
+		font-weight: 700;
+	    margin-bottom: 0.25rem;
+	    font-size: 1rem;
+
+		a {
+			color: $body-color;
+		}
+	}
+
+	&__price-desc {
+		color: $extra;
+		font-size: $small-font-size;
+	}
+
+	&__actions {
+		color: theme-color('secondary');
+		padding: 0 2rem;
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 100;
+		background-color: #fff;
+		opacity: .7;
+	}
+}

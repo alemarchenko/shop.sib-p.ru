@@ -1,0 +1,415 @@
+$bmd-line-color:						$border-color !default;
+$bmd-label-color: 						$border-color !default;
+$bmd-label-color-focus: 				theme-color('primary') !default;
+$bmd-label-font-size: 					$font-size-base !default;
+$bmd-label-static-top:					.35rem;
+$bmd-label-placeholder-top:				2.1875rem;
+
+$bmd-input-font-size:					$font-size-base !default;
+$bmd-input-color: 						$input-color !default;
+$bmd-input-bg:							transparent !default;
+$bmd-input-line-height:					$input-line-height !default;
+
+$bmd-form-control-bg-size: 				0 100%, 100% 100% !default;
+$bmd-form-control-bg-size-active: 		100% 100%, 100% 100% !default;
+
+$bmd-input-underline-bg-image:			linear-gradient(
+											to top,
+											$bmd-label-color-focus 2px,
+											fade-out($bmd-label-color-focus, 1) 2px
+								  		),
+										linear-gradient(
+											to top,
+											$bmd-line-color 1px,
+											fade-out($bmd-line-color, 1) 1px
+								  		) !default;
+
+$bmd-input-underline-bg-image-invalid:	linear-gradient(
+											to top,
+											theme-color('danger') 2px,
+											fade-out(theme-color('danger'), 1) 2px
+								  		),
+										linear-gradient(
+											to top,
+											$bmd-line-color 1px,
+											fade-out($bmd-line-color, 1) 1px
+								  		) !default;
+
+$bmd-input-padding-x:					0;
+$bmd-input-padding-y:					.4375rem;
+
+$bmd-radio-color-on:					theme-color('primary') !default;
+$bmd-radio-color-off:					$border-color !default;
+$bmd-radio-color-disabled:				$outline-disabled !default;
+$bmd-radio-border: 						.125em;
+$bmd-radio-size:						1.125em !default;
+$bmd-radio-label-padding: 				.8125em !default;
+
+
+$bmd-checkbox-size:						 1.135em !default;
+$bmd-checkbox-label-padding: 			.8125em !default;
+$bmd-checkbox-border-size:				 .125em !default;
+$bmd-checkbox-border-color: 			$outline-base !default;
+$bmd-checkbox-border-color-disabled: 	$outline-disabled !default;
+$bmd-checkbox-checked-color: 			theme-color('primary');
+$bmd-checkbox-animation-check: 			.3s !default;
+
+$bmd-form-group-padding-top: 1.69rem;
+
+.form-group {
+  position: relative;
+}
+
+.bmd-form-group {
+
+	& {
+		padding-top: $bmd-form-group-padding-top;
+	}
+
+	.bmd-label-floating,
+	.bmd-label-placeholder,
+	.bmd-label-static {
+		position: absolute;
+		color: $bmd-label-color;
+		pointer-events: none;
+		transition: $transition-base;
+	}
+
+	.bmd-label-floating,
+	.bmd-label-placeholder {
+		top: $bmd-label-placeholder-top;
+		line-height: 1.1;
+	}
+
+	.bmd-label-static {
+		top: $bmd-label-static-top;
+		left: 0;
+	}
+
+	&.is-focused [class*=" bmd-label"],
+	&.is-focused [class^=bmd-label] {
+		color: theme-color('primary');
+	}
+
+	& .bmd-label-floating {
+		will-change: left, top, contents;
+	}
+
+	&.is-focused .bmd-label-floating,
+	&.is-filled .bmd-label-floating {
+		top: 1rem;
+		left: 0;
+		font-size: .75rem;
+	}
+
+	&.is-filled .bmd-label-placeholder {
+		display: none;
+	}
+}
+
+.bmd-form-control {
+	display: block;
+	width: 100%;
+	padding: $bmd-input-padding-y $bmd-input-padding-x;
+	font-size: $bmd-input-font-size;
+	line-height: $bmd-input-line-height;
+	color: $bmd-input-color;
+	background-color: $bmd-input-bg;
+	background: no-repeat bottom, 50% calc(100% - 1px);
+	background-image: $bmd-input-underline-bg-image;
+	background-size: $bmd-form-control-bg-size;
+	background-clip: padding-box;
+	border: 0;
+	border-radius: 0;
+	transition: background 0s ease-out;
+
+	&:invalid {
+		background-image: $bmd-input-underline-bg-image-invalid;
+	}
+}
+
+.bmd-form-control:focus,
+.bmd-form-group.is-focused .bmd-form-control {
+	outline: 0;
+}
+
+input.bmd-form-control:focus,
+textarea.bmd-form-control:focus,
+.bmd-form-group.is-focused input.bmd-form-control,
+.bmd-form-group.is-focused textarea.bmd-form-control {
+	background-size: $bmd-form-control-bg-size-active;
+	transition-duration: .3s;
+}
+
+select.bmd-form-control {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    background-position: 100%;
+}
+
+.bmd-help {
+  position: absolute;
+  display: none;
+  font-size: .8rem;
+  font-weight: normal;
+  @extend .text-muted;
+
+  .bmd-form-group.is-focused & {
+    display: block;
+  }
+
+  &:nth-of-type(2) {
+    padding-top: 1rem;
+  }
+
+  + .bmd-help {
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+
+
+.bmd-radio {
+	position: absolute;
+    left: 0;
+    display: inline-block;
+    padding: .7em;
+    margin: -.7em;
+    line-height: .7;
+    border-radius: 100%;
+
+	&::after {
+      display: inline-block;
+      width: $bmd-radio-size;
+      height: $bmd-radio-size;
+      cursor: pointer;
+      content: "";
+      border: $bmd-radio-border solid $bmd-radio-color-off;
+      border-radius: 50%;
+      transition: border-color ease .28s;
+      transition-duration: 0.2s;
+    }
+    &::before {
+      position: absolute;
+      display: inline-block;
+      width: $bmd-radio-size;
+      height: $bmd-radio-size;
+      content: "";
+      background-color: $bmd-radio-color-on;
+      border-radius: 50%;
+      transition: transform ease .28s;
+      transform: scale3d(0, 0, 0);
+    }
+
+}
+
+label.bmd-custom-radio-inline,
+.bmd-custom-radio > label {
+	position: relative;
+	padding-left: $bmd-radio-size + $bmd-radio-label-padding;
+	line-height: 1;
+
+	> input[type="radio"] {
+		position: absolute;
+	    left: 0;
+	    z-index: -1;
+	    width: 0;
+	    height: 0;
+	    margin: 0;
+	    overflow: hidden;
+	    pointer-events: none;
+	    opacity: 0;
+	}
+
+	> input[type="radio"]:checked ~ .bmd-radio {
+		&::after {
+			border-color: $bmd-radio-color-on;
+		}
+		&::before {
+			background-color: $bmd-radio-color-on;
+		}
+
+		&::before {
+			transform: scale3d(0.45, 0.45, 1);
+		}
+	}
+
+	&[disabled],
+	> input[type="radio"]:disabled + .bmd-radio {
+		&::after {
+			border-color: $bmd-radio-color-disabled;
+		}
+		&::before {
+			background-color: $bmd-radio-color-disabled;
+		}
+	}
+
+}
+.bmd-custom-radio.disabled > label {
+	color: $bmd-radio-color-disabled;
+}
+
+
+.bmd-custom-checkbox > label,
+label.bmd-custom-checkbox-inline {
+	position: relative;
+	padding-left: $bmd-checkbox-size + $bmd-checkbox-label-padding;
+	line-height: 1.25;
+
+	.checkbox-decorator {
+		position: absolute;
+		left: 0;
+		padding: .7em;
+		margin: -.7em;
+		margin-top: -.58em;
+		line-height: .7;
+		vertical-align: middle;
+		cursor: pointer;
+		border-radius: 100%;
+	}
+
+	.checkbox-decorator .check {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		width: $bmd-checkbox-size;
+		height: $bmd-checkbox-size;
+		overflow: hidden;
+		border: $bmd-checkbox-border-size solid $bmd-checkbox-border-color;
+		// border-radius: $border-radius;
+
+		&:before {
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			margin-top: -5px;
+			margin-left: 5px;
+			color: $bmd-checkbox-border-color;
+			content: "";
+			box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,0 0 0 0 inset;
+			transform: rotate(45deg);
+			animation: checkbox-off;
+
+			 // fix for safari 14
+			 height: 1px;
+			 width: 1px;
+		}
+
+		.is-focused &:before {
+			animation: checkbox-off $bmd-checkbox-animation-check forwards;
+		}
+	}
+
+	input[type="checkbox"] {
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		width: 0;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		pointer-events: none;
+		opacity: 0;
+	}
+
+	input[type="checkbox"]:focus + .checkbox-decorator .check::after {
+		opacity: 0.2;
+	}
+
+	input[type="checkbox"]:checked {
+		+ .checkbox-decorator .check {
+			color: $bmd-checkbox-checked-color;
+			border-color: $bmd-checkbox-checked-color;
+		}
+
+		+ .checkbox-decorator .check:before {
+			color: $bmd-checkbox-checked-color;
+			box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 32px 0 20px,
+			  -5px 5px 0 10px, 20px -12px 0 11px;
+			animation: checkbox-on $bmd-checkbox-animation-check forwards;
+		}
+	}
+
+	&[disabled],
+	input[type="checkbox"]:disabled + .checkbox-decorator > .check {
+		border-color: $bmd-checkbox-border-color-disabled;
+	}
+}
+
+.bmd-custom-checkbox.disabled > label {
+	color: $bmd-radio-color-disabled;
+}
+
+.bmd-form-control {
+
+	.was-validated &:invalid {
+		box-shadow:none;
+		background-image: $bmd-input-underline-bg-image-invalid;
+		background-size: 100% 100%, 100% 100%;
+
+		~ .invalid-feedback,
+		~ .invalid-tooltip {
+			display: block;
+		}
+	}
+}
+
+.bmd-custom-checkbox input[type="checkbox"] {
+	&:invalid ~ .invalid-feedback,
+	&:invalid ~ .invalid-tooltip {
+		display: block;
+	}
+}
+
+@keyframes checkbox-on {
+  0% {
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, .94em .13em 0 .6875em;
+  }
+
+  50% {
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, 1.25em .13em 0 .6875em;
+  }
+
+  100% {
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, 1.25em -.75em 0 .6875em;
+  }
+}
+
+@keyframes checkbox-off {
+  0% {
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, 1.25em -.75em 0 .6875em, 0 0 0 0 inset;
+  }
+
+  25% {
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, 1.25em -.75em 0 .6875em, 0 0 0 0 inset;
+  }
+
+  50% {
+    width: 0;
+    height: 0;
+    margin-top: -.25em;
+    margin-left: .38em;
+    box-shadow: 0 -.0625em 0 .625em, .6875em -.625em 0 .625em, 2.0625em 0 0 1.25em, 0 2em 0 1.25em, -.3125em .3125em 0 .625em, .94em .13em 0 .6875em, 0 0 0 0 inset;
+    transform: rotate(45deg);
+  }
+
+  51% {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: -.13em;
+    margin-left: -.13em;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 .63em inset;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: -.13em;
+    margin-left: -.13em;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+    transform: rotate(0deg);
+  }
+}

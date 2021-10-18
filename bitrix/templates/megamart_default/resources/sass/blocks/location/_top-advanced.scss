@@ -1,0 +1,19 @@
+.location-top-advanced {
+	max-width: 58.25rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-position: center right;
+
+	&__container {
+		background-repeat: no-repeat;
+		background-position: 100% 2rem;
+	}
+
+	&__list {
+		max-width: 29rem;
+	}
+}

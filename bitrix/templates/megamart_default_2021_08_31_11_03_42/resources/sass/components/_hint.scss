@@ -1,0 +1,33 @@
+.hint {
+  background: transparent;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  color: $extra;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  height: 1.1667em;
+  line-height: 1;
+  margin: -0.16667em auto auto;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 1.16667em;
+  
+  &:hover {
+    background-color: $extra;
+    border-color: $extra;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.active {
+    background-color: #b01e21;
+    border-color: #b01e21;
+    color: #fff;
+  }
+}

@@ -1,0 +1,9 @@
+.simple-basket-item-prop {
+	display: flex;
+	font-size: $font-size-sm;
+
+	&__name {
+		color: $extra;
+		margin-right: map-get($spacers, 3);
+	}
+}

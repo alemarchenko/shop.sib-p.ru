@@ -1,0 +1,92 @@
+.shop-cards__list {
+  min-height: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+@media (min-width: 576px) {
+  .shop-cards {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; } }
+
+@media (max-width: 575.98px) {
+  .shop-cards {
+    background-image: none !important; } }
+
+.shop-card {
+  display: block;
+  min-height: 17.5rem;
+  background: white;
+  padding: 1rem 60px 1rem 1.25rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 12px 30px -15px rgba(61, 72, 81, 0.75);
+          box-shadow: 0 12px 30px -15px rgba(61, 72, 81, 0.75);
+  display: block;
+  color: #202020;
+  position: relative; }
+  .shop-card-auto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 2rem; }
+  .shop-card__go-button {
+    width: 2.38rem;
+    height: 2.38rem;
+    border-radius: 50%;
+    border: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    background: rgba(0, 0, 0, 0);
+    margin: 0 0.5rem;
+    line-height: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem; }
+  .shop-card:hover, .shop-card:focus {
+    color: #202020;
+    text-decoration: none; }
+  .shop-card:hover .shop-card__go-button {
+    background-color: #ff5605;
+    border: #ff5605;
+    color: #fff; }
+  .shop-card__icon {
+    margin: 0.25rem 0 1.25rem;
+    font-size: 1.38rem; }
+  .shop-card__name {
+    font-weight: bold; }
+  .shop-card__props {
+    height: 8.88rem;
+    overflow: hidden; }
+  .shop-card .btn {
+    width: 14.38rem; }
+  @media (max-width: 575.98px) {
+    .shop-card {
+      margin-bottom: 0;
+      margin-top: 0;
+      border-bottom: 1px solid #f1f1f1; } }
+
+/*# sourceMappingURL=style.css.map */

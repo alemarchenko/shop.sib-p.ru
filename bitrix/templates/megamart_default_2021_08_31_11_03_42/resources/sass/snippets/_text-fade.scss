@@ -1,0 +1,16 @@
+%text-fade {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		background: linear-gradient(90deg, rgba($white, 0) 0%, $white 80%, $white 100%);
+		bottom: 0;
+		right: 0;
+		content: "";
+		height: $line-height-computed;
+		position: absolute;
+		top: 0;
+		width: 10%;
+	}
+}

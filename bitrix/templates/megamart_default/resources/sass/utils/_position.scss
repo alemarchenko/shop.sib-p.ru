@@ -1,0 +1,14 @@
+
+@include media-breakpoint-up(lg) {
+
+	.position-lg-relative { position: relative !important; }
+	.position-lg-absolute { position: absolute !important; }
+}
+
+.sticky-compact {
+	@supports (position: sticky) {
+		position: sticky;
+		top: $compact-height + map-get($spacers, 4);
+		z-index: $zindex-sticky;
+	}
+}

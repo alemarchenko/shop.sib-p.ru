@@ -1,0 +1,208 @@
+/* Line Height */
+.lh-0 {
+	line-height: 0;
+}
+
+.lh-1 {
+	line-height: 1;
+}
+
+.lh-base {
+	line-height: $line-height-base;
+}
+
+
+/* Font-size */
+.font-size-base {
+	font-size: $font-size-base;
+}
+
+.font-size-sm {
+	font-size: $font-size-sm;
+}
+
+.font-size-lg {
+	font-size: $font-size-lg;
+}
+
+.font-size-big {
+	font-size: 1.25rem;
+}
+
+.decoration-none {
+	text-decoration: none !important;
+}
+// insert
+.text-insert {
+	@extend .lead;
+	@extend .font-size-big;
+	@extend .text-muted;
+	@extend .col-10;
+
+	display: block;
+	margin: 3rem auto;
+}
+
+
+.text-emphasis {
+	text-align: center;
+	position: relative;
+
+	&__title {
+		color: $body-color;
+	}
+
+	&__content {
+		padding-top: 2rem;
+		padding-bottom: 4.5rem;
+		margin: auto;
+		max-width: 29rem;
+		font-weight: 300;
+		@extend .text-muted;
+		@extend .font-size-big;
+	}
+
+	&--delimiter:before,
+	&--delimiter:after {
+		position: absolute;
+		content: "";
+		height: 5px;
+		left: 0;
+		width: 100%;
+		border-radius: .5rem;
+		background: $body-bg;
+	}
+
+	&--delimiter:before {
+		top: 0;
+	}
+	&--delimiter:after {
+		bottom: 0;
+	}
+}
+
+.blockquote-custom {
+	margin-bottom: $spacer;
+	font-size: $blockquote-font-size;
+	max-width: 43.75rem;
+	padding-left: 4.25rem;
+	margin: auto;
+	position: relative;
+	color: $extra;
+	font-size: 300;
+
+	&:before {
+		content: "\201C";
+		position: absolute;
+		left: 0;
+		top: -10px;
+		font-size: 6rem;
+		line-height: 1;
+		color: theme-color('primary');
+	}
+}
+
+.text-link {
+	color: $link-color !important;
+}
+
+.blockquote-custom-footer {
+	display: block;
+	font-size: .88rem;
+	color: $body-color;
+	margin-top: 1.25rem;
+
+	&::before {
+		content: "\2014 \00A0"; // em dash, nbsp
+	}
+}
+
+%custom-list {
+	font-size: 1.25rem;
+	font-weight: 500;
+	max-width: 43.75rem;
+	margin: 2.63rem auto;
+	line-height: 1.56rem;
+
+	& ul,
+	& ol {
+		font-size: $font-size-base;
+		font-weight: 400;
+		line-height: $line-height-base;
+		margin: .88rem 0;
+	}
+
+	li {
+		position: relative;
+	}
+
+	& > li {
+		margin: 1rem 0;
+	}
+}
+
+ol.custom-list-ol {
+	@extend %custom-list;
+
+	&,
+	& ol {
+		list-style-type: none;
+		counter-reset: step-counter;
+	}
+
+
+	li {
+		position: relative;
+	}
+
+	li:before {
+		content: counters(step-counter, ".")". ";
+		counter-increment: step-counter;
+
+		position: absolute;
+		left: -2.38rem;
+	}
+
+	& > li:after {
+		content: "";
+		position: absolute;
+		width: .38rem;
+		height: .88rem;
+		left: -3rem;
+		top: .38rem;
+		border-radius: .5rem;
+		background: theme-color('primary');
+	}
+}
+
+ul.custom-list-ul {
+	@extend %custom-list;
+	list-style: none;
+
+	& li:before {
+		content: "";
+		position: absolute;
+		background: theme-color('primary');
+	}
+
+	& > li:before {
+		width: .63rem;
+		height: .63rem;
+		left: -2.5rem;
+		top: .5rem;
+		border-radius: .25rem;
+	}
+
+	& ul,
+	& ol {
+		list-style: none;
+
+		& > li:before {
+			width: .31rem;
+			height: .31rem;
+			left: -2.38rem;
+			top: .63rem;
+			border-radius: 50%;
+		}
+	}
+}

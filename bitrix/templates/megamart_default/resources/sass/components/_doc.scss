@@ -1,0 +1,107 @@
+
+.doc {
+	// height: $line-height-computed*3;
+	margin: auto;
+	max-width: 980px;
+
+	&__name {
+		@extend %text-fade;
+
+		color: $black;
+		font-weight: $font-weight-bold;
+		/* max-height: 1.2 * 2 * 1rem; */
+		text-decoration: none;
+		line-height: 1.2;
+
+		&:after {
+			top: $line-height-computed;
+		}
+
+		@include hover-focus {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+
+	&__type {
+		// @extend %vcenter;
+
+		align-items: center;
+		bottom: 0;
+		color: $body-color;
+		display: flex;
+		font-size: $font-size-base;
+		font-weight: bold;
+		justify-content: center;
+		left: 0;
+		max-height: 100%;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		text-transform: uppercase;
+		text-overflow: ellipsis;
+		top: 17%;
+		white-space: nowrap;
+
+		> span {
+			// @extend %vcenter__in;
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+
+
+		.icon-svg {
+			color: #bbc0c7;
+			display: block;
+			font-size: 2.875rem;
+		}
+
+		&.icon-doc .icon-svg {
+			color: #1c69aa;
+		}
+
+		&.icon-xls .icon-svg {
+			color: #2ea86a;
+		}
+
+		&.icon-pdf .icon-svg {
+			color: #c7482a;
+		}
+	}
+
+	&__icon.icon-doc &__type,
+	&__icon.icon-xls &__type,
+	&__icon.icon-pdf &__type {
+		color: #fff;
+	}
+
+	&__preview {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 0;
+		margin-bottom: map-get($spacers, 3);
+		padding-bottom: 67%;
+		position: relative;
+
+		> img {
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			max-height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&__desc {
+		color: $extra;
+		font-size: $font-size-sm;
+	}
+}

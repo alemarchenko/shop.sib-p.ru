@@ -1,0 +1,78 @@
+
+.opportunity-item {
+	opacity: 1;
+	padding: 0;
+	text-align: center;
+	font-weight: 500;
+	transition: $transition-base;
+	color: $white;
+	background-size: cover;
+	border-radius: $border-radius;
+	display: flex;
+	align-items: stretch;
+
+	&__link {
+		text-decoration: none;
+		background: #1d1f23;
+		transition: $transition-base;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2.5rem 1rem;
+		color: $white;
+		flex: 1;
+
+		@include hover-focus { 
+			color: $white;
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+		font-size: 3.13rem;
+		padding-bottom: 1.5rem;
+		display: block;
+		color: theme-color('primary');
+	}
+
+	&__name {
+		font-size: $font-size-base;
+		margin: 1rem 0;
+	}
+
+	&--light-blue &__link {
+		background-color: #0277bd;
+	}
+
+	&--teal &__link {
+		background-color: #00695c;
+	}
+
+	&--red &__link {
+		background-color: #d32f2f;
+	}
+
+	&--amber &__link {
+		background-color: #ffb300;
+	}
+
+	&--blue &__link {
+		background-color: #2196f3;
+	}
+
+	&--indigo &__link {
+		background-color: #5c6bc0;
+	}
+
+	&--pink &__link {
+		background-color: #ec407a;
+	}
+
+	&--cyan &__link {
+		background-color: #00acc1;
+	}
+
+	&--green &__link {
+		background-color: #689400;
+	}
+}

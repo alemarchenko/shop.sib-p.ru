@@ -1,0 +1,61 @@
+.b-header-user {
+	display: flex;
+	align-items: center;
+
+	&:not(&--r-lg) &__icon {
+		font-size: $h4-font-size;
+		line-height: 0;
+	}
+
+	&__icon {
+		color: $icon-300;
+		@include hover-focus {
+			color: $icon-300;
+		}
+	}
+
+	&__personal {
+		line-height: 1;
+	}
+
+	&--r-lg &__personal {
+		display: none;
+	}
+
+	&--r-lg &__icon {
+		@extend %icon-circle;
+	}
+
+	&:not(&--r-lg) &__letter,
+	&:not(&--r-lg) &__icon {
+		margin: 0px map-get($spacers, 3);
+	}
+
+	@include media-breakpoint-up(lg) {
+		&--r-lg &__letter,
+		&--r-lg &__icon {
+			margin: 0px map-get($spacers, 3);
+		}
+
+		&--r-lg  &__personal {
+			display: block;
+		}
+
+		&--r-lg &__icon {
+			width: auto;
+			height: auto;
+			font-size: $h4-font-size;
+			line-height: 0;
+			color: $icon-300;
+
+			@include hover-focus {
+				background: transparent;
+				color: $icon-300;
+			}
+		}
+
+		&__personal {
+			min-width: 6.5rem;
+		}
+	}
+}

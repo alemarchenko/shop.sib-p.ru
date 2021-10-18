@@ -1,0 +1,135 @@
+.btn {
+	&.is-loading {
+		animation: btn-more-rotate 1.5s linear infinite;
+		animation-delay: 0.2s;
+		background-color: transparent;
+		border: 0.3em solid $border-color;
+		border-radius: 50%;
+		border-top-color: theme-color('primary');
+		height: 2.375em;
+		color: transparent;
+		padding: 0;
+		pointer-events: none;
+		transition: none;
+		width: 2.375em;
+	}
+}
+
+.btn-lg {
+	&.is-loading {
+		height: 2.5em;
+		width: 2.5em;
+	}
+}
+
+.btn-rounded {
+	border-radius: $border-radius-rounded;
+}
+
+.btn-quantity {
+	position: relative;
+
+	& > span {
+		font-size: 0.75rem;
+		background: theme-color('primary');
+		padding: 0.13rem 0.44rem;
+		border-radius: 1.5rem;
+		color: #fff;
+		border: 0.13rem solid theme-color('light');
+		font-size: 0.75rem;
+		min-width: 1.5rem;
+		text-align: center;
+	}
+}
+
+.btn-head {
+	font-size: 0.88rem;
+	padding: 0.63rem 1.25rem;
+
+	.icon-svg {
+		font-size: 1.13rem;
+		margin-top: -1px;
+	}
+}
+
+.btn-dropdown {
+	$color: $secondary;
+	@include button-outline-variant($color, $extra, transparent, $extra);
+	color: $body-color;
+
+	&:not(:disabled):not(.disabled).active,
+	&:not(:disabled):not(.disabled):active,
+	.show > &.dropdown-toggle {
+		color: $extra;
+	}
+}
+
+.btn-outline-secondary-primary {
+	$color: $secondary;
+	$color-yiq: $primary-yiq;
+	@include button-outline-variant($color, $color-yiq, theme-color('primary'), theme-color('primary'));
+	color: $body-color;
+}
+
+.btn-link-extra-primary {
+	@extend .btn-link;
+	color: $extra;
+	@include hover {
+		color: theme-color('primary');
+	}
+}
+
+.btn-outline-secondary {
+	color: $body-color;
+}
+
+.btn-loading {
+	position: relative;
+
+	&,
+	&:active,
+	&:focus,
+	&:hover {
+		color: transparent !important;
+	}
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -4px;
+		margin-left: -4px;
+		content: '';
+		height: 8px;
+		width: 8px;
+		background: $body-color;
+		border-radius: 100%;
+		transition: all 0.4s linear;
+		animation: btn-loading 2s infinite;
+		opacity: 1;
+	}
+
+	&.btn-primary:before {
+		background: $primary-yiq;
+	}
+}
+
+@keyframes btn-more-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes btn-loading {
+	0% {
+		transform: translateX(-300%);
+	}
+
+	50% {
+		transform: translateX(300%);
+	}
+
+	100% {
+		transform: translateX(-300%);
+	}
+}

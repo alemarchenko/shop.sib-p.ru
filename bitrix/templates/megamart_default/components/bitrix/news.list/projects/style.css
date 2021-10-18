@@ -1,0 +1,72 @@
+.project-item {
+  padding: 0;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-align: center;
+  height: 100%; }
+  .project-item:hover {
+    -webkit-box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+            box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3); }
+  .project-item__head {
+    padding: 0 1rem;
+    margin: 1rem 0; }
+  .project-item__pic {
+    display: block;
+    padding-top: 76%;
+    position: relative;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
+  .project-item__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    z-index: 110; }
+  .project-item__data {
+    padding: 0 1rem; }
+  .project-item__name {
+    overflow: hidden;
+    font-weight: bold; }
+    .project-item__name a {
+      color: #202020; }
+      .project-item__name a:hover, .project-item__name a:focus {
+        color: #202020; }
+  .project-item__props {
+    padding-top: 1.5rem;
+    position: relative;
+    margin: 1rem; }
+    .project-item__props:after {
+      content: "";
+      height: 6px;
+      width: 3rem;
+      background: #ff5605;
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 0;
+      margin: auto;
+      left: 0;
+      right: 0; }
+  .project-item__prop {
+    font-size: .88rem;
+    color: #7d8698; }
+  .project-item__description {
+    margin: 1rem 0;
+    overflow: hidden; }
+  .project-item--type1 .project-item__name {
+    margin: 1rem 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+$adv-index-md-height: 12.5rem !default;
+$adv-index-sm-height: 9.38rem !default;
+$adv-index-xs-height: 6.25rem !default;
+
+.b-adv-index-full {
+	position:relative;
+	height: $adv-index-md-height;
+	background-repeat: no-repeat;background-position: 50% 0;
+	background-size: cover;
+
+	@include media-breakpoint-down(sm) {
+		height: $adv-index-sm-height;
+	}
+
+	@include media-breakpoint-down(xs) {
+		height: $adv-index-xs-height;
+	}
+}

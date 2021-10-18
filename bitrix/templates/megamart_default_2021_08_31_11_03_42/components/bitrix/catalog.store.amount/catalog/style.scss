@@ -1,0 +1,34 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+
+$product-item-class: '.product-cat' !default;
+
+.shop-list {
+	&-item {
+		&.is-outofstock &__icon {
+			color: $extra;
+		}
+
+		&.is-outofstock &__amount {
+			background-color: $extra;
+		}
+
+		&__amount {
+			background-color: $extra;
+		}
+
+		#{$product-item-class}-limit-quantity::before {
+			color: theme-color('primary');
+			left: 0;
+			margin: 0.5rem;
+			position: absolute;
+		}
+	}
+
+	&-empty {
+		padding: 3rem;
+	}
+}

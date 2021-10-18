@@ -1,0 +1,61 @@
+.side-panel {
+
+	&__inner {
+		background: $white;
+		width: 0;
+		z-index: 1;
+		right: 0;
+		top: 0;
+		height: auto;
+		overflow: hidden;
+		position: fixed;
+
+	}
+
+	&.is-open &__inner {
+		z-index: 9999;
+		height: 100%;
+		overflow: visible;
+	}
+
+	&.is-open &__inner .side-panel-controls {
+		position: absolute;
+		right: 100%;
+		border-right: 1px solid #dee1e6;
+		box-shadow: none;
+
+		// prevent margin-right if side-panel is-open
+		margin-right: 0 !important; 
+	}
+
+	&__close {
+		background: transparent;
+		border: 0;
+		border-radius: 0;
+		cursor: pointer;
+		height: 44px;
+		margin: 0;
+		padding: 6px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 44px;
+		z-index: 10;
+		font-size: 22px;
+		right: 18px;
+		top: 12px;
+
+		&:focus {
+			outline: none;
+		}
+
+		svg {
+			transition:  opacity 0.5s ease;
+			opacity: 0.5;
+		}
+		
+		&:hover svg {
+			opacity: 1;
+		}
+	}
+}

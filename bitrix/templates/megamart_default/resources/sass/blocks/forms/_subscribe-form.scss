@@ -1,0 +1,55 @@
+.subscribe-form-flex {
+	display: flex;
+	
+	&-block_img {
+		margin-right: 1rem;
+		
+		img{
+			width: 60px;
+			margin: 0.5rem 0;
+		}
+	}
+	
+	&-block_inf { width:314px;}
+	&-block_art {
+		font-size: 0.875rem;
+		color: #7d8698;
+	}
+	
+	&-block_name {
+		font-weight: bold;
+	}
+	
+}
+
+@media (min-width: 481px) { 
+	.subscribe-form-email, .btn-primary-subscribe-button{ 
+		float:left;
+	}
+	.subscribe-form-email{ 
+		width: 65.35%; 
+		margin-right:3%;
+	}
+	.btn-primary-subscribe-button{
+		padding-top: 2.69rem;
+	}
+}
+#bx-catalog-subscribe-form-container-1{
+	display:flex;
+}
+
+@media (max-width: 480px) {
+	.btn-primary-mobile{ 
+		width: 100%;
+	}
+	
+	.subscribe-form-flex {
+		display: block;
+		&-block_inf{
+			width: 100%;
+		}
+	}
+	
+}
+
+

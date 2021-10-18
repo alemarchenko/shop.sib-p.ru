@@ -1,0 +1,27 @@
+.footer-subscribe {
+	&__input {
+		background: transparent;
+		min-width: 0;
+	}
+
+	&__note {
+		font-size: $small-font-size;
+		color: $extra;
+		padding-right: 2.5rem;
+	}
+
+	&__button {
+		@extend .btn;
+		@extend .btn-primary;
+		@extend .ml-3;
+		padding-left: .5rem;
+		padding-right: .5rem;
+		font-size: 1.5rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

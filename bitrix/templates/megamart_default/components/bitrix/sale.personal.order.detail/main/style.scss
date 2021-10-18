@@ -1,0 +1,347 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.sale-order-detail {
+
+	&-back-to-list-link-up {
+		display: block;
+		margin-bottom: 2.13rem;
+	}
+
+	&-back-to-list-link-down {
+		display: block;
+		margin-top: 2.13rem;
+	}
+
+
+	&-general {
+		border: 1px solid $extra-gray;
+	}
+
+	&-general-head {
+		margin: 0px;
+		padding: .81rem 1rem;
+		background-color: $extra-gray;
+		font-weight: bold;
+	}
+
+	&-general-item {
+		margin-top: 2.31rem;
+		margin-bottom: 2.13rem;
+	}
+
+	&-about-order,
+	&-payment-options,
+	&-payment-options-order-content,
+	&-total-payment {
+		padding: 0 1rem 1.5rem;
+		border-bottom: 1px solid $extra-gray;
+	}
+
+	&-about-order-title-element,
+	&-payment-options-order-content-title-element,
+	&-payment-options-title-element {
+		display: block;
+		font-size: $font-size-sm;
+		color: $extra;
+		margin: 1rem 0;
+	}
+
+	&-about-order-inner-container-details-title,
+	&-payment-options-shipment-composition-title-element {
+		font-size: $font-size-sm;
+		margin: 0;
+		padding: 1rem 0;
+		color: $extra;
+		border-bottom: 1px solid $extra;
+	}
+
+	&-about-order-inner-container-name-title,
+	&-about-order-inner-container-status-title,
+	&-about-order-inner-container-price-title,
+	&-payment-options-methods-shipment-list-item,
+	&-payment-options-methods-shipment-list-item-link  {
+		font-size: $font-size-sm;
+		magin: .44rem 0;
+	}
+
+	&-payment-options-methods-shipment-list-item-link {
+		color: $link-color;
+
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+
+	&-about-order-inner-container-name-detail,
+	&-about-order-inner-container-price-detail,
+	&-about-order-inner-container-status-detail {
+		font-weight: bold;
+	}
+
+	&-about-order-inner-container-name-read-less,
+	&-about-order-inner-container-name-read-more,
+	& .sale-order-list-cancel-payment {
+		margin: 1rem 0 1rem;
+		border-bottom: 1px dashed $link-color;
+		cursor: pointer;
+		color: $link-color !important;
+		display: inline-block;
+	}
+
+	&-about-order-inner-container-details,
+	&-about-order-inner-container-name-read-less,
+	&-hide-link {
+		display: none;
+	}
+
+
+	&-about-order-inner-container-repeat {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&-about-order-inner-container-repeat-cancel {
+		display: block;
+		text-align: center;
+		margin: .5rem 0;
+	}
+
+	&-about-order-inner-container-details-list,
+	&-total-payment-list-left,
+	&-total-payment-list-right {
+		@include list-unstyled;
+	}
+
+
+	&-about-order-inner-container-details {
+		padding: 0 2rem;
+	}
+
+	&-about-order-inner-container-list-item {
+		padding: 1rem 0 0 0;
+	}
+
+	&-about-order-inner-container-list-item-element,
+	&-about-order-inner-container-list-item-link {
+		display: block;
+		font-weight: bold;
+	}
+
+	&-payment-options-info-image {
+		display: inline-block;
+		height: 3.38rem;
+		background: url(images/sale-personal-order-payment-options-order-number.svg) center no-repeat;
+		color: $extra;
+	}
+
+	&-payment-options-info-order-number,
+	&-payment-options-info-total-price {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	&-payment-options-info-order-number {
+		font-weight: bold;
+	}
+
+	&-payment-inner-row-template {
+		display: none;
+		cursor: pointer;
+		margin-top: 1rem;
+	}
+
+	&-payment-options-shipment-image-container,
+	&-payment-options-methods-image-container {
+		text-align: center;
+	}
+
+	&-payment-options-methods {
+		padding: 1.25rem 0 1.25rem 0;
+		border-top: 1px solid $extra-gray;
+		overflow: hidden;
+	}
+
+	&-payment-options-methods-image-element,
+	&-payment-options-shipment-image-element {
+		display: block;
+		height: 3.19rem;
+		margin: 0;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&-payment-options-info {
+		padding: 1.5rem .94rem 2rem 1rem;
+	}
+
+	& &-payment-options-methods-button-container {
+		padding-right: 0;
+		text-align: right;
+	}
+
+	.payment-options-methods-row {
+		position: relative;
+		padding: 0 0 0;
+		margin: 0 0 0;
+		overflow: hidden;
+	}
+
+
+	&-payment-options-methods-info-title,
+	&-payment-options-methods-shipment-list-item-title {
+		font-weight: bold;
+	}
+
+	&-payment-options-methods-info-total-check,
+	&-payment-options-methods-info-total-price {
+		font-size: $font-size-sm;
+		margin: .44rem 0;
+	}
+
+	&-payment-options-methods-info-change-link,
+	&-payment-options-methods-shipment-list-item-link  {
+	    display: block;
+		font-size: $font-size-sm;
+		margin: .44rem 0 0 0;
+		cursor: pointer;
+	}
+
+	.sale-order-list-payment-title-element {
+		margin-right: 1rem;
+		margin-left: .25rem;
+	}
+
+	&-payment-options-methods-info-title-status-alert,
+	&-payment-options-methods-info-title-status-success,
+	&-payment-options-methods-info-title-status-restricted {
+		display: inline-block;
+		padding: .31rem .38rem;
+		font-weight: 600;
+		font-size: .81rem;
+		border: $alert-border-width solid transparent;
+		line-height: 1;
+	}
+
+	.sale-order-payment-change-pp-list {
+		padding: 0 0 2rem;
+		display: flex;
+		flex-wrap: wrap;
+
+		.sale-order-payment-change-pp-company-graf-container {
+			border-color: $extra;
+		}
+		.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container {
+			border-color: theme-color('primary');
+		}
+
+		.sale-order-payment-change-pp-company-smalltitle {
+			color: $extra;
+			font-size: .69rem;
+		}
+	}
+
+
+	&-payment-options-methods-template {
+	    position: absolute !important;
+	    left: 1000px;
+	    padding: 1.5rem 2rem 1.5rem 2rem;
+	    margin: 0;
+	    border: 1px solid rgb(59, 200, 245);
+	    transition: opacity .5s .3s ease;
+	    opacity: 0;
+	}
+
+	&-active-event .sale-order-detail-payment-options-methods-template {
+		position: relative !important;
+		left: 0;
+		opacity: 1;
+	}
+
+	&-active-event &-payment-options-methods-information-block {
+		position: absolute;
+		left: 1000px;
+		opacity: 0;
+	}
+
+	&-payment-options-shipment-composition-map {
+		display: none;
+	}
+
+	&-order-item-img-block {
+	    margin: 0;
+	    padding-left: 0 !important;
+	    width: 5.31rem;
+	    min-width: 5.31rem;
+	    max-width: 5.31rem;
+	}
+
+	&-order-item-img-container {
+	    display: block;
+	    padding-top: 100%;
+	    background-position: center;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+
+	&-order-section-content table tr:first-child td {
+		border-top: transparent;
+	}
+
+	&-order-section-content .table thead th {
+		border-bottom-width: 1px;
+		border-top: 0;
+	}
+
+	&-total-payment-list-left-item {
+	    overflow: hidden;
+	    list-style: none;
+	    text-align: right;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+
+	&-total-payment-container {
+		padding: 2rem 0 1rem;
+	}
+
+	&-total-payment-list-right-item {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	&-total-payment {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		&-about-order-inner-container-repeat,
+		&-payment-options-methods-button-container {
+			margin: 1rem 0 0;
+		}
+
+		&-about-order-inner-container-repeat-button,
+		&-payment-options-methods-button-element {
+			display: block !important;
+		}
+
+		&-payment-options-methods-template {
+			padding: 0 !important;
+		}
+
+		& .payment-options-methods-row {
+			padding-left: $grid-gutter-width / 2;
+		}
+
+		&-payment-options-methods-image-container {
+			margin: .5rem 0;
+		}
+	}
+}

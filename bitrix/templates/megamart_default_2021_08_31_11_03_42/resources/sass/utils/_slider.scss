@@ -1,0 +1,15 @@
+.slider-before {
+	display: flex;
+
+	> * {
+		flex: 1;
+	}
+
+	@each $spacer in map-keys($spacers) {
+		&--m-#{$spacer} {
+			> * {
+				margin-right: map-get($spacers, $spacer);
+			}
+		}
+	}
+}

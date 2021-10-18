@@ -1,0 +1,77 @@
+// .is-compact-menu-open,
+// .is-compact-menu-open > body {
+// 	overflow: hidden;
+// }
+//
+// .is-compact-menu-open > body {
+// 	overflow-y: scroll;
+// }
+
+.l-compact-menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+
+	@include media-breakpoint-down(md) {
+		transition: opacity .3s;
+		transform: translateX(-100%);
+		background: theme-color('light');
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+
+		&.is-open {
+			overflow-y: scroll;
+			overflow-x: hidden;
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		&__user {
+			background: $compact;
+		}
+
+		&__items {
+			position: relative;
+		}
+
+		.is-view ~ &__bottom,
+		.animate-in ~ &__bottom,
+		.animate-out ~ &__bottom,
+		.animate-in-back ~ &__bottom,
+		.animate-out-back ~ &__bottom {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		z-index: 999;
+		position: fixed;
+		width: auto;
+		height:auto;
+		background: transparent;
+		display: block;
+		background: transparent;
+		min-width: 16.25rem; // 260px
+		visibility: hidden;
+
+		&__items {
+			transform: translateY(10px);
+			opacity: 0;
+		}
+
+		&.is-open {
+			visibility: visible;
+			overflow: visible;
+			display: block;
+		}
+
+		&.is-open  &__items {
+			transform: translateY(0);
+			opacity: 1;
+			transition: transform .3s, opacity .5s;
+		}
+	}
+}

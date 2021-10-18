@@ -1,0 +1,66 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../../../../resources/sass/variables';
+@import '../../../../../../../resources/sass/mixins/spacings';
+@import 'bootstrap/scss/variables';
+
+.brand-detail-block {
+    
+    &__name {
+        color: $extra;
+        font-weight: normal;
+        margin-bottom: 0.75rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        &__picture {
+            @include make-spacings(-1 * map-get($spacers, 4), 'margin', ('left', 'right'));
+        }
+    }
+
+    @include media-breakpoint-between(sm, md) {
+        &__picture {
+            @include make-spacings(-1 * map-get($spacers, 7), 'margin', ('left', 'right'));
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &__picture {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+    
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        margin-top: 4.5rem;
+        margin-bottom: 2rem;
+        
+        &__desc {
+            margin-right: 1rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 25rem;
+            order: 1; 
+            align-self: center;
+        }
+        
+        &__picture {
+            flex-grow: 0;
+            flex-shrink: 0;
+            max-width: 50%;
+            order: 2;
+        }
+
+        .l-section &__picture {
+            @include make-spacings(-1 * map-get($spacers, 7), 'margin', ('right'));
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        &__desc {
+            margin-left: 6.25rem;
+            margin-right: 6.25rem;
+        }
+    }
+}

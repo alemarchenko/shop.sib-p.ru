@@ -1,0 +1,20 @@
+
+.basket-empty {
+	display: block;
+	margin: auto;
+	max-width: 35rem;
+	padding: 0 map-get($spacers, 4);
+	text-align: center;
+
+	&__icon {
+		font-size: 3.5rem;
+		color: theme-color('primary');
+	}
+
+	&__icon,
+	&__title,
+	&__descr,
+	&__buttons {
+		margin: map-get($spacers, 4) 0;
+	}
+}

@@ -1,0 +1,41 @@
+.up-float-button {
+
+	display: none;
+
+	@include media-breakpoint-up(lg) {
+		display: block;
+		position: fixed;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		cursor: pointer;
+		background: theme-color('dark');
+		position: fixed;
+		bottom: 2rem;
+		right: .375rem;
+		z-index: $zindex-fixed;
+		font-size: 2rem;
+		text-align: center;
+		color: $white;
+		border: 1px solid $body-bg;
+		transition: $transition-base;
+		line-height: 1;
+		font-size: 1.5rem;
+		padding-top: .5rem;
+		visibility: hidden;
+		opacity: 0;
+
+		&--up {
+			bottom: 5rem;
+		}
+
+		&.showed {
+			opacity: .6;
+			visibility: visible;;
+		}
+
+		@include hover {
+			opacity: .8;
+		}
+	}
+}

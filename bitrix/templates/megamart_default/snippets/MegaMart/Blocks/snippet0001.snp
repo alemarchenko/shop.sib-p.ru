@@ -1,0 +1,26 @@
+<h3 class="mb-4">Наши возможности</h3>
+<div class="row mb-6">
+	<div class="col-md-4">
+		<ul class="mb-0 b-about-list">
+			<li class="b-about-list__item">Быстрая доставка</li>
+			<li class="b-about-list__item">Низкие цены</li>
+			<li class="b-about-list__item">Широкий ассортимент</li>
+			<li class="b-about-list__item">Бонусы и подарки</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul class="mb-0 b-about-list">
+			<li class="b-about-list__item">Отличное обслуживание</li>
+			<li class="b-about-list__item">Профессиональные менеджеры</li>
+			<li class="b-about-list__item">Гарантия на все товары</li>
+			<li class="b-about-list__item">Надежные поставщики</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul class="mb-0 b-about-list">
+			<li class="b-about-list__item">Сезонные скидки</li>
+			<li class="b-about-list__item">Программа лояльности</li>
+			<li class="b-about-list__item">Карты постоянных клиентов</li>
+		</ul>
+	</div>
+</div>

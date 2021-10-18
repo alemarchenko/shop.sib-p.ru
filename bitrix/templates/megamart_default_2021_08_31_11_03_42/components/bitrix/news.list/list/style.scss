@@ -1,0 +1,153 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+$news-content-padding: 0 map-get($spacers, 4);
+$news-stickers-height: 1 * $h6-font-size * $headings-line-height + map-get($spacers, 3) + 0.63rem; // sticker height (line + paddings + corner size)
+$news-stickers-info-separator-spaces: map-get($spacers, 3);
+
+.b-news-list {
+	&-tile {
+		&__item {
+			@extend %tile;
+		}
+
+		&__pic {
+			@extend %tile__pic;
+		}
+
+		&__body {
+			@extend %tile__body;
+		}
+
+		&__stickers {
+			position: relative;
+			margin-bottom: map-get($spacers, 3);
+
+			&-in {
+				position: absolute;
+				top: -(map-get($spacers, 2) + map-get($spacers, 3) + $news-stickers-height/2); // __body top padding + __pic bottom margin + half __stickers height
+				height: $news-stickers-height;
+				max-height: $news-stickers-height;
+				overflow: hidden;
+			}
+		}
+
+		&__head {
+			@extend %tile__head;
+			padding: $news-content-padding;
+		}
+
+		&__info {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: theme-color('primary');
+			
+			&-date {
+				position: relative;
+				font-size: $small-font-size;
+				color: $extra;
+			}
+
+			&-slogan {
+				font-size: $small-font-size;
+				color: theme-color('primary');
+			}
+
+			&-date + &-slogan {
+				padding-left: $news-stickers-info-separator-spaces;
+
+				&:before {
+					display: inline-block;
+					content: "|";
+					color: $extra;
+					padding-right: $news-stickers-info-separator-spaces;
+				}
+			}
+		}
+
+		&__title {
+			@extend %tile__title;
+			max-height: 3 * $h6-font-size * $headings-line-height;
+		}
+	}
+
+	&-line {
+		&__item {
+			position: relative;
+			height: 100%;
+			padding: map-get($spacers, 4) map-get($spacers, 7);
+		}
+
+		&__pic__canvas {
+			position: relative;
+			display: block;
+			// padding-bottom: 90%;
+		}
+
+		&__pic {
+			// position: absolute;
+			// top: 0;
+			// right: 0;
+			// bottom: 0;
+			// left: 0;
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+
+		&__body {
+			@extend %tile__body;
+			padding: 0;
+		}
+
+		&__stickers {
+			padding-top: map-get($spacers, 4);
+		}
+
+		&__head {
+			@extend %tile__head;
+			padding: $news-content-padding;
+		}
+
+		&__info {
+			&-date {
+				position: relative;
+				font-size: $small-font-size;
+				color: $extra;
+			}
+
+			&-slogan {
+				font-size: $small-font-size;
+				color: theme-color('primary');
+			}
+
+			&-date + &-slogan {
+				padding-left: $news-stickers-info-separator-spaces;
+
+				&:before {
+					display: inline-block;
+					content: "|";
+					color: $extra;
+					padding-right: $news-stickers-info-separator-spaces;
+				}
+			}
+		}
+
+		&__title {
+			@extend %tile__title;
+			// font-weight: $font-weight-bold;
+			max-height: 2 * $h6-font-size * $headings-line-height;
+		}
+
+		@include media-breakpoint-down(md) {
+			&__item {
+				padding-left: map-get($spacers, 4);
+				padding-right: map-get($spacers, 4);
+			}
+		}
+	}
+}

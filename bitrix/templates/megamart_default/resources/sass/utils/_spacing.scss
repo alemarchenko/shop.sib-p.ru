@@ -1,0 +1,68 @@
+// Margin and Padding
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (margin: m) {
+      @each $size, $length in $spacers {
+		@if $length > 0 {
+			.#{$abbrev}#{$infix}--#{$size} { #{$prop}: -1*$length !important; }
+			.#{$abbrev}t#{$infix}--#{$size},
+			.#{$abbrev}y#{$infix}--#{$size} {
+			  #{$prop}-top: -1*$length !important;
+			}
+			.#{$abbrev}r#{$infix}--#{$size},
+			.#{$abbrev}x#{$infix}--#{$size} {
+			  #{$prop}-right: -1*$length !important;
+			}
+			.#{$abbrev}b#{$infix}--#{$size},
+			.#{$abbrev}y#{$infix}--#{$size} {
+			  #{$prop}-bottom: -1*$length !important;
+			}
+			.#{$abbrev}l#{$infix}--#{$size},
+			.#{$abbrev}x#{$infix}--#{$size} {
+			  #{$prop}-left: -1*$length !important;
+			}
+		}
+      }
+    }
+  }
+}
+
+
+.block-spacing {
+	@include make-block-spacing();
+}
+
+.block-spacing-x {
+	@include make-block-spacing(('padding'), ('left', 'right'));
+}
+
+.block-spacing-y {
+	@include make-block-spacing(('padding'), ('top', 'bottom'));
+}
+
+.block-margin {
+	@include make-block-spacing(('margin'));
+}
+
+.block-margin-x {
+	@include make-block-spacing(('margin'), ('left', 'right'));
+}
+
+.block-margin-y {
+	@include make-block-spacing(('margin'), ('top', 'bottom'));
+}
+
+.block-spacing-negative {
+	@include make-block-spacing-negative();
+}
+
+.block-spacing-negative-x {
+	@include make-block-spacing-negative(('margin'), ('left', 'right'));
+}
+
+.block-spacing-negative-y {
+	@include make-block-spacing-negative(('margin'), ('top', 'bottom'));
+}

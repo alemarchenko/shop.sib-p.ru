@@ -1,0 +1,131 @@
+.nav-wrap {
+	@extend .clearfix;
+	
+	color: $white;
+	display: flex;
+	overflow: hidden;
+
+	.nav {
+		color: $body-color;
+		display: block;
+		white-space: nowrap;
+	}
+	
+	.nav-item {
+		float: none;
+		display: inline-block;
+	}
+	
+	.nav-scroll {
+		flex-shrink: 0;
+		margin-left: map-get($spacers, 3);
+		position: relative;
+
+		&:before {
+			background: linear-gradient(90deg, transparent 0%, currentColor 80%, currentColor 100%);
+			bottom: 0;
+			content: '';
+			display: block;
+			position: absolute;
+			right: 100%;
+			top: 0;
+			width: 1.5rem;
+		}
+	}
+	
+	.scroll-arrow {
+		width: 2.375rem;
+		height: 2.375rem;
+		border-radius: 50%;
+		border: 1px solid $outline-base;
+		color: $outline-base;
+		background: transparent;
+		// margin: -0.125rem map-get($spacers, 3);
+		line-height: 0;
+		transition: $transition-base;
+		cursor: pointer;
+		display: inline-flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+
+		svg {
+			//stroke-width: 2px;
+			fill: $outline-base;
+			font-size: 1.25rem;
+			transition: $transition-base;
+			margin: auto;
+		}
+
+		&:focus,
+		&:active {
+			outline: 0;
+		}
+
+		@include hover {
+			background: theme-color('primary');
+			border-color: theme-color('primary');
+
+			svg {
+				fill: $white;
+			}
+		}
+	}
+}
+
+.nav-scrollspy {
+	
+	$icon-width: 1.5rem;
+	
+	.nav-link {
+		color: $extra;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&:not(.active) .nav-item:first-child .nav-link,
+	.nav-link:hover,
+	.nav-link:active,
+	.nav-link.active {
+		color: theme-color('primary');
+		
+		.nav-link-icon {
+			opacity: 1;
+		}
+	}
+	
+	.nav-link:hover {
+		.nav-link-icon {
+			opacity: 0;
+		}
+	}
+
+	.nav-link-icon {
+		font-size: $icon-width;
+		margin: 0 map-get($spacers, 3) 0 map-get($spacers, 4);
+		opacity: 0;
+	}
+}
+
+.nav-slide {
+	position: relative;
+
+	.nav-link {
+		color: $extra;
+
+		&:hover,
+		&:active,
+		&.active {
+			color: theme-color('primary');
+		}
+	}
+
+	.nav-slide-line {
+		position: absolute;
+		bottom: .31rem;
+		height: .13rem;
+		background-color: theme-color('primary');
+		transition: all .3s ease;
+	}
+}

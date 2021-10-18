@@ -1,0 +1,105 @@
+%beauty-loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg) translate3d(0,0,0);
+
+	span {
+		position: absolute;
+		display: block;
+		background-color: $primary;
+		animation: loaderBlock 1.2s infinite ease-in-out both;
+
+		&:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(2) {
+			top: 0;
+			right: 0;
+			animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+		}
+		&:nth-child(3) {
+			bottom: 0;
+			left: 0;
+			animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+		}
+		&:nth-child(4) {
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+
+.rs-banner-loader {
+	@extend %beauty-loader;
+
+	width: 80px;
+	height: 80px;
+	animation: loader-1 1.2s infinite ease-in-out;
+
+	span {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.panel-loader {
+	@extend %beauty-loader;
+
+	width: 40px;
+	height: 40px;
+	animation: loader-2 1.2s infinite ease-in-out;
+
+	span {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@keyframes loader-1 {
+	0%, 10%, 100% {
+		width: 80px;
+		height: 80px;
+	}
+	65% {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@keyframes loader-2 {
+	0%, 10%, 100% {
+		width: 40px;
+		height: 40px;
+	}
+	65% {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@keyframes loaderBlock {
+	0%, 30% {
+		transform: rotate(0);
+	}
+	55% {
+		background-color: lighten($primary, 15%);
+	}
+	100% {
+		transform: rotate(90deg);
+
+	}
+}
+@keyframes loaderBlockInverse {
+	0%, 20% {
+		transform: rotate(0);
+	}
+	55% {
+		background-color: lighten($primary, 15%);
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}

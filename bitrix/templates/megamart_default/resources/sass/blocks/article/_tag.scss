@@ -1,0 +1,14 @@
+.article-tag {
+	background: $body-bg;
+	color: $extra;
+	padding: .25rem .5rem;
+	font-size: .75rem;
+    position: relative;
+    transition: $transition-base;
+
+	@include hover-focus {
+        color: $extra;
+        background-color: darken($body-bg, 5%);
+		text-decoration: none;
+	}
+}

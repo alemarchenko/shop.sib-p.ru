@@ -1,0 +1,31 @@
+
+.b-article-detail-head {
+
+	&__title {
+		max-width: 41.25rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__stickers {
+		margin-left: -.63rem;
+	}
+
+	&__meta {
+		display: flex;
+	}
+
+	&__meta-item {
+		font-size: $small-font-size;
+		color: $extra;
+	}
+
+	&__meta-item + &__meta-item {
+		padding-left: 1.5rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__title h1 {
+			font-size: 1.5rem;
+		}
+	}
+}

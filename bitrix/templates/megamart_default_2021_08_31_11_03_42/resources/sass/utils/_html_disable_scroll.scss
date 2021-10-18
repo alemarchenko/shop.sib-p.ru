@@ -1,0 +1,8 @@
+html.disable-scroll {
+	overflow: hidden;
+
+	> body {
+		overflow-y: scroll !important;
+		height: auto;
+	}
+}

@@ -1,0 +1,72 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+
+.brand-collection-item {
+    padding: 1.5rem;
+
+    &__image-wrapper {
+		position: relative;
+		padding: map-get($spacers, 4);
+		margin: -1*map-get($spacers, 4) -1*map-get($spacers, 4) 0;
+
+        display: block;
+
+		transition: all 300ms ease;
+    }
+
+    &__image-canvas {
+		position: relative;
+		padding-bottom: 90%;
+        
+        display: block;
+	}
+
+	&__image {
+		position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+
+		display: block;
+	}
+
+    &__title {
+		max-height: 2 * $h6-font-size * $headings-line-height;
+		margin-bottom: map-get($spacers, 2);
+        
+        font-weight: $font-weight-bold;
+        
+        overflow: hidden;
+
+		& > a,
+		& > a:hover {
+			color: $body-color;
+        }
+    }
+
+    &__parent {
+		font-size: $small-font-size;
+		height:  $font-size-base * $line-height-base * $small-font-size/100%;;
+		margin-bottom: map-get($spacers, 2);
+		overflow: hidden;
+
+		& > a,
+		& > a:hover {
+			color:  theme-color('primary');
+		}
+    }
+
+    @include media-breakpoint-up(lg) {
+		&__image-wrapper {
+			padding: map-get($spacers, 5);
+			margin: -1*map-get($spacers, 5) -1*map-get($spacers, 5) map-get($spacers, 3);
+		}
+
+	}
+}

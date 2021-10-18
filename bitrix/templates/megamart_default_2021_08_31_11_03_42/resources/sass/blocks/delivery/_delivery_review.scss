@@ -1,0 +1,37 @@
+.b-delivery-review {
+	padding-top: 3.125rem;
+	padding-bottom: 4.25rem;
+}
+
+.b-delivery-review__face img {
+	width: 100%;
+	max-width: 13.88rem;
+	margin-bottom:  1.5rem;
+}
+
+.b-delivery-review__content {
+	max-width: 30.63rem;
+}
+
+.b-delivery-review__offer-title {
+	font-weight: bold;
+	color: $body-color;
+	margin-bottom: 0.5rem;
+}
+
+.b-delivery-review__offer-phone {
+	font-weight: bold;
+	color: $body-color;
+	margin-bottom: -2px;
+}
+
+.b-delivery-review__schedule {
+	font-size: 0.75rem;
+	color: $extra;
+	margin-bottom: 1.5rem;
+}
+
+.b-delivery-review__message {
+	font-size: 0.875rem;
+	color: $extra;
+}

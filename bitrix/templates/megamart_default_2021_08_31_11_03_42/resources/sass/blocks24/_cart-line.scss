@@ -1,0 +1,79 @@
+
+.bx-basket-fixed {
+	padding: map-get($spacers, 4) #{map-get($spacers, 4) + 1.5rem + map-get($spacers, 4)} map-get($spacers, 4) map-get($spacers, 4);
+	width: auto;
+}
+
+.bx-basket-block {
+	@include clearfix();
+
+	// align-items: center;
+	// display: flex;
+	line-height: 1;
+	margin: 0 0 map-get($spacers, 3) 0;
+	padding: 0;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	> * {
+		font-size: $font-size-base;
+	}
+
+	& > a:last-child,
+	& > span:last-child {
+		font-size: $font-size-base * $small-font-size/100%;
+	}
+
+	> .fa {
+		@extend %svg-icon-background;
+
+		float: left;
+		font-size: 1.5rem;
+		margin: map-get($spacers, 2) map-get($spacers, 4) map-get($spacers, 2) 0;
+		position: static;
+		width: auto;
+
+		&.fa-user,
+		&.fa-shopping-cart {
+			&:before {
+				content: '';
+			}
+		}
+
+		&.fa-user {
+			&:before {
+				mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-user-view);
+			}
+		}
+
+		&.fa-shopping-cart {
+			&:before {
+				mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-cart-view);
+			}
+		}
+
+		& + a {
+			color: $body-color;
+			font-size: $font-size-base;
+			font-weight: $font-weight-bold;
+			line-height: $line-height-base;
+			margin: 0;
+			
+			&:after {
+				content: '\0a';
+				display: inline;
+				white-space: pre;
+			}
+		}
+	}
+
+	&:first-child {
+		font-size: 0;
+	}
+	
+	br {
+		display:: none;
+	}
+}

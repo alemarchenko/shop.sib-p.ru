@@ -1,0 +1,9 @@
+.c-icon {
+	@extend %icon-circle;
+	
+	font-size: $h4-font-size;
+
+	&.active {
+		color: theme-color('primary');
+	}
+}

@@ -1,0 +1,29 @@
+//
+// Lists
+//
+
+.list-justified {
+	clear: both;
+  
+	> dt {
+		clear: both;
+		float: left;
+		margin-bottom: map-get($spacers, 2);
+		margin-right: map-get($spacers, 2);
+
+		&:before {
+			content: '';
+			display: block;
+		}
+	}
+
+	> dd {
+		float: right;
+		margin-bottom: map-get($spacers, 2);
+	}
+	
+	> dt:last-of-type,
+	> dd:last-of-type {
+		margin-bottom: 0;
+	}
+}

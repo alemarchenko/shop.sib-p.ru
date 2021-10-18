@@ -1,0 +1,83 @@
+// checkout
+@import '../../../components/bitrix/sale.order.ajax/main/style.scss';
+
+.block-store-personal {
+	.container {
+		> .row {
+			@extend .row-borders;
+		}
+	}
+
+	.sale-personal-section-index-block {
+		margin: 0;
+		background: $white;
+		height: auto;
+	}
+
+	.sale-personal-section-index-block-link {
+		color: var(--theme-color-primary);
+		padding: map-get($map: $spacers, $key: 5) map-get($map: $spacers, $key: 4);
+	}
+
+	.sale-personal-section-index-block-ico {
+		display: block;
+		font-size: 3.13rem;
+		line-height: 1;
+		margin-bottom: map-get($map: $spacers, $key: 4);
+
+		.fa {
+			@extend %svg-icon-background;
+
+			display: inline-block;
+
+			&:before {
+				content: '';
+				display: block;
+				line-height: 1;
+			}
+		}
+
+		.fa-calculator {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-orders-view);
+		}
+
+		.fa-credit-card {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-account-view);
+		}
+
+		.fa-user-secret {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-private-view);
+		}
+
+		.fa-list-alt {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-order-history-view);
+		}
+
+		.fa-list-ol {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-profiles-view);
+		}
+
+		.fa-shopping-cart {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-cart-view);
+		}
+
+		.fa-envelope {
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-lk-subscribe-view);
+		}
+	}
+
+	.sale-personal-section-index-block-name {
+		margin-bottom: 0; // $headings-margin-bottom;
+		font-family: $headings-font-family;
+		font-size: 1rem;
+		font-weight: $headings-font-weight;
+		line-height: $headings-line-height;
+		color: $body-color;
+
+		@include hover-focus-active() {
+			
+			color: var(--theme-color-primary);
+			text-decoration: none;
+		}
+	}
+}

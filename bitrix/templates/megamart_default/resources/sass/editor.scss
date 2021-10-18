@@ -1,0 +1,52 @@
+@import 'variables';
+
+$body-bg: #FFF;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/input-group";
+@import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/media";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/utilities";
+
+@import 'mixins/all';
+
+@import 'snippets/all';
+@import 'base/all';
+@import 'utils/all';
+@import 'components/all';
+
+@import 'blocks/delivery/all';
+@import 'blocks/about/all';
+@import 'blocks/payment/all';
+
+html > body {
+  width: 100%;
+  max-width: 1066px;
+  font-family: $font-family-base !important;
+  padding: 0px;
+  margin: 8px 8px 8px 18px !important;
+}

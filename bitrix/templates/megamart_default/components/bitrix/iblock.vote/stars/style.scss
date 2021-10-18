@@ -1,0 +1,27 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.rate {
+	white-space: nowrap;
+
+	&__item {
+		color: $icon-200;
+		cursor: pointer;
+		padding: 0.125rem;
+
+		& > &-icon {
+			vertical-align: initial;
+		}
+
+		&.is-voted,
+		&.is-hover {
+			color: #faad3d;
+		}
+	}
+
+	&__votes {
+		color: $link-color;
+	}
+}

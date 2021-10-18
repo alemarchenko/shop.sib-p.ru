@@ -1,0 +1,66 @@
+.bx_catalog-compare-list {
+	font-family: $font-family-base;
+	padding: map-get($map: $spacers, $key: 4);
+
+	.bx_catalog_compare_count {
+		text-align: center;
+
+		& > p {
+			&:first-child {
+				text-align: left;
+			}
+		}
+	}
+
+	.compare-redirect {
+		@extend .btn;
+		@extend .btn-primary;
+
+		& > a {
+			color: inherit;
+		}
+	}
+
+	.compare-items {
+		@extend .table;
+
+		margin-bottom: 0;
+		width: 100%;
+
+		thead {
+			display: none;
+		}
+
+		thead td,
+		tbody tr:first-child td {
+			border-top: none;
+		}
+
+		td {
+			padding: 5px 0;
+		}
+
+		a {
+			color: var(--theme-color-primary);
+			font-size: inherit;
+
+			&[data-id] {
+				@extend %svg-icon-background;
+
+				color: $secondary;
+				font-size: 0;
+				
+				&:before {
+					bottom: 0;
+					font-size: 1.25rem;
+					left: 0;
+					margin: auto;
+					mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-trash-view);
+					right: 0;
+					transform: none;
+					top: 0;
+				}
+			}
+		}
+	}
+}

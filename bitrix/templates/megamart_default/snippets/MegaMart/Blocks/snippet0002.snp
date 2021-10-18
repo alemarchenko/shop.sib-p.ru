@@ -1,0 +1,27 @@
+<div class="b-delivery-review">
+	<div class="row justify-content-center">
+		<div class="offset-lg-1 col-lg-4">
+			<div class="b-delivery-review__face">
+ <img src="/delivery/img/avatar-delivery.png" class="b-delivery-review__img" alt="Доставка">
+			</div>
+		</div>
+		<div class="col-lg-7 align-self-center">
+			<div class="b-delivery-review__content">
+				<div class="b-delivery-review__offer">
+					<div class="b-delivery-review__offer-title">
+						Отдел доставки
+					</div>
+					<div class="b-delivery-review__offer-phone">
+						+7 (495) 000-00-00
+					</div>
+					<div class="b-delivery-review__schedule">
+						Без выходных 09:00-22:00
+					</div>
+				</div>
+				<div class="b-delivery-review__message">
+					 Если купленная вещь не подошла, вы всегда можете вернуть ее при условии сохранения её товароного вида, упаковки и этикетки
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,56 @@
+@mixin make-spacings($spacing: 1rem, $types: (margin, padding), $sides: (top, left, bottom, right)) {
+	@each $type in $types {
+
+		@each $side in $sides {
+			#{$type}-#{$side}: $spacing;
+		}
+	}
+}
+
+@mixin make-block-spacing($types: (padding), $sides: (top, left, bottom, right)) {
+	@include make-spacings(map-get($spacers, 4), $types, $sides);
+
+	@include media-breakpoint-up('sm') {
+		@include make-spacings(map-get($spacers, 7), $types, $sides);
+	}
+
+	.l-main--has-outer-sidebar .l-main__inner-content & {
+		@include media-breakpoint-up('md') {
+			@include make-spacings(map-get($spacers, 4), $types, $sides);
+		}
+
+		@include media-breakpoint-up('lg') {
+			@include make-spacings(map-get($spacers, 7), $types, $sides);
+		}
+	}
+
+	@include media-breakpoint-up('lg') {
+		.l-main__outer-sidebar & {
+			@include make-spacings(map-get($spacers, 4), $types, $sides);
+		}
+	}
+
+	@include media-breakpoint-up('xl') {
+		.l-main__inner-sidebar & {
+			@include make-spacings(map-get($spacers, 4), $types, $sides);
+		}
+	}
+}
+
+@mixin make-block-spacing-negative($types: (margin), $sides: (top, left, bottom, right)) {
+	@include make-spacings(-1 * map-get($spacers, 4), $types, $sides);
+
+	@include media-breakpoint-up('sm') {
+		@include make-spacings(-1 * map-get($spacers, 7), $types, $sides);
+	}
+
+	.l-main--has-outer-sidebar & {
+		@include media-breakpoint-up('md') {
+			@include make-spacings(-1 * map-get($spacers, 4), $types, $sides);
+		}
+
+		@include media-breakpoint-up('lg') {
+			@include make-spacings(-1 * map-get($spacers, 7), $types, $sides);
+		}
+	}
+}

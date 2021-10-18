@@ -1,0 +1,229 @@
+.block-store-catalog-detail {
+
+	// @import '.../../../components/bitrix/catalog.set.constructor/catalog/style.scss';
+
+	.catalog-set-constructor {
+		align-items: flex-start;
+		border: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		@include make-block-spacing();
+
+		& > .row:nth-child(2) {
+			flex: 0 0 75%;
+			max-width: 75%;	
+		}
+
+		& > .row:nth-child(3) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			order: 1;
+		}
+
+		& > .row:nth-child(4) {
+			align-items: flex-start !important;
+			flex: 0 0 25%;
+			max-width: 25%;
+			text-align: center !important;
+
+			& > div {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.catalog-set-constructor-title {
+		@extend .l-section__head;
+
+		@include make-block-spacing-negative();
+
+		box-sizing: content-box;
+		flex: 0 0 100%;
+		font-size: $h4-font-size;
+		font-weight: $headings-font-weight;
+		line-height: $headings-line-height;
+		min-height: auto;
+		// margin: #{-1rem - map-get($spacers, 4) } -1*map-get($spacers, 4) map-get($spacers, 4) !important;
+		// padding: map-get($spacers, 4) map-get($spacers, 4);
+		width: calc(100% + #{2 * map-get($spacers, 4)});
+
+		
+		@include media-breakpoint-up(lg) {
+		// 	margin: #{-1rem - map-get($spacers, 7) } -1*map-get($spacers, 7) map-get($spacers, 7) !important;
+		// 	padding: map-get($spacers, 5) map-get($spacers, 7);
+			width: calc(100% + #{2 * map-get($spacers, 7)});
+		}
+	}
+
+	.catalog-set-constructor-product-item-container {
+		text-align: center;
+	}
+
+	.catalog-set-constructor-product-item-image {
+		margin-bottom: map-get($spacers, 3) !important;
+	}
+
+	.catalog-set-constructor-product-info {
+		text-align: center;
+	}
+
+	.catalog-set-constructor-slider-item {
+		padding-bottom: map-get($map: $spacers, $key: 4);
+	}
+
+	.catalog-set-constructor-slider-item-title,
+	.catalog-set-constructor-product-name {
+		font-size: $h6-font-size;
+		font-weight: $font-weight-bold;
+		max-height: 2 * $h6-font-size * $headings-line-height;
+		margin-bottom: map-get($spacers, 4);
+		overflow: hidden;
+		padding: 0 map-get($spacers, 4);
+
+		& > a,
+		& > a:hover {
+			color: $body-color;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.catalog-set-constructor-product-new-price {
+		
+		@extend %price-current;
+
+		& > strong {
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	.catalog-set-constructor-product-old-price {
+		@extend %price-old;
+
+		& > strong {
+			font-weight: $font-weight-normal;
+		}
+	}
+
+	.catalog-set-constructor-items-list-table {
+
+		tr {
+
+			& > td {
+				padding: map-get($spacers, 4);
+
+			}
+		}
+
+	}
+
+	.catalog-set-constructor-items-list-table-cell-img {
+		height: auto;
+		width: auto;
+	}
+
+	.catalog-set-constructor-items-list-table-cell-name {
+		font-weight: $font-weight-bold;
+	}
+
+	.catalog-set-constructor-items-list-table-cell-delete-btn {
+		@extend %svg-icon-background;
+		
+		display: inline-block;
+		color: $secondary;
+
+		&:before {
+			bottom: 0;
+			font-size: 1.25rem;
+			left: 0;
+			margin: auto;
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-trash-view);
+			right: 0;
+			transform: none;
+			top: 0;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.catalog-set-constructor-result-table {
+		margin: map-get($map: $spacers, $key: 5) 0;
+		tr {
+			display: none !important;
+
+			&:nth-child(2) {
+				display: table-cell !important;
+			}
+		}
+
+		td {
+			display: block !important;
+			text-align: center;
+			
+		}
+	}
+
+	.catalog-set-constructor-result-table-title {
+		font: $font-weight-normal #{$font-size-base}/#{$line-height-base} $font-family-base;
+	}
+
+	.catalog-set-constructor-result-table-value {
+		& > strong {
+			font: $font-weight-bold #{$font-size-lg}/#{$line-height-base} $font-family-base;
+		}
+	}
+
+	.catalog-set-constructor-result-btn-container {
+		&:nth-child(1) {
+			display: none;
+		}
+	}
+
+	.catalog-set-constructor-slider-item-price {
+		padding: 0 map-get($spacers, 4);
+		margin-bottom: map-get($spacers, 4);
+	}
+
+	.catalog-set-constructor-slider-item-add-btn {
+		padding: 0 map-get($spacers, 4);
+	}
+
+	.catalog-set-constructor-slider-item-add-btn > .btn,
+	.catalog-set-constructor-result-btn-container > .btn {
+		@include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius);
+
+		align-items: center;
+		background-color: var(--theme-color-primary);
+		border-color: var(--theme-color-primary);
+		color: $white;
+		display: inline-flex;
+		font-weight: $btn-font-weight;
+		height: auto;
+		margin: 0;
+		max-width: none;
+		padding: $btn-padding-y $btn-padding-x;
+		text-transform: none;
+		width: auto;
+
+		@extend %svg-icon-background;
+
+		&:before {
+			font-size: 1.25rem;
+			margin-right: 0.2em;
+			mask-image: url(https://megamart.redsign.ru/b24app/version1/app/assets/images/icons.svg#svg-cart-view);
+		}
+		
+		&:hover,
+		&:not(:disabled):not(.disabled):active,
+		&:focus {
+			background-color: var(--theme-color-primary);
+			border-color: var(--theme-color-primary);
+		}
+	}
+}

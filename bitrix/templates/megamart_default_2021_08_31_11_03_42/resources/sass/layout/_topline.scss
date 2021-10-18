@@ -1,0 +1,38 @@
+.l-topline {
+	background: theme-color('light');
+	height: 2.5rem; // 40px
+	position: relative;
+	z-index: $zindex-topline;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		top: 100%;
+		background: rgba($gray-200, .75);
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__left {
+		width: 40%;
+		flex: 1 1 40%;
+	}
+
+	&__right {
+		width: 60%;
+		flex: 1 1 60%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	.c-icon-count {
+		height: 2.5rem;
+	}
+}

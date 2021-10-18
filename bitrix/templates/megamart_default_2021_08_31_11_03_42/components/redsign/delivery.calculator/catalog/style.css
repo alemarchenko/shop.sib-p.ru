@@ -1,0 +1,8 @@
+.card-lazyload .card-body {
+  -webkit-transition: .5s;
+  transition: .5s;
+  min-height: 4.5rem;
+  position: relative;
+  overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */

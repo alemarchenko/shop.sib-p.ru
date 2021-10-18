@@ -1,0 +1,6 @@
+.page-link {
+	& > .icon-svg {
+		margin-left: -1*map-get($spacers, 2);
+		margin-right: -1*map-get($spacers, 2);
+	}
+}

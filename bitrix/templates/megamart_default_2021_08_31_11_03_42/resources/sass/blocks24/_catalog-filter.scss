@@ -1,0 +1,184 @@
+
+$filter-class: '.smart-filter';
+
+@import '../../../components/bitrix/catalog.smart.filter/catalog/style.scss';
+@import '../components/hint';
+
+#{$filter-class} {
+    font-family: $font-family-base;
+
+    .font-family {
+        font-family: $font-family-base;
+    }
+
+    &-title {
+        display: none;
+    }
+
+    &-parameters-box-title {
+        font-size: inherit;
+    }
+
+    &-parameters-box-title-text {
+        color: $body-color;
+    }
+
+    &-checkbox-text,
+    &-dropdown-text {
+        font-size: inherit;
+    }
+
+    &-input-group-checkbox-list {
+        .form-group {
+            @extend #{$filter-class}-input-checkbox;
+            // padding-top: map-get($spacers, 3);
+            line-height: 1.25rem;
+        }
+    }
+
+    &-angle {
+        @extend #{$filter-class}-parameters-box-angle;
+
+        bottom: 0;
+        top: 0;
+    }
+
+    &-angles:after,
+    &-angles:before {
+        background-color: $body-color;
+        width: 6px;
+    }
+
+    &-angles:after {
+        margin-left: 4px;
+    }
+
+    &-parameters-box {
+        margin-bottom: 1px !important;
+    }
+
+    &-input-container .form-control {
+        
+        height: $input-height;
+        padding: $input-padding-y $input-padding-x;
+        @include font-size($input-font-size);
+        line-height: $input-line-height;
+        @include border-radius($input-border-radius);
+    }
+
+    &-parameters-box-container {
+
+        .btn {
+            display: block;
+            margin: auto;
+        }
+
+        .btn-primary {
+            margin-bottom: map-get($spacers, 4);
+        }
+    }
+
+    &-button-box &-parameters-box-container {
+        @extend #{$filter-class}-button-box-inner;
+    }
+    
+    &-checkbox-btn {
+        @extend #{$filter-class}-param-btn.bx-color-sl;
+
+        height: auto;
+        padding: 0;
+        width: auto;
+    }
+
+    &-checkbox-btn-image {
+        @extend #{$filter-class}-btn-color-icon;
+    }
+
+    &-slider-range {
+        z-index: 90;
+    }
+
+    &-slider-handle {
+        @extend .bx-ui-slider-handle;
+    }
+
+    & &-slider-handle {
+        border: none;
+        background-color: var(--theme-color-primary);
+    }
+
+    &-slider-ruler {
+        // @extend .bx-ui-slider-part;
+        background: transparent $body-bg;
+
+        span {
+            color: $body-color !important;
+        }
+
+        &.p1,
+        &.p5 {
+            background: transparent;
+            display: block;
+            white-space: nowrap;
+        }
+        
+        &.p1 {
+            span {
+                left: -5px;
+                margin: 0;
+                width: auto;
+            }   
+        }
+
+        &.p5 {
+            span {
+                left: auto;
+                right: -5px;
+                width: auto;
+            }   
+        }
+    }
+
+    &-slider-track-container {
+        margin: 0 -6px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    &-slider-track {
+        @extend .bx-ui-slider-track;
+    }
+
+    &-hint {
+        line-height: 1;
+        margin: -0.16667em auto auto;
+        vertical-align: middle;
+    }
+
+    &-hint-popup {
+        line-height: $line-height-base;
+    }
+
+    &-hint-icon {
+        @extend .hint;
+
+        font-size: inherit;
+        margin: 0;
+    }
+
+    &-popup-result {
+        > br {
+            display: none;
+        }
+    }
+    &-popup-result.right,
+    &-popup-result.left {
+        border: none;
+    }
+
+    .landing-sidebar &-popup-result.left {
+        @extend #{$filter-class}-popup-result.right;
+        
+        right: auto;
+    }
+}

@@ -1,0 +1,20 @@
+.simple-basket-total {
+
+	&__price {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid $body-bg;
+		border-bottom: 1px solid $body-bg;
+	}
+
+	&__buttons {
+		padding: 1.5rem 0;
+
+		.btn {
+			margin-top: map-get($spacers, 2);
+		}
+	}
+}

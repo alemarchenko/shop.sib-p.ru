@@ -1,0 +1,4 @@
+@each $color, $value in $local-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+  @include bg-variant(".bg-#{$color}", $value);
+}

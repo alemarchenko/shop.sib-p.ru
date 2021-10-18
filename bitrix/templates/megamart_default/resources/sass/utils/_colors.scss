@@ -1,0 +1,24 @@
+.border-body-bg {
+	border-color: $body-bg !important;
+}
+
+
+.border-compact {
+	border-color: $compact !important;
+}
+
+.bg-compact {
+	background-color: $compact !important;
+}
+
+.text-extra {
+	color: $extra !important;
+}
+.alert-extra {
+	background-color: $extra !important;
+	color: color-yiq($extra);
+}
+
+.bg-extra-gray {
+	background-color: #e9ecef !important;
+}

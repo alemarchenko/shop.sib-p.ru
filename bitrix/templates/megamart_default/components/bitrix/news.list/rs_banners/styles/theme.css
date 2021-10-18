@@ -1,0 +1,289 @@
+/*
+* 	Default theme - Owl Carousel CSS File
+*/
+
+.rs-banners-container .owl-theme .owl-nav {
+	margin-top: 10px;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.rs-banners-container .owl-theme .owl-nav [class*='owl-'] {
+	color: #FFF;
+	font-size: 14px;
+	margin: 5px;
+	padding: 4px 7px;
+	background-color: #ebebeb;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.rs-banners-container .owl-theme .owl-nav [class*='owl-']:hover {
+	background-color: #7aa104;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.rs-banners-container .owl-theme .owl-nav .disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.rs-banners-container .owl-theme .owl-item {
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	backface-visibility: visible;
+	overflow: hidden;
+}
+
+.rs-banners-container .owl-theme .owl-nav {
+	position: absolute;
+	width: 100%;
+	height: 0.1px;
+	margin: auto;
+	top: 0;
+	/* display: none; */
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: all, 0.2s, ease-in-out 0s;
+	-moz-transition: all, 0.2s, ease-in-out 0s;
+	transition: all, 0.2s, ease-in-out 0s;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev,
+.rs-banners-container .owl-theme .owl-nav .owl-next {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	height: 45px;
+	width: 38px;
+	border-radius: 50%;
+	color: transparent;
+	cursor: pointer;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev:hover,
+.rs-banners-container .owl-theme .owl-nav .owl-next:hover {
+	/* background-color: #ebebeb; */
+	background-color: rgba(255, 255, 255, 0.2);
+	color: transparent;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev:before,
+.rs-banners-container .owl-theme .owl-nav .owl-next:before {
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	font-size: 2px;
+	left: 0;
+	text-align: center;
+	line-height: 45px;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev {
+	left: 10px;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev {
+	/* background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUycHgiIGhlaWdodD0iNTJweCIgdmlld0JveD0iMCAwIDkyIDkyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA5MiA5MiI+CjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzY2NiIgaWQ9IlhNTElEXzQyM18iIGQ9Ik02MS44LDY4LjFjMS42LDEuNSwxLjYsNC4xLDAuMSw1LjdDNjEuMSw3NC42LDYwLDc1LDU5LDc1Yy0xLDAtMi0wLjQtMi44LTEuMWwtMjYtMjUgIEMyOS40LDQ4LjEsMjksNDcuMSwyOSw0NnMwLjQtMi4xLDEuMi0yLjlsMjYtMjVjMS42LTEuNSw0LjEtMS41LDUuNywwLjFjMS41LDEuNiwxLjUsNC4xLTAuMSw1LjdMMzguOCw0Nkw2MS44LDY4LjF6Ii8+Cjwvc3ZnPg==); */
+	background-position: -3px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-next {
+	right: 10px;
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-next {
+	/* background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iOTJweCIgaGVpZ2h0PSI5MnB4IiB2aWV3Qm94PSIwIDAgOTIgOTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDkyIDkyIiBmaWxsPSIjNjY2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9IlhNTElEXzQzOV8iIGQ9Ik02Myw0NmMwLDEuMS0wLjQsMi4xLTEuMiwyLjlsLTI2LDI1QzM1LDc0LjYsMzQsNzUsMzMsNzVjLTEuMSwwLTIuMS0wLjQtMi45LTEuMmMtMS41LTEuNi0xLjUtNC4xLDAuMS01LjcKCWwyMy0yMi4xbC0yMy0yMi4xYy0xLjYtMS41LTEuNi00LjEtMC4xLTUuN2MxLjUtMS42LDQuMS0xLjYsNS43LTAuMWwyNiwyNUM2Mi42LDQzLjksNjMsNDQuOSw2Myw0NnoiLz4KPC9zdmc+); */
+	background-position: 3px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.rs-banners-container:hover .owl-theme .owl-nav .owl-prev,
+.rs-banners-container:hover .owl-theme .owl-nav .owl-next {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rs-banners-container .owl-theme .owl-nav .owl-prev:hover,
+.rs-banners-container .owl-theme .owl-nav .owl-next:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 768px) {
+	.rs-banners-container .owl-theme .owl-dots {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}
+
+@media (min-width: 992px) {
+	.rs-banners-container .owl-theme .owl-dots {
+		bottom: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.rs-banners-container .owl-dots {
+		opacity: 1;
+	}
+}
+
+.rs-banners-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rs-banners-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.rs-banners-container .owl-carousel {
+	display: block;
+	width: 100%;
+}
+
+.rs-banners-container.__wide {
+	width: 100%;
+}
+.rs-banners-container.__underlay .owl-theme .owl-nav {
+	top: 158px;
+}
+
+.rs-banners-container.__center {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rs-banners-container.__leftbanner,
+.rs-banners-container.__rightbanner {
+	width: 100%;
+}
+
+.rs-banners-container.__leftbanner .owl-theme .owl-nav {
+	top: 0;
+}
+
+.rs-banners-container.__leftbanner .owl-theme .owl-nav,
+.rs-banners-container.__leftbanner .rs-banners .rs-banners_wrap,
+.rs-banners-container.__rightbanner .owl-theme .owl-nav,
+.rs-banners-container.__rightbanner .rs-banners .rs-banners_wrap {
+	width: 100%;
+}
+
+.rs-banners-container .rs-banners-sidebanner {
+	position: absolute;
+	width: 250px;
+	overflow: hidden;
+}
+
+.rs-banners-container .rs-banners-sidebanner.__left {
+	left: 0;
+}
+
+.rs-banners-container .rs-banners-sidebanner.__right {
+	right: 0;
+}
+
+.rs-banners-container .rs-banners.owl-theme .owl-nav .owl-prev,
+.rs-banners-container .rs-banners.owl-theme .owl-nav .owl-next {
+	height: 60px;
+	width: 60px;
+	-webkit-transition: all, 0.2s, ease-in-out 0s;
+	-moz-transition: all, 0.2s, ease-in-out 0s;
+	transition: all, 0.2s, ease-in-out 0s;
+}
+
+.rs-banners-container .rs-banners.owl-theme .owl-dots {
+	-webkit-transition: all, 0.2s, ease-in-out 0s;
+	-moz-transition: all, 0.2s, ease-in-out 0s;
+	transition: all, 0.2s, ease-in-out 0s;
+}
+
+.rs-banners-container .rs-banners .rs-banners_product img {
+	width: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.rs-banners-container .rs-banners.owl-theme.owl-carousel .owl-video-play-icon {
+	background: url("owl.video.play.png") no-repeat;
+}
+
+.rs-banners-container .rs-banners.owl-theme.owl-carousel .owl-video-tn {
+	background-size: cover;
+}
+
+.rs-banners-container.__wide .rs-banners_wrap,
+.rs-banners-container.__wide .owl-theme .owl-nav {
+	max-width: 85.38rem;
+}
+
+.rs-banners-sidebanner.__left,
+.rs-banners-sidebanner.__right {
+	display: none;
+}
+
+.rs_banner-preloader {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+@media (min-width: 1200px) {
+	.__leftbanner.__center .rs-banners {
+		padding-left: 16.25rem;
+	}
+	.__leftbanner.__center .rs-banners .owl-nav {
+		left: 16.25rem;
+		width: auto;
+	}
+
+	.rs-banners-sidebanner.__left.js-sidebanners_selected {
+		display: block;
+	}
+}
+
+@media (min-width: 992px) {
+	.__rightbanner.__center .rs-banners {
+		padding-right: 16.25rem;
+	}
+	.__rightbanner.__center .rs-banners .owl-nav {
+		right: 16.25rem;
+		width: auto;
+	}
+
+	.rs-banners-sidebanner.__right.js-sidebanners_selected {
+		display: block;
+	}
+}
+
+@media (max-width: 800px) {
+	.rs-banners-container .owl-theme .owl-nav {
+		top: 0;
+	}
+	.rs-banners-container .owl-theme .owl-nav{
+		display: none;
+	}
+	
+}

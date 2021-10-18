@@ -1,0 +1,22 @@
+.collapsed {
+  &__in {
+    display: none;
+  }
+  
+  & &__in {
+    display: inline;
+  }
+
+  & &__out {
+    display: none;
+  }
+}
+
+
+.collapsed__icon {
+  top: 0.15em;
+
+  .collapsed & {
+    transform: rotate(180deg);
+  }
+}

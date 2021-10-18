@@ -1,0 +1,14 @@
+.compact-user-panel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: map-get($spacers, 2) 0;
+
+	&__user {
+		overflow: hidden;
+	}
+	&__icons {
+		min-width: 9.5rem; // 152px
+		white-space: nowrap;
+	}
+}
