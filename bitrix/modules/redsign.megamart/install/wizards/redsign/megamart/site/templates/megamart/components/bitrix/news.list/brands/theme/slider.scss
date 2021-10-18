@@ -1,0 +1,28 @@
+@import 'bootstrap/scss/functions';
+@import '../../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+
+.brand-item-light {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 9rem;
+	padding: map-get($spacers, 6);
+	background-color: theme-color('light');
+	transition: $transition-base;
+	filter: grayscale(1);
+
+	&__img-wrap {
+	}
+	&:hover {
+		filter: grayscale(0);
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		margin: auto;
+		display: block;
+	}
+}

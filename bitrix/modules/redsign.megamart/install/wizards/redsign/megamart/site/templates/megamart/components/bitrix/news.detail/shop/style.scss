@@ -1,0 +1,11 @@
+
+.shops-detail {
+	&__map .bx-yandex-map,
+	&__map .bx-google-map {
+		width: 100% !important;
+	}
+
+	&__content img {
+		max-width: 100%;
+	}
+}

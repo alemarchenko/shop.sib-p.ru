@@ -1,0 +1,40 @@
+.search-form {
+	position: relative;
+	max-width: 100%;
+	width: 26.25rem;
+
+	&__input {
+		border-radius: 2.5rem;
+		height: 2.63rem;
+		background: $body-bg;
+	}
+
+	&__button {
+		position: absolute;
+		outline: 0;
+		border: 0;
+		color: theme-color('primary');
+		background: transparent;
+		right: 0;
+		top: 0;
+		right: .31rem;
+		top: .19rem;
+		font-size: 1.25rem;
+
+		&:focus {
+			border: 0;
+			outline: 0;
+		}
+	}
+
+	&.header-search-form {
+		width: 26.25rem;
+		max-width: 100%;
+
+
+		@include media-breakpoint-only(md) {
+			width: 100%;
+	    	max-width: 26.25rem;
+		}
+	}
+}

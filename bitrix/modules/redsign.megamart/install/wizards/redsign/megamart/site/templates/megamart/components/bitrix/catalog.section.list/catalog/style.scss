@@ -1,0 +1,30 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+
+.tile {
+	@extend %tile;
+
+	&__pic {
+		@extend %tile__pic;
+	}
+
+	&__body {
+		@extend %tile__body;
+	}
+
+	&__head {
+		@extend %tile__head;
+		max-height: 3 * $h6-font-size * $headings-line-height + map-get($spacers, 3); // 3 string + title-margin
+		margin-bottom: map-get($spacers, 4);
+	}
+
+	&__title {
+		@extend %tile__title;
+		max-height: 2 * $h6-font-size * $headings-line-height;
+	}
+
+	&__sub {}
+}

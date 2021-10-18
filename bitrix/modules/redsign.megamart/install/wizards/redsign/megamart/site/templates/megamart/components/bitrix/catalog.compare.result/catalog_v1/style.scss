@@ -1,0 +1,38 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+
+$product-item-class: '.product-cat' !default;
+
+.compare {
+
+	&__names,
+	&__table {
+		table-layout: fixed;
+	}
+
+	&__table {
+		
+		#{$product-item-class}-del {
+			color: theme-color('secondary');
+			cursor: pointer;
+		}
+
+		#{$product-item-class}-image-action {
+			display: block;
+			right: map-get($spacers, 4);
+			top: map-get($spacers, 3);
+		}
+	}
+
+	&__scroll {
+		box-sizing: content-box;
+		height: 8px; //scroll height
+		padding: map-get($spacers, 4) 0;
+	}
+}
+
+
+

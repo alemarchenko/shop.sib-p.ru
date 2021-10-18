@@ -1,0 +1,236 @@
+/*
+$secondary-color: #70aa70 !default;
+$secondary-color: #ff5500 !default;
+
+$main-font-size: 13px;
+
+$header-bg-color: $secondary-color;
+
+$main-border: 1px solid #e6e6e6;
+
+$sidebar-tab-text-color: #000;
+$sidebar-tab-text-color-active: $secondary-color;
+
+$sidebar-menu-text-color: #555555;
+$sidebar-menu-text-color-active: #555555;
+
+$option-name: #414243 !default;
+$option-title-color: #444c7a;
+$svg-color: #636363 !default;
+
+$input-background: #fff !default;
+
+$input-disabled-color: rgba(0,0,0, .42) !default;
+$input-disabled-solid-color: #949494 !default;
+$input-border: 1px solid #d2d2d2 !default;
+$input-border-hover: 1px solid $header-bg-color !default;
+
+$radio-fill-color: $secondary-color !default;
+$radio-empty-color: #5a5a5a !default;
+$radio-border: 2px solid $radio-fill-color !default;
+
+$switch-bg-color: $secondary-color !default;
+$switch-checked-lever-bg: desaturate(lighten($switch-bg-color, 25%), 25%) !default;
+$switch-unchecked-bg: #F1F1F1 !default;
+$switch-unchecked-lever-bg: rgba(0,0,0,.38) !default;
+$switch-radius: 15px !default;
+
+$spinner-default-color: $secondary-color !default;
+*/
+/* Radio Buttons
+   ========================================================================== */
+/* line 4, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+.rstuning {
+  /* Unchecked styles */
+  /* Checked styles */
+  /* Radio With gap */
+  /* Focused styles */
+  /* Disabled Radio With gap */
+  /* Disabled style */ }
+  /* line 7, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:not(:checked),
+  .rstuning [type="radio"]:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none; }
+  /* line 14, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:not(:checked) + label,
+  .rstuning [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    transition: .28s ease;
+    user-select: none; }
+  /* line 27, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"] + label:before,
+  .rstuning [type="radio"] + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 16px;
+    height: 16px;
+    z-index: 0;
+    transition: .28s ease; }
+  /* line 41, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:not(:checked) + label:before,
+  .rstuning [type="radio"]:not(:checked) + label:after,
+  .rstuning [type="radio"]:checked + label:before,
+  .rstuning [type="radio"]:checked + label:after,
+  .rstuning [type="radio"].with-gap:checked + label:before,
+  .rstuning [type="radio"].with-gap:checked + label:after {
+    border-radius: 50%; }
+  /* line 50, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:not(:checked) + label:before,
+  .rstuning [type="radio"]:not(:checked) + label:after {
+    border: 2px solid #5a5a5a; }
+  /* line 55, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:not(:checked) + label:after {
+    transform: scale(0); }
+  /* line 60, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:checked + label:before {
+    border: 2px solid transparent; }
+  /* line 64, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:checked + label:after,
+  .rstuning [type="radio"].with-gap:checked + label:before,
+  .rstuning [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #ff5500; }
+  /* line 70, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:checked + label:after,
+  .rstuning [type="radio"].with-gap:checked + label:after {
+    background-color: #ff5500; }
+  /* line 75, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:checked + label:after {
+    transform: scale(1.02); }
+  /* line 80, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"].with-gap:checked + label:after {
+    transform: scale(0.5); }
+  /* line 85, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"].tabbed:focus + label:before {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 90, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"].with-gap:disabled:checked + label:before {
+    border: 2px solid rgba(0, 0, 0, 0.42); }
+  /* line 94, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"].with-gap:disabled:checked + label:after {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.42); }
+  /* line 100, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:disabled:not(:checked) + label:before,
+  .rstuning [type="radio"]:disabled:checked + label:before {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.42); }
+  /* line 106, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:disabled + label {
+    color: rgba(0, 0, 0, 0.42); }
+  /* line 110, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:disabled:not(:checked) + label:before {
+    border-color: rgba(0, 0, 0, 0.42); }
+  /* line 114, source/style/sass/lib/materializecss/components/forms/_radio-buttons.scss */
+  .rstuning [type="radio"]:disabled:checked + label:after {
+    background-color: rgba(0, 0, 0, 0.42);
+    border-color: #949494; }
+
+/* line 11, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images input + label:before,
+.rstuning__option__radio.mod-images input + label:after, .rstuning__option__radio.mod-buttons input + label:before,
+.rstuning__option__radio.mod-buttons input + label:after {
+  display: none; }
+
+/* line 16, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images input, .rstuning__option__radio.mod-buttons input {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none; }
+  /* line 22, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+  .rstuning__option__radio.mod-images input:checked + label,
+  .rstuning__option__radio.mod-images input:not(:checked) + label, .rstuning__option__radio.mod-buttons input:checked + label,
+  .rstuning__option__radio.mod-buttons input:not(:checked) + label {
+    height: auto;
+    padding-left: 0; }
+  /* line 30, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+  .rstuning__option__radio.mod-images input:hover + label .rstuning__option__radio__div,
+  .rstuning__option__radio.mod-images input:checked + label .rstuning__option__radio__div, .rstuning__option__radio.mod-buttons input:hover + label .rstuning__option__radio__div,
+  .rstuning__option__radio.mod-buttons input:checked + label .rstuning__option__radio__div {
+    border: 1px solid #ff5500; }
+
+/* line 36, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images label, .rstuning__option__radio.mod-buttons label {
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  margin-bottom: 15px; }
+  /* line 42, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+  .rstuning__option__radio.mod-images label .rstuning__option__radio__div, .rstuning__option__radio.mod-buttons label .rstuning__option__radio__div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dde3e7;
+    border-radius: 5px;
+    transition: all 0.3s ease; }
+
+/* line 56, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images label .rstuning__option__radio__div {
+  display: inline-block;
+  padding: 15px;
+  background-color: #fff; }
+
+/* line 62, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images label .rstuning__option__radio__name {
+  display: inline-block;
+  font-size: 12px; }
+  /* line 66, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+  .rstuning__option__radio.mod-images label .rstuning__option__radio__name.mod-left {
+    text-align: left; }
+  /* line 70, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+  .rstuning__option__radio.mod-images label .rstuning__option__radio__name.mod-big {
+    font-size: 16px; }
+
+/* line 75, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images label .rstuning__option__radio__name + .rstuning__option__radio.mod-images label .rstuning__option__radio__around-image,
+.rstuning__option__radio.mod-images label .rstuning__option__radio__around-image + .rstuning__option__radio.mod-images label .rstuning__option__radio__name {
+  margin-top: 10px; }
+
+/* line 81, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-images label img {
+  max-width: 100%;
+  transition: all 0.3s ease; }
+
+/* line 88, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio__number {
+  margin-right: 15px; }
+
+/* line 92, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio__around-image {
+  display: inline-block; }
+
+/* line 96, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio__image {
+  display: inline-block;
+  margin-top: 5px; }
+
+/* line 102, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-buttons .rstuning__option__radio__alone {
+  display: inline-block;
+  margin-right: 8px; }
+
+/* line 109, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-buttons input:checked + label .rstuning__option__radio__div {
+  border: 1px solid #ff5500; }
+
+/* line 115, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio.mod-buttons input + label .rstuning__option__radio__div {
+  padding: 11px 13px 10px;
+  cursor: pointer;
+  border-radius: 6px; }
+
+/* line 125, source/style/sass/css/redsign.tuning/options/radio/style.scss */
+.rstuning__option__radio__alone input + label {
+  font-size: 14px;
+  line-height: 1.5; }

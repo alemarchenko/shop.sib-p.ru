@@ -1,0 +1,129 @@
+.compact-search-button {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 3.75rem;
+	font-size: $h5-font-size;
+	color: theme-color('primary');
+
+	@include hover {
+		text-decoration: none;
+		color: darken(theme-color('primary'), 15%);
+	}
+}
+
+.compact-search {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: theme-color('light');
+	display: none;
+
+	&__form {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__form .bmd-form-group {
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+
+	&__form .bmd-form-control {
+		background-image: none;
+	}
+
+	&__input {
+		flex-grow: 1;
+	}
+
+	&__close svg {
+		stroke-width: 2px;
+		stroke: theme-color('secondary');
+		fill: none;
+	}
+
+	&__close,
+	&__search {
+		color: theme-color('secondary');
+		flex-grow: 0;
+		width: 2.5rem;
+		font-size: $font-size-base * 1.75;
+		line-height: 0;
+	}
+
+	&__button .icon-svg {
+		font-size: 1.25rem;
+		color: theme-color('secondary');
+	}
+
+	&__button input[type="submit"],
+	&__button button {
+		background: transparent;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		outline: 0;
+		border: 0;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 0 $grid-gutter-width / 2;
+	}
+
+	@include media-breakpoint-up(md) {
+		display: block;
+		position: relative;
+
+		&__close {
+			display: none;
+		}
+
+		.bmd-form-group .bmd-form-control {
+			color: $input-color;
+			background-color: $body-bg;
+			background-clip: padding-box;
+			border: $input-border-width solid $input-border-color;
+			padding: $input-padding-y $input-padding-x;
+			transition: $transition-base;
+			border-radius: $border-radius-rounded;
+			height: 2.63rem;
+			z-index: 1;
+			padding-right: 50px;
+
+			&:focus {
+				color: $input-focus-color;
+				background-color: $input-focus-bg;
+				border-color: $input-focus-border-color;
+				@if $enable-shadows {
+					@include box-shadow($input-box-shadow, $input-focus-box-shadow);
+				} @else {
+					// Avoid using mixin so we can pass custom focus shadow properly
+					box-shadow: $input-focus-box-shadow;
+				}
+			}
+		}
+
+		&__button {
+			font-size: 1.25rem;
+			right: .63rem;
+			color: theme-color('primary');
+			z-index: 2;
+			position: absolute;
+			line-height: 0px;
+			top: 0;
+
+			button {
+				padding: .69rem .63rem;
+				cursor: pointer;
+			}
+
+			.icon-svg {
+				color: theme-color('primary');
+			}
+		}
+	}
+}

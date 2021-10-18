@@ -1,0 +1,230 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.sale-order {
+
+	&-history-link {
+		margin-right: 1rem;
+	}
+
+	&-title {
+		margin-top: 2.31rem;
+		margin-bottom: 2.13rem;
+	}
+
+	&-list-container {
+		border: 1px solid $extra-gray;
+		margin-bottom: 2rem;
+	}
+
+
+	&-list-title-container {}
+
+	&-list-title {
+		margin: 0px;
+		padding: .81rem 1rem;
+		background-color: $extra-gray;
+		font-weight: bold;
+	}
+
+	&-list-accomplished-title-container,
+	&-list-accomplished-date-container {
+		background-color: $extra-gray;
+		font-weight: bold;
+		padding-top: .81rem;
+		padding-bottom: .81rem;
+	}
+
+	&-list-accomplished-title,
+	&-list-accomplished-date,
+	&-list-accomplished-date-number {
+		padding-left: .81rem;
+		padding-right: .81rem;
+		margin: 0;
+	}
+
+	&-list-inner-accomplished {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	&-list-accomplished-date-container {
+		text-align: right;
+	}
+
+	&-list-inner-container {
+	}
+
+	&-list-inner-title-line {
+		display: block;
+		font-size: $font-size-sm;
+		color: $extra;
+		padding: 1rem 1rem .38rem;
+	}
+
+	&-list-inner-row {
+		padding:  0 1rem;
+	}
+
+	&-list-payment-title,
+	&-list-shipment-title {
+		font-weight: bold;
+		display: block;
+		align-items: center;
+	}
+
+	&-list-inner-row-body {
+		flex: 1 1 auto;
+		padding-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&-list-payment-price {
+		padding: .44rem 0;
+	}
+
+	&-list-payment-title-element {
+		margin-left: .25rem;
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	&-list-status-alert,
+	&-restricted,
+	&-success,
+	&-list-shipment-status-block {
+		display: inline-block;
+		padding: .31rem .38rem;
+		font-weight: 600;
+		font-size: .81rem;
+		border: $alert-border-width solid transparent;
+		line-height: 1;
+	}
+
+
+	&-list-button-container {
+		padding-top: .44rem;
+	}
+
+	&-list-inner-row-template {
+		display: none;
+	}
+
+	&-list-inner-title-line:nth-child(n+2) {
+		border-top: 1px solid $extra-gray;
+	}
+
+	&-list-button-container {
+		text-align: right;
+	}
+
+	&-list-shipment-status {
+		margin: .38rem 0 .5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&-list-shipment-element,
+	&-list-shipment-status-item {
+		margin-right: 1rem;
+	}
+
+	&-list-inner-row-buttons-container {
+		display: flex;
+		margin: 0 -.5rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		flex-wrap: wrap;
+	}
+
+	&-list-inner-button--about,
+	&-list-inner-button--repeat,
+	&-list-inner-button--cancel {
+		margin: 0 .5rem;
+	}
+
+	&-list-inner-button--about,
+	&-list-inner-button--repeat {
+		flex: 0;
+	}
+
+	&-list-inner-button--about {
+	}
+
+	&-list-inner-button--cancel {
+		flex: 1;
+		text-align: right;
+	}
+
+	&-list-top-border  {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		width: 100%;
+		height: 1px;
+		background: $extra-gray;
+	}
+
+	&-payment-change-pp-list {
+		padding: 0 0 2rem;
+		display: flex;
+		flex-wrap: wrap;
+
+		.sale-order-payment-change-pp-company-graf-container {
+			border-color: $extra;
+		}
+		.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container {
+			border-color: theme-color('primary');
+		}
+
+		.sale-order-payment-change-pp-company-smalltitle {
+			color: $extra;
+			font-size: .69rem;
+		}
+	}
+
+	&-list-cancel-payment {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+
+	@include media-breakpoint-down(md) {
+		&-list-payment-title-element {
+			margin-left: 0;
+		}
+
+		&-list-status-alert,
+		&-restricted,
+		&-success,
+		&-list-shipment-status-block {}
+	}
+
+	@include media-breakpoint-down(md) {
+		&-list-inner-row-buttons-container {
+			flex-direction: column;
+		}
+
+		&-list-inner-button {
+			display: block;
+			flex: 1 1 auto;
+
+			.btn {
+				display: block;
+			}
+
+			& + & {
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		&-list-button-container {
+			text-align: center;
+			margin-top: 1rem;
+		}
+	}
+}

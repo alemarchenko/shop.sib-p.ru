@@ -1,0 +1,23 @@
+.b-article-detail {
+
+	&__head,
+	&__content {
+		@include make-block-spacing();
+	}
+
+	&__head + &__content {
+		padding-top: 0;
+	}
+
+	&__breadcrumb {
+		margin-bottom: 1.5rem;
+	}
+
+	&__tags,
+	&__footer {
+		@include make-block-spacing(('padding'), ('left', 'right'));
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid $body-bg;
+	}
+}

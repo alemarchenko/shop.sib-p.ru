@@ -1,0 +1,13 @@
+@mixin scrollbar-hide() {
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none !important;
+  .bx-touch & {
+    scrollbar-width: none;
+  }
+  
+ &::-webkit-scrollbar {
+   width: 0;
+ }
+
+}

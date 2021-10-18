@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Слайдеры";
+$arDirProperties = Array(
+
+);
+?>

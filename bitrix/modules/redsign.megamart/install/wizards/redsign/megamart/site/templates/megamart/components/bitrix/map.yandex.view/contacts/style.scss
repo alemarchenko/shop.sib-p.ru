@@ -1,0 +1,33 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/mixins/all';
+
+.contacts-view {
+	display: block;
+	overflow: hidden;
+
+	&__map {
+		@include make-block-spacing((margin), (top));
+		margin-bottom: 2.5rem;
+	}
+
+	&__content {
+		@include make-block-spacing((padding), (left, right));
+		@include make-spacings(2rem, (margin), (top, bottom));
+	}
+
+	.bx-yandex-map {
+		width: 100% !important;
+	}
+}
+
+.contacts-view-table {
+	width: 100%;
+	font-size: .88rem;
+
+	& td:nth-child(2n + 1) {
+		padding: .25rem;
+	}
+}

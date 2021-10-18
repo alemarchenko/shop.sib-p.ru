@@ -1,0 +1,1 @@
+<div class="footer-age-limit footer-age-limit--dark">18+</div>

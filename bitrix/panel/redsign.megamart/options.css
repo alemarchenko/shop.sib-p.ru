@@ -1,0 +1,102 @@
+.rs-adm-options-input-container {
+    padding: 8px;
+    cursor: move;
+}
+
+.rs-adm-options-input-container  input {
+    font-size: 13px;
+    height: 25px;
+    padding: 0 5px;
+    background: #fff;
+    border: 1px solid;
+    border-color: #87919c #959ea9 #9ea7b1 #959ea9;
+    border-radius: 4px;
+    color: #000;
+}
+
+.rs-adm-options-input-container:hover {
+    background-color: #f6f6f6;
+}
+
+.rs-adm-options-button-container {
+    max-width: 330px;
+    text-align: center;
+} 
+
+.adm-workarea .grecaptcha-container {
+    display: block;
+    background-color: #fafafa;
+    max-width: 978px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.adm-workarea .grecaptcha-table {
+    width: 100%;
+}
+
+.adm-workarea .grecaptcha-table th {
+    text-align: left;
+}
+
+.adm-workarea .grecaptcha-table td,
+.adm-workarea .grecaptcha-table th {
+    padding: 5px 0px;
+}
+
+.adm-workarea .grecaptcha-table th + th,
+.adm-workarea .grecaptcha-table td + td {
+    padding-left: 10px;
+}
+
+.adm-workarea .grecaptcha-table input {
+    width: 100%;
+}
+
+.adm-workarea .grecaptcha-checkbox-desc {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.adm-workarea .grecaptcha-extended-options {
+    display: block;
+    margin-top: 15px;
+}
+
+.adm-workarea .grecaptcha-extended-options-list {
+    padding: 10px 25px;
+    border-left: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+.adm-workarea .grecaptcha-extended-options summary {
+    padding: 5px 0;
+    display: block;
+    cursor: pointer;
+    color: #2675d7;
+}
+
+.adm-workarea .grecaptcha-extended-options summary:focus {
+    outline: none;
+}
+
+.adm-workarea .grecaptcha-extended-options-list-item {
+    padding: 10px 0;
+}
+
+.adm-workarea input.grecaptcha-input,
+.adm-workarea textarea.grecaptcha-textarea {
+    padding: 10px;
+    height: auto;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+    min-width: 330px;
+    box-sizing: border-box;
+}
+
+.adm-workarea .grecaptcha-input-desc {
+    padding: 8px 0;
+}

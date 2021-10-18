@@ -1,0 +1,17 @@
+.trash-anim-icon {
+	cursor: pointer;
+	font-size: 2.25rem;
+
+	path:first-child {
+		transform-origin: 40px 15px;
+		transition: .2s;
+	}
+
+	&:hover path:first-child {
+		transform: rotate(15deg);
+	}
+
+	&:hover {
+		color: theme-color('primary');
+	}
+}

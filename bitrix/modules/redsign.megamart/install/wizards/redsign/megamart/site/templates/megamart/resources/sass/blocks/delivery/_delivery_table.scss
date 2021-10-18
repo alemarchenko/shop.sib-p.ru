@@ -1,0 +1,19 @@
+.delivery-table {
+	margin-bottom: 2.75rem;
+
+	td {
+		padding: .75rem 1.25rem;
+		border: 1px solid gray('200');
+		text-align: center;
+		vertical-align: top;
+	}
+
+	td:first-child {
+		text-align: left;
+	}
+
+	&__title {
+		padding: .75rem 1.25rem !important;
+		font-weight: bold;
+	}
+}

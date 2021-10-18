@@ -1,0 +1,124 @@
+$form-check-input-margin-y:			 .4rem;
+
+// @import 'system';
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
+@import 'mixins/all';
+
+// @import 'snippets/all';
+@import 'base/all';
+@import 'components/nav';
+@import 'utils/colors';
+// @import 'mixins/spacings';
+
+@import 'snippets/svg-icon-background';
+@import 'utils/row';
+
+html {
+	font-size: initial !important;
+}
+
+
+body {
+	font-family: $font-family-base !important;
+	font-size: $font-size-base !important;
+	font-weight: $font-weight-base !important;
+	line-height: $line-height-base !important;
+	color: $body-color !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	//  margin-bottom: $headings-margin-bottom;
+	//  font-family: $headings-font-family;
+	//  font-weight: $headings-font-weight;
+	line-height: $headings-line-height !important;
+	//  color: $headings-color;
+}
+
+@include media-breakpoint-down(lg) {
+	.container {
+		max-width: none;
+	}
+}
+
+.form-control:focus {
+	box-shadow: none; // 0 0 0 0.2rem rgba(var(--theme-color-primary), 0.25)
+	border-color: var(--theme-color-primary);
+}
+
+@import 'layout/page';
+// @import 'components/icon-count';
+
+.icon-svg {
+    @extend %svg-icon-background;
+}
+
+.landing-layout-flex {
+	@extend .container;
+
+	&,
+	.container {
+	padding: 0;
+	}
+}
+
+.landing-sidebar {
+	padding-right: 1.25rem;
+}
+
+// TODO
+// .icon-svg {
+// 	 display: none !important;
+// }
+
+
+.l-section {
+	&__head {
+		@include make-block-spacing(('padding'), ('left', 'right'));
+		padding-top: map-get($spacers, 5);
+		padding-bottom: map-get($spacers, 5);
+		min-height: $section-head-height; // paddings + owl-prev height;
+
+		background-color: $white;
+	}
+}
+
+.table.data-table {
+	@extend .table;
+}
+
+.text-primary {
+	color: var(--theme-color-primary) !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:focus {
+	background-color: var(--theme-color-primary);
+	border-color: var(--theme-color-primary);
+}
+
+.popup-window {
+	color: $body-color;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-normal;
+	line-height: $line-height-base;
+	padding: map-get($spacers, 4);
+}
+
+
+.popup-window.popup-window-with-titlebar {
+	padding: 0 map-get($spacers, 4) map-get($spacers, 4);
+}
+
+.popup-window-titlebar-text {
+	color: $body-color;
+	font-size: $font-size-base;
+	font-weight: $headings-font-weight;
+	// line-height: $headings-line-height;
+}
+
+@import 'blocks24/all';

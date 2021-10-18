@@ -1,0 +1,42 @@
+.side-panel-controls {
+
+	position: fixed;
+	top: 31%;
+	right: 0;
+	z-index: 9997;
+	background: rgba(theme-color('light'), .9);
+	border-top-left-radius: .13rem;
+	border-bottom-left-radius: .13rem;
+	box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+
+
+	.c-icon-count {
+		width: 60px;
+		height: 60px;
+		border-radius: 0px;
+
+	}
+
+	.c-icon-count:first-child {
+		border-top-left-radius: .13rem;
+	}
+
+	.c-icon-count:last-child {
+		border-bottom-left-radius: .13rem;
+	}
+
+	.c-icon-count__quantity {
+		top: .5rem;
+		right: .25rem;
+	}
+
+	.c-icon-count:hover,
+	.c-icon-count.is-active {
+		color: inherit;
+		background: #dee1e6;
+	}
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}

@@ -1,0 +1,14 @@
+@import 'bootstrap/scss/functions';
+@import '../../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+
+.abc {
+
+	&__letter {
+		height: 2rem;
+		width: 2rem;
+	}
+	&__list {
+		padding-left: $badge-padding-x-md;
+	}
+}

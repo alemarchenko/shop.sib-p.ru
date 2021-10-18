@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2019-08-09T11:53:38">
+	<Metadata>
+		<Id>redsign_megamart_system_size_tables</Id>
+		<Title>Size table</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+		</Properties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>redsign_megamart_system_size_tables</Id>
+		<MetadataId>redsign_megamart_system_size_tables</MetadataId>
+		<Title>Size table</Title>
+		<BitrixCode>redsign_megamart_system_size_tables</BitrixCode>
+		<BitrixSort>500</BitrixSort>
+		<BitrixListURL></BitrixListURL>
+		<BitrixDetailURL></BitrixDetailURL>
+		<BitrixSectionURL></BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Size table</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Size table</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add size table</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit size table</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete size table</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>1198</Id>
+				<Title>Men's shoes size table</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>tablitsa-razmerov-obuvi</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;br&gt;
+&lt;div class=&quot;table-responsive text-center d-inline-block&quot;&gt;
+	&lt;table class=&quot;table&quot;&gt;
+	&lt;thead class=&quot;thead-borderless&quot;&gt;
+	&lt;tr&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 US&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 EU&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 RU&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Foot, &lt;br&gt;
+			 sm&lt;br&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 6.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38.5&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 7.5 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;40
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;39
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;24.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 26
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 26.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 10
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.0
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 10.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 44
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.3
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 11
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 44.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.9&lt;br&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;11.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;45
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;44
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;28.3
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;12
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;44.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;28.6
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;12.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;45
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;13
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 47 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;13.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 48 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;47
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>1199</Id>
+				<Title>Women's shoes size chart</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>tablitsa-razmerov-zhenskoy-obuvi</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;br&gt;
+&lt;div class=&quot;table-responsive text-center d-inline-block&quot;&gt;
+	&lt;table class=&quot;table&quot;&gt;
+	&lt;thead class=&quot;thead-borderless&quot;&gt;
+	&lt;tr&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 US&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 EU&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 RU&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Foot, &lt;br&gt;
+			 sm&lt;br&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 22.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 5.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 23.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 6 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 36 (3)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 35-36
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;23.5
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			&amp;nbsp; 6.5&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37 (4)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 36
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 23.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5 (4,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 36.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38 (5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.5
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38.5 (5,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39 (6)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40 (6,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40.5 (7)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.7&lt;br&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 10
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 41 (7,5)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;40
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;26.0
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 10.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 42 (8,5)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;41
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;26.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 11
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 42.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;41.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;27.6
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

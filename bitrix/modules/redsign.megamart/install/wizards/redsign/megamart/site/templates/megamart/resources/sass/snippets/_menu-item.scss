@@ -1,0 +1,16 @@
+%dropdown-menu-item-link {
+	display: block;
+	width: 100%; // For `<button>`s
+	padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+	clear: both;
+	font-weight: $font-weight-normal;
+	color: $dropdown-link-color;
+	white-space: normal;
+	transition: unset;
+}
+
+%dropdown-menu-item-link-hover {
+	color: $dropdown-link-hover-color;
+	text-decoration: none;
+	@include gradient-bg($dropdown-link-hover-bg);
+}

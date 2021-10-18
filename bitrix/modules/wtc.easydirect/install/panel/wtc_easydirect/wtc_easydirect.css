@@ -1,0 +1,148 @@
+/*Menu icon*/
+.wtc_easydirect_menu_icon {
+	background-image:url("/bitrix/panel/wtc_easydirect/images/icon.png") !important;
+    background-position: 9px 6px;}
+
+/*MAIN STYLE*/
+
+hr.wtc_easydirect_line_hr {border:none; background:#bbbbbb; height:1px;}
+	
+/*Table ShowTbl*/
+table.wtc-easydirect-show-data-table
+{
+	/*border:1px solid #969d9e;*/
+	border-collapse:collapse;
+	font-size: 14px;
+	color:#000;
+}
+
+/*Head cell*/
+table.wtc-easydirect-show-data-table th
+{
+	background-color:#b0bdc1;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #969d9e;
+	padding:4px;
+}
+
+/*Any cell*/
+table.wtc-easydirect-show-data-table td
+{
+	border:1px solid #969d9e;
+	background-color:#f5f9f9;
+	padding:3px 5px;
+	margin: 0px; 
+	vertical-align:top;
+}
+
+/*action panel*/
+table.wtc-easydirect-show-data-table tr.action-panel td
+{
+	border:0px solid;
+	background-color: transparent;
+}
+table.wtc-easydirect-show-data-table tr.action-panel td div{
+	max-width: 90px;
+	float: right;
+}
+table.wtc-easydirect-show-data-table tr.action-panel td a.excel i {
+	background: url("/bitrix/panel/main/images/popup_menu_sprite_2.png") no-repeat -2px -1294px;
+	display: block;
+	float: left;
+	height: 20px;
+	width: 24px;
+}
+
+	
+/*TR colors*/
+table.wtc-easydirect-show-data-table tr.red{color: #7D0000;}
+table.wtc-easydirect-show-data-table tr.yellow{color: #808000;}
+
+/*Link del*/
+a.wtc-easydirect-link-del {font-size: 14px; color:#b10000; text-decoration: none;}
+
+/*Banners*/
+table.wtc-easydirect-show-data-table tr.noactive td {background-color:#f1f1f1;}
+
+table.wtc-easydirect-show-data-table td span {color: #888; }
+table.wtc-easydirect-show-data-table td .new-banner span {color: #888; font-size: 12px;}
+table.wtc-easydirect-show-data-table td span.onserch {font-size: 12; }
+table.wtc-easydirect-show-data-table td nobr.currentPrice {background-color:#c1ffbf;}
+
+table.wtc-easydirect-show-data-table td .banner{border: 0px; border-left: 3px solid #CCC !important; width: 280px;}
+table.wtc-easydirect-show-data-table .banner td{margin:0; padding:1px 3px !important; text-align:left; border: 0px solid #000 !important;}
+table.wtc-easydirect-show-data-table .banner td.title a{font-size: 14; font-weight: bold; padding:0px;}
+table.wtc-easydirect-show-data-table .banner td.title2 {font-size: 14; font-weight: bold; padding:0px; color: #888;}
+table.wtc-easydirect-show-data-table .banner td.sitelinks a {color: #888; white-space: nowrap;}
+table.wtc-easydirect-show-data-table .banner td.href {color: green;}
+table.wtc-easydirect-show-data-table .banner.noactive td {color: #AAA;}
+table.wtc-easydirect-show-data-table .banner.noactive td.title a {color: #AAA;}
+
+table.wtc-easydirect-show-data-table .no-border td{margin:0; padding:1px 3px !important; text-align:left; border: 0px solid #000 !important;}
+table.wtc-easydirect-show-data-table .no-border td.right{text-align:right;}
+
+table.wtc-easydirect-show-data-table table.phrases{width: 100%; border-collapse:collapse;}
+
+table.wtc-easydirect-show-data-table table.prices{display:none;}
+table.wtc-easydirect-show-data-table table.prices td{border: 0px solid #000 !important;}
+
+table.wtc-easydirect-show-data-table .condBanerEdit{display:none;}
+table.wtc-easydirect-show-data-table table.condBanerEdit{border-collapse:collapse;}
+
+table.wtc-easydirect-show-data-table hr{border:none; background:#ddd; height:1px;}
+
+/* Podbor phrases */
+#WtcEasydirectPhrasesTbl{min-width:170px;}
+#WtcEasydirectMinusTbl{min-width:170px;}
+table.wtc-easydirect-show-data-table a.del-phrase {
+	color: #b10000; 
+	text-decoration: none;
+}
+table.wtc-easydirect-show-data-table a.edit-phrase {
+	text-decoration: none;
+}
+table.wtc-easydirect-show-data-table a.null {
+	color: #000;
+	text-decoration: none;
+}
+table.wtc-easydirect-show-data-table a.null:hover {
+	text-decoration: underline;
+}
+
+#bx-admin-prefix #reportMessage .adm-info-message-icon::before, #bx-admin-prefix #greenMessage .wait-icon::before{
+    background: transparent url("/bitrix/panel/wtc_easydirect/images/wait.gif") no-repeat scroll 0px 0px;
+	margin-top: -10px;
+	left: 20px;
+}
+
+/* help icon*/
+.wtc-easydirect-help-link i {
+    display: inline-block;
+    height: 22px;
+    cursor: pointer;
+    vertical-align: top;
+	font-size: 16px;
+	padding: 1px 3px 0px 5px;
+	font-style: normal;
+}
+.wtc-easydirect-help-link span{
+    display: inline-block;
+    cursor: pointer;
+	font-size: 12px;
+	margin: 4px 6px 0px 0px;
+	text-decoration: underline;
+}
+.wtc-easydirect-help-link{
+    background-color: #cfd7da;	
+	border-radius: 10px;
+	border: 1px solid #969d9e59;
+    display: inline-block;
+    cursor: pointer;
+	font-size: 12px;
+    height: 22px;
+    margin-top: 0px;	
+    vertical-align: middle;
+	color:#0046aa;
+}

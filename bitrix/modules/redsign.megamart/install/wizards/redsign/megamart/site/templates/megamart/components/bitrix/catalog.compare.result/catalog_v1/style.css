@@ -1,0 +1,19 @@
+.compare__names, .compare__table {
+  table-layout: fixed; }
+
+.compare__table .product-cat-del {
+  color: #bdbdbd;
+  cursor: pointer; }
+
+.compare__table .product-cat-image-action {
+  display: block;
+  right: 1rem;
+  top: 0.5rem; }
+
+.compare__scroll {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 8px;
+  padding: 1rem 0; }
+
+/*# sourceMappingURL=style.css.map */

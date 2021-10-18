@@ -1,0 +1,179 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import '../../../../resources/sass/mixins/master-icon';
+@import 'bootstrap/scss/variables';
+
+.b-employee {
+	padding: 0 1rem;
+	transition: box-shadow 0.3s;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	overflow: hidden;
+	text-align: center;
+
+
+	&:hover {
+		box-shadow: $block-shadow-hover;
+	}
+
+	&--type2 {
+		border-top: 1px solid $body-bg;
+	}
+
+	&--type2 &__container {
+		display: flex;
+		max-width: 51.25rem; // 820px
+		margin: auto;
+		padding: 2.5rem 0;
+		align-items: center;
+		flex-direction: column;
+	}
+
+
+
+	&__picture {
+		border-radius: 50%;
+		// overflow: hidden;
+		width: 12rem;
+		height: 12rem;
+		display: inline-block;
+
+		& img {
+			border-radius: 50%;
+			width: 100%;
+			padding: 5px;
+			box-shadow: 0 0 0 1px #fff;
+		}
+	}
+
+	&--type1 &__picture {
+		margin: 2.19rem 0 0.75rem;
+	}
+
+	&__name {
+		overflow: hidden;
+		font-weight: bold;
+	}
+
+	&--type1 &__name {
+		margin: 0.75rem 0 0;
+		height: $font-size-base * $line-height-base;
+	}
+
+	&__description {
+		margin: 0.63rem 0;
+		overflow: hidden;
+	}
+
+	&__contacts {
+		font-size: $font-size-sm;
+		color: $extra;
+	}
+
+	&__position {
+		font-size: $small-font-size;
+		color: $extra;
+		overflow: hidden;
+	}
+
+	&__position {
+		margin: 0.13rem 0;
+		padding-bottom: 1.31rem;
+		position: relative;
+
+		&:after {
+			content: "";
+			height: 6px;
+			width: 2rem;
+			background: theme-color('primary');
+			border-radius: 0.5rem;
+			position: absolute;
+			bottom: 0;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+	}
+
+
+
+	&--type1 &__contacts {
+		margin-top: 1.63rem;
+		position: relative;
+
+	}
+
+	&--type2 &__contacts {
+		margin-top: 1rem;
+	}
+
+	&--type1 &__contacts {
+		height: 2.63rem;
+	}
+
+	&__quest {
+		margin: 0;
+		font-size: $font-size-sm;
+	}
+
+	&--type1 &__quest {
+		height: $font-size-base * $line-height-base;
+	}
+
+	&__social {
+		margin: 1.63rem 0 0;
+	}
+
+	&--type1 &__social {
+		margin-bottom: 1.5rem;
+	}
+
+	&--type1 &__social {
+		height: $font-size-base * $line-height-base * 3;
+	}
+
+	@include media-breakpoint-up(sm) {
+		&--type1 &__description {
+			height: $font-size-base * $line-height-base * 3;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&--type2 {
+			text-align: left;
+		}
+
+		&--type2 &__container {
+			flex-direction: row;
+		}
+
+		&--type2 &__picture {
+			flex: 0 0 auto;
+		}
+
+		&--type2 &__data {
+			flex: 1 1 auto;
+			text-align: left;
+		}
+
+		&--type2 &__data {
+			padding-left: 4rem;
+		}
+
+		&--type2 &__position:after {
+			left: 0;
+			right: auto;
+		}
+	}
+}
+
+.b-employee-social-icon {
+	@include master-icon--fill();
+	@include master-icon--full();
+	@include master-icon--hover();
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

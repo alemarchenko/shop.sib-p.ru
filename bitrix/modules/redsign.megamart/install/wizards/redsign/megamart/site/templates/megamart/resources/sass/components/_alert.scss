@@ -1,0 +1,17 @@
+.errortext {
+  @extend .alert;
+  @extend .alert-danger;
+
+  display: block;
+}
+
+.notetext {
+  @extend .alert;
+  @extend .alert-success;
+
+  display: block;
+}
+
+.required {
+  color: theme-color('danger');
+}

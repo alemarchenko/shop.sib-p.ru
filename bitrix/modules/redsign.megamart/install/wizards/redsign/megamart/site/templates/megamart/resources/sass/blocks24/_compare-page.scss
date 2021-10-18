@@ -1,0 +1,77 @@
+
+// compare.result
+.block-store-compare {
+	.landing-block {
+		padding-top: 0 !important;
+	}
+}
+
+.bx_compare {
+	background: $white;
+
+	.bx_filtren_container {
+		display: none;
+	}
+
+	.bx_sort_container  {
+		margin-bottom: map-get($map: $spacers, $key: 3);
+		padding: map-get($map: $spacers, $key: 4);
+
+		.sorttext {
+			@extend .btn;
+		}
+
+		.sortbutton {
+			@extend .btn;
+			@extend .btn-outline-primary;
+
+			@include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+			background-image: none;
+			border: $btn-border-width solid;
+			box-shadow: none;
+  			font-weight: $btn-font-weight;
+			text-shadow: none;
+
+			&.current {
+				@extend .btn-primary;
+
+				@include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+				background-image: none;
+				border: $btn-border-width solid;
+				box-shadow: none;
+				font-weight: $btn-font-weight;
+				text-shadow: none;
+			}
+		}
+	}
+
+	.table_compare {
+		table {
+			// table-layout: fixed;
+			margin-bottom: 0;
+
+			tr {
+				td {
+					font-size: $font-size-sm;
+					padding: $table-cell-padding;
+
+					&:first-child {
+						padding-left: map-get($map: $spacers, $key: 4) + $btn-padding-x;
+					}
+				}
+			}
+
+			.bx_bt_button {
+				@extend .btn;
+				@extend .btn-primary;
+				@extend .btn-sm;
+
+				background-image: none;
+				font-size: $btn-font-size-sm !important;
+				height: auto;
+				margin-top: map-get($map: $spacers, $key: 2);
+				text-shadow:  none;
+			}
+		}
+	}
+}

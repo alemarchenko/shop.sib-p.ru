@@ -1,0 +1,29 @@
+%icon-circle {
+	font-size: $h5-font-size;
+	color: $secondary;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.13rem;
+	height: 3.13rem;
+
+	line-height: 0;
+	position: relative;
+
+	border-radius: 50%;
+	transition: $transition-base;
+
+	@include hover-focus {
+		//background: $icon-bg;
+		//color: $icon-base;
+		color: theme-color('primary');
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+	& + & {
+		margin-left: -.25rem;
+	}
+}

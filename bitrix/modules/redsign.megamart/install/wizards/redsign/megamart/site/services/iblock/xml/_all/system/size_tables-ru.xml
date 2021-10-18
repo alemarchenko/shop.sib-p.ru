@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2019-08-09T11:53:38">
+	<Классификатор>
+		<Ид>redsign_megamart_system_size_tables</Ид>
+		<Наименование>Таблицы размеров</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>redsign_megamart_system_size_tables</Ид>
+		<ИдКлассификатора>redsign_megamart_system_size_tables</ИдКлассификатора>
+		<Наименование>Таблицы размеров</Наименование>
+		<БитриксКод>redsign_megamart_system_size_tables</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок></БитриксURLСписок>
+		<БитриксURLДеталь></БитриксURLДеталь>
+		<БитриксURLРаздел></БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Таблица размеров</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Таблицы размеров</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить таблицу размеров</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить таблицу размеров</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить таблицу размеров</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>1198</Ид>
+				<Наименование>Таблица размеров мужской обуви</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>tablitsa-razmerov-obuvi</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;br&gt;
+&lt;div class=&quot;table-responsive text-center d-inline-block&quot;&gt;
+	&lt;table class=&quot;table&quot;&gt;
+	&lt;thead class=&quot;thead-borderless&quot;&gt;
+	&lt;tr&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 США&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Европа&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Россия&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Стопа, &lt;br&gt;
+			 см&lt;br&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 6.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38.5&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 7.5 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;40
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;39
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;24.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 26
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 41.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 26.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 10
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 42
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.0
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 10.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 44
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.3
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 11
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 44.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 43.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 27.9&lt;br&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;11.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;45
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;44
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;28.3
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;12
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;44.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;28.6
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;12.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;45
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;13
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 47 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;46
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;13.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 48 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;47
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;29.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>1199</Ид>
+				<Наименование>Таблица размеров женской обуви</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>tablitsa-razmerov-zhenskoy-obuvi</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;br&gt;
+&lt;div class=&quot;table-responsive text-center d-inline-block&quot;&gt;
+	&lt;table class=&quot;table&quot;&gt;
+	&lt;thead class=&quot;thead-borderless&quot;&gt;
+	&lt;tr&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 США&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Европа&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Россия&lt;br&gt;
+		&lt;/th&gt;
+		&lt;th class=&quot;align-middle&quot;&gt;
+			 Стопа, &lt;br&gt;
+			 см&lt;br&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 22.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 5.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 35.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 23.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 6 &lt;br&gt;
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 36 (3)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 35-36
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;23.5
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			&amp;nbsp; 6.5&lt;br&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37 (4)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 36
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 23.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5 (4,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 36.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 7.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38 (5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.5
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38.5 (5,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 37.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 24.8
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 8.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39 (6)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 38
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.1
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40 (6,5)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 9.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 40.5 (7)
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 39.5
+		&lt;/td&gt;
+		&lt;td&gt;
+			 &amp;nbsp; 25.7&lt;br&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 10
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 41 (7,5)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;40
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;26.0
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 10.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 42 (8,5)
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;41
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;26.7
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 11
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			&amp;nbsp; 42.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;41.5
+		&lt;/td&gt;
+		&lt;td colspan=&quot;1&quot;&gt;
+			 &amp;nbsp;27.6
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

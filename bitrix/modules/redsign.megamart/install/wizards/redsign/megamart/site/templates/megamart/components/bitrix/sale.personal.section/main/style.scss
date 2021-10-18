@@ -1,0 +1,72 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.sale-personal-section-list {
+	display: flex;
+    flex-wrap: wrap;
+    margin-right: -1px;
+
+	&__item {
+        border-right: 1px solid $body-bg;
+		border-bottom: 1px solid $body-bg;
+	}
+
+	@include media-breakpoint-down(sm) {
+		&__item {
+			width: 50%;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&__item {
+			width: 33.333%;
+		}
+    }
+    
+    @include media-breakpoint-up(lg) {
+		&__item {
+			width: 20%;
+		}
+	}
+}
+
+.sale-personal-section-item {
+	opacity: 1;
+	padding: 0;
+	text-align: center;
+	font-weight: 500;
+	transition: $transition-base;
+	color: theme-color('primary');;
+	background: $white;
+	background-size: cover;
+	border-radius: $border-radius;
+	display: flex;
+	align-items: center;
+
+	&__link {
+		text-decoration: none;
+		transition: $transition-base;
+		display: block;
+		padding: 1.5rem 1rem;
+		color: $body-color;
+		flex: 1;
+
+		@include hover-focus {
+			color: theme-color('primary');
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+		font-size: 3.13rem;
+		padding-bottom: 1.5rem;
+		display: block;
+		color: theme-color('primary');
+	}
+
+	&__name {
+		font-size: $font-size-base;
+	}
+}

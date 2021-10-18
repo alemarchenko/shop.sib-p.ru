@@ -1,0 +1,339 @@
+.bx-filter-block::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.bx-filter-param-btn.bx-color-sl {
+  background: #ffffff;
+  border: 2px solid transparent;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: border .3s ease, color .3s ease;
+  -o-transition: border .3s ease, color .3s ease;
+  -moz-transition: border .3s ease, color .3s ease;
+  transition: border .3s ease, color .3s ease;
+  vertical-align: middle; }
+
+.bx-filter-btn-color-icon {
+  -webkit-background-size: cover;
+          background-size: cover;
+  border: 2px solid #e9ecef;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  vertical-align: middle; }
+
+.checked.bx-filter-param-label .bx-filter-param-btn.bx-color-sl,
+.selected.bx-filter-param-label .bx-filter-param-btn.bx-color-sl,
+.bx-filter-param-label:hover .bx-filter-param-btn.bx-color-sl, .bx-filter-param-btn.bx-color-sl:active, .bx-filter-param-btn.bx-color-sl:focus {
+  border-color: #7d8698; }
+
+.disabled.bx-filter-param-label > .bx-filter-param-btn.bx-color-sl {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .disabled.bx-filter-param-label > .bx-filter-param-btn.bx-color-sl:before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    content: ' ';
+    display: block;
+    z-index: 100;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA/UlEQVQ4y5WSQQ6CQAxFOSBuwAtoAitc4R6MkKgYJULUi8Ax4DgKm9o/45BxBBNJmkB/33T6qUVEHkfDUXHY1sQD7V2DWg+JJox3lOZ3enYdf5IzAjnQkvxGa64Fg2S9PV3JXa4ozoovWEGbY0nOIqDkfIVeQ5hBAOQsAy5guO8FbEJxVqqDZ+rUuQ6rziJ3VLkBcs05BBxlF1nIADrJESYgE0YhAER0KH5DphEKFDNPuG1AhTAi4jnRWV17FNYhcT3NHLzLzuUnjI0YHP203EWY8ENqNsAq5Y3Qf4NuhIT7wTBsDxgIbRjvCfCUe6ozoFCuXIukj5c/lhy1/gvSDM3b8PrjegAAAABJRU5ErkJggg==") no-repeat center;
+    opacity: .7; }
+
+.disabled.bx-filter-param-label .bx-filter-btn-color-icon {
+  opacity: .2; }
+
+.bx-filter {
+  width: 100%;
+  /*
+	*Track
+	*
+	*/
+  /*
+	*	LABEL
+	*
+	*/
+  /*
+	*	 BTN
+	*
+	*/
+  /*
+	*	 Result Popup
+	*
+	*/ }
+  .fancybox-content .bx-filter {
+    background: #f1f1f1; }
+  .bx-filter-section {
+    position: relative; }
+    .bx-filter-section > .row {
+      padding: 0 5px; }
+  .bx-filter-container-modef {
+    display: none; }
+    @media (min-width: 576px) {
+      .bx-filter-container-modef {
+        display: block; } }
+  .bx-filter-parameters-box {
+    position: relative;
+    margin-bottom: 1px; }
+    .bx-filter-parameters-box-title {
+      background-color: #fff;
+      cursor: pointer;
+      display: block;
+      position: relative;
+      word-break: break-word; }
+    .bx-filter-parameters-box-angle {
+      background-color: #fff;
+      position: absolute;
+      font-weight: 700;
+      display: inline-block;
+      margin: auto;
+      right: 0;
+      top: 0; }
+    .bx-filter-parameters-box-title, .bx-filter-parameters-box-angle {
+      padding: 0.75rem 1rem; }
+  .bx-filter-block {
+    background-color: #ffffff;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    display: none;
+    -webkit-transition: padding .3s ease;
+    -o-transition: padding .3s ease;
+    -moz-transition: padding .3s ease;
+    transition: padding .3s ease; }
+    .bx-filter-block .bmd-radio,
+    .bx-filter-block .bmd-custom-checkbox > label .checkbox-decorator {
+      left: .25rem; }
+    .bx-filter-block .bmd-custom-radio > label,
+    .bx-filter-block .bmd-custom-checkbox > label {
+      padding-left: 40px; }
+  .bx-filter-button-box .bx-filter-block,
+  .bx-filter-parameters-box.bx-active .bx-filter-block {
+    display: block; }
+  .bx-filter-parameters-box-container {
+    padding: 1rem; }
+    .bx-filter-parameters-box-container-block + .bx-filter-parameters-box-container-block:before {
+      background-color: #7d8698;
+      bottom: 0;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      left: -7px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      width: 13px; }
+  .bx-filter-scroll {
+    max-height: 167px;
+    overflow: auto;
+    padding-top: 1px; }
+    .bx-filter-scroll .scroll-element {
+      background: #f7f7f8; }
+  .bx-filter .bx-ui-slider-track-container {
+    padding-bottom: 15px;
+    padding-top: 28px; }
+  .bx-filter .bx-ui-slider-track {
+    position: relative;
+    height: 3px;
+    background: #d7dbdd; }
+  .bx-filter .bx-ui-slider-part {
+    display: none;
+    position: absolute;
+    top: -6px;
+    width: 1px;
+    height: 17px;
+    background: #a2bfc7; }
+  .bx-filter .bx-ui-slider-part.p1 {
+    left: -1px; }
+  .bx-filter .bx-ui-slider-part.p2 {
+    left: 25%; }
+  .bx-filter .bx-ui-slider-part.p3 {
+    left: 50%; }
+  .bx-filter .bx-ui-slider-part.p4 {
+    left: 75%; }
+  .bx-filter .bx-ui-slider-part.p5 {
+    right: -1px; }
+  .bx-filter .bx-ui-slider-part span {
+    font-size: 75%;
+    /*font-weight: bold;*/
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    color: #000; }
+  .bx-filter .bx-ui-slider-part.p2 span,
+  .bx-filter .bx-ui-slider-part.p3 span,
+  .bx-filter .bx-ui-slider-part.p4 span {
+    color: #6b8086; }
+  .bx-filter .bx-ui-slider-range,
+  .bx-filter .bx-ui-slider-pricebar,
+  .bx-filter .bx-ui-slider-pricebar-vd,
+  .bx-filter .bx-ui-slider-pricebar-vn,
+  .bx-filter .bx-ui-slider-pricebar-v {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 1px; }
+  .bx-filter .bx-ui-slider-range {
+    z-index: 90; }
+  .bx-filter .bx-ui-slider-pricebar {
+    z-index: 100; }
+  .bx-filter .bx-ui-slider-pricebar-vd {
+    z-index: 60;
+    background: #b1b1b1; }
+  .bx-filter .bx-ui-slider-pricebar-vn {
+    z-index: 70;
+    background: #f2f2f2; }
+  .bx-filter .bx-ui-slider-pricebar-v {
+    z-index: 80;
+    background: #ff5605; }
+  .bx-filter .bx-ui-slider-handle {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #ff5605;
+    height: 21px;
+    position: absolute;
+    top: -9px;
+    -webkit-transform: scale(0.571);
+       -moz-transform: scale(0.571);
+        -ms-transform: scale(0.571);
+         -o-transform: scale(0.571);
+            transform: scale(0.571);
+    -webkit-transition: -webkit-transform .1s ease-out;
+    transition: -webkit-transform .1s ease-out;
+    -o-transition: -o-transform .1s ease-out;
+    -moz-transition: transform .1s ease-out, -moz-transform .1s ease-out;
+    transition: transform .1s ease-out;
+    transition: transform .1s ease-out, -webkit-transform .1s ease-out, -moz-transform .1s ease-out, -o-transform .1s ease-out;
+    width: 21px; }
+  .bx-filter .bx-ui-slider-handle:hover {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab; }
+  .bx-filter .bx-ui-slider-handle.active {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1); }
+  .bx-filter .bx-ui-slider-handle:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing; }
+  .bx-filter .bx-ui-slider-handle.left {
+    left: 0;
+    margin-left: -0.5rem; }
+  .bx-filter .bx-ui-slider-handle.right {
+    right: 0;
+    margin-right: -0.5rem; }
+  .bx-filter-input-container .form-control {
+    height: 100%;
+    -moz-appearance: textfield; }
+    .bx-filter-input-container .form-control::-webkit-outer-spin-button, .bx-filter-input-container .form-control::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0;
+      /* <-- Apparently some margin are still there even though it's hidden */ }
+  .bx-filter-input-checkbox, .bx-filter-param-label {
+    padding-top: 1rem; }
+  .bx-filter-input-checkbox:first-of-type {
+    padding-top: 0.5rem; }
+  .bx-filter-param-label:first-of-type {
+    padding-top: 0; }
+  .bx-filter-param-label {
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    margin: 0; }
+  .dropdown-item .bx-filter-param-label,
+  .bx-filter-input-checkbox .bx-filter-param-label {
+    padding-top: 0; }
+  .bx-filter-param-btn-inline .bx-filter-param-label {
+    float: left;
+    margin: 0 0.25rem 0.25rem 0;
+    padding: 0; }
+  .bx-filter-param-label.disabled,
+  .bx-filter-param-label.disabled .bx-filter-param-text {
+    color: #adb5bd;
+    cursor: inherit; }
+  .bx-filter-param-btn.bx-color-sl {
+    margin-left: -2px; }
+  .bx-filter-param-label.disabled {
+    pointer-events: none; }
+  .bx-filter-param-label.disabled > .bx-filter-param-btn.bx-color-sl {
+    border-color: transparent;
+    cursor: inherit; }
+  .bx-filter-btn-color-icon {
+    display: inline-block; }
+    .bx-filter-btn-color-icon.all {
+      position: relative;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      fill: transparent;
+      font-size: 1.5rem;
+      stroke: currentColor; }
+  .bx-filter-param-btn + .bx-filter-param-text,
+  .bx-filter-btn-color-icon + .bx-filter-param-text {
+    margin-left: 0.25rem;
+    vertical-align: middle; }
+  .bx-filter-popup-result {
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background: #fff6e5;
+    -webkit-box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+            box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+    display: none;
+    margin: 0.5rem auto;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 915; }
+    .bx-filter-popup-result > a {
+      margin-left: 1.5rem; }
+    .bx-filter-popup-result.right {
+      left: 93%; }
+    .bx-filter-popup-result.left {
+      right: 93%; }
+    @media (max-width: 575.98px) {
+      .bx-touch .bx-filter-popup-result {
+        position: fixed !important;
+        z-index: 1001;
+        top: auto !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        margin-top: 0;
+        margin-left: 0;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        border: 1px solid #c6dae7;
+        background: rgba(255, 255, 255, 0.9); } }
+
+/*Sections*/
+@media (min-width: 768px) {
+  .bx-filter .bx-filter-section .col-md-4:nth-child(3n+1) {
+    clear: both; } }
+
+/*# sourceMappingURL=style.css.map */

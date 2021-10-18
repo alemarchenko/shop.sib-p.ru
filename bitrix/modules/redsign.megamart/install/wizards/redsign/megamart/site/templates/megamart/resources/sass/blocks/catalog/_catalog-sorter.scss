@@ -1,0 +1,12 @@
+.catalog-sorter {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: $section-head-height;
+
+	background-color: $white;
+	
+	border-bottom: 1px solid $body-bg;
+}
+

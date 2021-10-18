@@ -1,0 +1,76 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/snippets/all';
+
+.bcsl-blocks {
+	&-item {
+		padding: 1.5rem;
+
+		&__image {
+			position: absolute;
+			max-height: 100%;
+			max-width: 100%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+			margin: auto;
+			display: block;
+
+			&-wrapper {
+				position: relative;
+				padding: 1rem;
+				margin: -1rem -1rem 0;
+				display: block;
+				-webkit-transition: all 300ms ease;
+				-o-transition: all 300ms ease;
+				transition: all 300ms ease;
+			}
+
+			&-canvas {
+				position: relative;
+				padding-bottom: 90%;
+				display: block;
+			}
+		}
+
+		&__title {
+			max-height: 2.5rem;
+			margin-bottom: 0.25rem;
+			font-weight: 700;
+			overflow: hidden;
+
+			& > a,
+			& > a:hover {
+				color: $body-color;
+			}
+		}
+
+		&__parent {
+			font-size: 75%;
+			height: 1.125rem;
+			margin-bottom: 0.25rem;
+			overflow: hidden;
+
+			& > a,
+			& > a:hover {
+				color: theme-color('primary');
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bcsl-blocks {
+		&-item {
+			&__image {
+				&-wrapper {
+					padding: 1.5rem;
+					margin: -1.5rem -1.5rem 0.5rem;
+				}
+			}
+		}
+	}
+}

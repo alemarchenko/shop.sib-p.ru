@@ -1,0 +1,54 @@
+.card {
+	& + & {
+		margin-top: -1px;
+	}
+
+	& > &-header {
+		padding: 0;
+	}
+
+	& &-body {
+		border-top: 1px solid $card-border-color;
+	}
+
+	&.card-active &-header
+	{
+		background-color: $card-border-color;
+	}
+	
+	&.card-active &-body {
+	}
+}
+
+.card-header-link {
+	display: flex;
+	flex-direction: column;
+	padding:  1rem ($card-spacer-x + 2.5rem) $card-spacer-x 1rem;
+	width: 100%;
+	cursor: pointer;
+	font-weight: bold;
+
+	justify-content: space-between;
+
+	&__desc {
+		margin-top: 1rem;
+	}
+
+	&__arrow {
+		position: absolute;
+		right: 1rem;
+	}
+
+	.card-active &__arrow {
+		transform: rotate(180deg);
+		transform-origin: center center;
+	}
+
+	@include media-breakpoint-up(xl) {
+		flex-direction: row;
+
+		&__desc {
+			margin-top: 0;
+		}
+	}
+}

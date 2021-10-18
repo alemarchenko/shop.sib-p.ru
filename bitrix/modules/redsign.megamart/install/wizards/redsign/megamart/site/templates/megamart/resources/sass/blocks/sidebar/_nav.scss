@@ -1,0 +1,71 @@
+$sidebar-border-color: transparent !default;
+$sidebar-link-bg-color: $white !default;
+$sidebar-link-text-color: $body-color !default;
+$sidebar-link-hover-bg-color: theme-color('primary') !default;
+$sidebar-link-hover-text-color: $white !default;
+
+.b-sidebar-nav {
+  @extend .list-unstyled;
+  margin-bottom: 0;
+
+
+  &__link {
+    display: block;
+    position: relative;
+    padding: .75rem 3rem 1rem .75rem;
+    color: $sidebar-link-text-color;
+    background-color: $sidebar-link-bg-color;
+    border-bottom: 1px solid $sidebar-border-color;
+    border-left: 1px solid $sidebar-border-color;
+    border-right: 1px solid $sidebar-border-color;
+    word-break: break-word;
+  }
+
+  &__toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  	width: 3rem;
+  	height: 100%;
+  	right: -1px;
+  	top: 0;
+  	background: transparent;
+  }
+  &__toggle:not(.collapsed),
+  &__item.is-selected > &__toggle {
+    transform: rotate(180deg);
+  }
+
+
+  &__link:hover,
+  &__link:active,
+  &__link:focus,
+  &__item.is-selected > &__link {
+    text-decoration: none;
+    color: $sidebar-link-hover-text-color;
+    background-color: $sidebar-link-hover-bg-color;
+    border-left-color: $sidebar-link-hover-bg-color;
+    border-right-color: $sidebar-link-hover-bg-color;
+  }
+
+
+  &__submenu {
+    background: darken($white, 5%);
+    @extend .list-unstyled;
+  }
+
+  // Third level
+   &__submenu &__submenu > &__item > &__link {
+    padding-left: 37.5px;
+  }
+
+  &__submenu &__item.is-selected > &__link,
+  &__submenu &__link:hover,
+  &__submenu &__link:active,
+  &__submenu &__link:focus {
+    background: transparent;
+    color: theme-color('primary');
+    border-color: $sidebar-border-color;
+  }
+}

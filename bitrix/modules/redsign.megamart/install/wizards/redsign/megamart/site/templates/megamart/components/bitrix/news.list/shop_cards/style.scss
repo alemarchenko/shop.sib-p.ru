@@ -1,0 +1,104 @@
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/mixins/spacings';
+
+.shop-cards {
+
+	&__list {
+		min-height: 25rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	@include media-breakpoint-up(sm) {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	@include media-breakpoint-down(xs) {
+		background-image: none !important;
+	}
+}
+
+
+.shop-card {
+	display: block;
+	min-height: 17.5rem;
+	background: rgb(255, 255, 255);
+	padding: 1rem 60px 1rem 1.25rem;
+	margin-bottom: $grid-gutter-width / 2;
+	margin-top: $grid-gutter-width / 2;
+	box-shadow: $block-shadow-default;
+	display: block;
+	color: $body-color;
+	position: relative;
+
+	&-auto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		padding: 1rem 2rem;
+	}
+
+	&__go-button {
+		width: 2.38rem;
+		height: 2.38rem;
+		border-radius: 50%;
+		border: 1px solid rgb(189, 189, 189);
+		color: rgb(189, 189, 189);
+		background: rgba(0, 0, 0, 0);
+		margin: 0 0.5rem;
+		line-height: 0;
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+		display: inline-flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+		position: absolute;
+		right: 1rem;
+		bottom: 1rem;
+	}
+
+
+	&:hover,
+	&:focus {
+		color: $body-color;
+		text-decoration: none;
+	}
+
+	&:hover &__go-button {
+		background-color: rgb(255, 86, 5);
+		border: rgb(255, 86, 5);
+		color: #fff;
+	}
+
+	&__icon {
+		margin: 0.25rem 0 1.25rem;
+		font-size: 1.38rem;
+	}
+
+	&__name {
+		font-weight: bold;
+	}
+
+	&__props {
+		height: 8.88rem;
+		overflow: hidden;
+	}
+
+	.btn {
+		width: 14.38rem;
+	}
+
+	@include media-breakpoint-down(xs) {
+		margin-bottom: 0;
+		margin-top: 0;
+		border-bottom: 1px solid $body-bg;
+	}
+}

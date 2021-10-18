@@ -1,0 +1,8 @@
+$product-item-detail-class: '.product-detail' !default;
+
+iframe{
+	vertical-align: middle;
+	width:100%;
+	box-sizing:border-box;
+}
+#{$product-item-detail-class}-slider-image:hover{text-decoration:none;}

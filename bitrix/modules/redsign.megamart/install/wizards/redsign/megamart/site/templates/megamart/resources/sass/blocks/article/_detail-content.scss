@@ -1,0 +1,16 @@
+.b-article-detail-content {
+	&__preview {
+		max-width: 38.75rem;
+		font-size: 1.25rem;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	&__picture {
+		@include make-block-spacing-negative(('margin'), ('left', 'right'));
+		@include make-block-spacing(('margin'), ('bottom'));
+		text-align: center;
+	}
+}

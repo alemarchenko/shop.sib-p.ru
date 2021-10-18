@@ -1,0 +1,20 @@
+@import "family.scss/source/src/family";
+
+$maxItems:		10 !default;
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+	/* test */
+	@for $i from 1 through $maxItems {
+		@include media-breakpoint-up($breakpoint) {
+			.show-items#{$infix}-#{$i} > * {
+				@include first($i) {
+					display: block;
+				}
+				@include after-first($i) {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import '../../../../resources/sass/variables';
+@import 'bootstrap/scss/variables';
+@import '../../../../resources/sass/snippets/menu-item';
+
+.topline-menu {
+	display: flex;
+}
+
+
+.topline-menu-item {
+	position: relative;
+
+	&__link {
+		color: $extra;
+		font-size: $font-size-sm;
+		padding: .66rem map-get($spacers, 3);
+		display: block;
+		white-space: nowrap;
+
+		@include hover-focus {
+			color: $extra;
+		}
+	}
+
+	&__dropdown {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: $zindex-dropdown;
+		display: none; // none by default, but block on "open" of the menu
+		float: left;
+		min-width: $dropdown-min-width;
+		padding: $dropdown-padding-y 0;
+		font-size: $font-size-base;
+		color: $body-color;
+		text-align: left;
+		list-style: none;
+		background-color: $dropdown-bg;
+		background-clip: padding-box;
+		box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+		min-width: 15.25rem;
+		width: 100%;
+	}
+
+	&:hover > &__dropdown {
+		display: block;
+	}
+
+	&__dropdown &__dropdown {
+		left: 100%;
+		top: 0;
+		margin-top: -$dropdown-padding-y;
+	}
+
+	&__dropdown > & > &__link {
+		@extend %dropdown-menu-item-link;
+	}
+	&__dropdown > &:hover > &__link {
+		@extend %dropdown-menu-item-link-hover;
+	}
+}

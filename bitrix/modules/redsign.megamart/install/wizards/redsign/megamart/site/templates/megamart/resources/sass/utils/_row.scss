@@ -1,0 +1,52 @@
+
+
+.row-borders {
+	// padding: 0 1px;
+	margin: 0;
+
+	margin-top: -1px;
+	border-top: 1px solid $body-bg;
+
+	& > .col,
+	& > [class*="col-"] {
+		border-bottom: 1px solid $body-bg;
+		border-right: 1px solid $body-bg;
+		padding: 0;
+	}
+
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+		@include media-breakpoint-only($breakpoint, $grid-breakpoints) {
+
+			@for $i from 1 through $grid-columns {
+				& > .col#{$infix}-#{$i}:nth-child(#{round($grid-columns / $i)}n) {
+					border-right-color: transparent;
+				}
+
+				& > .col#{$infix}-#{$i}:nth-child(n-#{round($grid-columns / $i)}) {
+					//border-top: 1px solid $body-bg;
+				}
+
+				& > .col#{$infix}-#{$i} {
+					border-bottom: 1px solid $body-bg;
+				}
+
+			}
+		}
+	}
+}
+
+@each $spacer in map-keys($spacers-grid) {
+	.row-m-#{$spacer} {
+
+		$space: map-get($spacers-grid, $spacer);
+
+		margin: 0 -#{$space}px -#{$space}px;
+
+		> .col,
+		> [class*="col-"] {
+			padding: 0 #{$space}px #{$space}px;
+		}
+	}
+}

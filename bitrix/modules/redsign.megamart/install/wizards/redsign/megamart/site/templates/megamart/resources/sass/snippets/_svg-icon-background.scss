@@ -1,0 +1,11 @@
+%svg-icon-background {
+    &:before {
+        background-color: currentColor;
+        content: '';
+        display: inline-block;
+        height: 1em;
+        line-height: $btn-line-height;
+        // vertical-align: middle;
+        width: 1em;
+    }
+}

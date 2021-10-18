@@ -1,0 +1,26 @@
+%lazy-anim {
+	opacity: 1;
+	background-image: linear-gradient(to left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-color: #f6f7f8;
+	animation: lazyloadanimimgeffect 1s infinite linear forwards;
+}
+
+.lazy-anim-img {
+	background-size: 450px 700px;
+	height: 100%;
+
+	@extend %lazy-anim;
+}
+
+.lazy-anim-bg {
+	@extend %lazy-anim;
+}
+
+
+@keyframes lazyloadanimimgeffect {
+  from {
+    background-position: -400px 0; }
+  to {
+    background-position: 200px 0; }
+}

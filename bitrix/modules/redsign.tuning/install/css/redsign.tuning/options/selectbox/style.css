@@ -1,0 +1,239 @@
+/*
+$secondary-color: #70aa70 !default;
+$secondary-color: #ff5500 !default;
+
+$main-font-size: 13px;
+
+$header-bg-color: $secondary-color;
+
+$main-border: 1px solid #e6e6e6;
+
+$sidebar-tab-text-color: #000;
+$sidebar-tab-text-color-active: $secondary-color;
+
+$sidebar-menu-text-color: #555555;
+$sidebar-menu-text-color-active: #555555;
+
+$option-name: #414243 !default;
+$option-title-color: #444c7a;
+$svg-color: #636363 !default;
+
+$input-background: #fff !default;
+
+$input-disabled-color: rgba(0,0,0, .42) !default;
+$input-disabled-solid-color: #949494 !default;
+$input-border: 1px solid #d2d2d2 !default;
+$input-border-hover: 1px solid $header-bg-color !default;
+
+$radio-fill-color: $secondary-color !default;
+$radio-empty-color: #5a5a5a !default;
+$radio-border: 2px solid $radio-fill-color !default;
+
+$switch-bg-color: $secondary-color !default;
+$switch-checked-lever-bg: desaturate(lighten($switch-bg-color, 25%), 25%) !default;
+$switch-unchecked-bg: #F1F1F1 !default;
+$switch-unchecked-lever-bg: rgba(0,0,0,.38) !default;
+$switch-radius: 15px !default;
+
+$spinner-default-color: $secondary-color !default;
+*/
+/* line 8, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+.rstuning__selectbox {
+  position: relative;
+  display: inline-block; }
+  /* line 12, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox input[type="text"] {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none; }
+  /* line 22, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox.open .rstuning__selectbox__value {
+    border: 1px solid #ff5500; }
+    /* line 25, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+    .rstuning__selectbox.open .rstuning__selectbox__value > svg {
+      transform: rotate(-90deg); }
+  /* line 30, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox.open .rstuning__selectbox__select {
+    opacity: 1;
+    pointer-events: auto; }
+  /* line 41, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox.closed .rstuning__selectbox__select {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10039; }
+  /* line 50, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox__value {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 14px 10px 14px;
+    background-color: #fff;
+    border: 1px solid #dde3e7;
+    border-radius: 5px;
+    transition: all 0.3s ease; }
+    /* line 60, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+    .rstuning__selectbox__value:hover {
+      border: 1px solid #ff5500; }
+    /* line 64, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+    .rstuning__selectbox__value > svg {
+      will-change: transform;
+      position: relative;
+      bottom: 2px;
+      width: 17px;
+      height: 20px;
+      fill: #ff5500;
+      margin-left: 16px;
+      transform: rotate(90deg); }
+  /* line 76, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox__select {
+    will-change: opacity;
+    position: absolute;
+    top: 100%;
+    max-height: 276px;
+    border: 1px solid #dde3e7;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3);
+    transform: translateY(8px);
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10040; }
+    /* line 3, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-scrollbar-button {
+      width: 0;
+      height: 0;
+      background-image: none;
+      background-repeat: no-repeat; }
+    /* line 10, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-scrollbar-track {
+      background-color: #fff; }
+    /* line 14, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #7a879a; }
+    /* line 19, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-scrollbar-thumb:hover {
+      background-color: #7a879a; }
+    /* line 23, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-resizer {
+      width: 4px;
+      height: 0;
+      background-image: none;
+      background-repeat: no-repeat; }
+    /* line 30, source/style/sass/mixin/_scroll.scss */
+    .rstuning__selectbox__select::-webkit-scrollbar {
+      width: 4px; }
+  /* line 96, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+  .rstuning__selectbox__option {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 49px 10px 14px; }
+    /* line 101, source/style/sass/css/redsign.tuning/options/selectbox/style.scss */
+    .rstuning__selectbox__option:hover {
+      background-color: #f8f9fb; }
+
+/*
+
+.rstuning {
+    &__selectbox {
+        position: relative;
+
+        input[type="text"] {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
+    }
+
+    &__selectbox__select {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        min-width: 135px;
+
+        &.open {
+            z-index: 5;
+
+            .rstuning {
+                &__selectbox__option {
+                    z-index: 6;
+
+                    &:hover,
+                    &.active {
+                        z-index: 7;
+                    }
+                }
+
+                &__selectbox__arrow {
+                    z-index: 7;
+                }
+            }
+        }
+    }
+
+    &__selectbox__option {
+        position: relative;
+        display: none;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 0 35px 0 20px;
+        margin-top: -1px;
+        background-color: $input-background;
+        border: $input-border;
+        border-radius: 4px;
+
+        &::first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__selectbox-name {
+        color: $option-name;
+        font-size: 14px;
+        font-weight: 300;
+        margin-right: 7px;
+    }
+
+    &__selectbox__option,
+    &__selectbox-name {
+        line-height: 38px;
+    }
+
+    &__selectbox__select.open .rstuning__selectbox__option.active,
+    &__selectbox__select:not(.open):hover .rstuning__selectbox__option,
+    &__selectbox__option:hover {
+        border: $input-border-hover;
+    }
+
+    &__selectbox__select.open .rstuning__selectbox__option,
+    &__selectbox__option.active {
+        display: block;
+    }
+
+    &__selectbox__arrow {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        display: block;
+        height: 22px;
+        float: right;
+        cursor: pointer;
+        padding-left: 8px;
+        border-left: $input-border;
+
+        svg {
+            position: relative;
+            bottom: 2px;
+            width: 15px;
+            height: 18px;
+            fill: $svg-color;
+            transform: rotate(90deg);
+        }
+    }
+
+}
+*/

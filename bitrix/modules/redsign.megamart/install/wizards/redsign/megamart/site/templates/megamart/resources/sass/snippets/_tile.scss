@@ -1,0 +1,55 @@
+%tile {
+	background-color: theme-color('light');
+	box-shadow: $block-shadow-default;
+	display: block;
+//	height: 100%;
+  	position: relative;
+	flex: 1;
+	max-width: 100%;
+
+	&__pic {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		height: 0;
+		margin-bottom: map-get($spacers, 3);
+		overflow: hidden;
+		padding-bottom: 50%;
+		position: relative;
+		text-align: center;
+	}
+
+	&__body {
+		display: block;
+		//height: 2 * $h6-font-size * $headings-line-height + map-get($spacers, 3) + 2 * $h6-font-size * $headings-line-height + map-get($spacers, 3);
+		padding: map-get($spacers, 2) map-get($spacers, 4) map-get($spacers, 4);
+		font-size: $font-size-sm;
+		line-height: $h6-font-size * $headings-line-height;
+	}
+
+	.l-main__outer-sidebar &__body,
+	.l-main__inner-sidebar &__body {
+		padding-bottom: map-get($spacers, 5);
+	}
+
+	&__title {
+		margin-bottom: map-get($spacers, 3);
+		overflow: hidden;
+
+		& > a,
+		& > a:hover {
+			color: $body-color;
+		}
+	}
+
+	&__head {
+		overflow: hidden;
+	}
+
+	@include media-breakpoint-up(xl) {
+		&__pic {
+			padding-bottom: 66.66667%;
+		}
+	}
+}

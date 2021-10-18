@@ -1,0 +1,106 @@
+.l-section {
+	&__head {
+		@extend .block-spacing-x;
+		padding-top: map-get($spacers, 5);
+		padding-bottom: map-get($spacers, 5);
+		min-height: $section-head-height; // paddings + owl-prev height;
+
+		background-color: $white;
+		border-bottom: 1px solid $body-bg;
+	}
+
+	&__title {}
+	&__controls {}
+
+	&--heighter > &__main {
+		min-height: 40rem;
+	}
+
+ 	&--container &__container {
+		@extend .container;
+	}
+
+	.container &--container &__container,
+	&__container &__container {
+		padding: 0;
+	}
+
+	&--outer-spacing {
+		margin-bottom: map-get($spacers, 6);
+	}
+
+	&--outer-spacing-quart {
+		margin-bottom: (map-get($spacers, 6) / 4);
+	}
+
+	&--inner-spacing > &__main,
+	&--inner-spacing > &__container > &__wrap-main > &__main {
+		@extend .block-spacing;
+	}
+
+	&--bg-white &__main {
+		background-color: $white;
+	}
+
+	&--bg-lg &__main {
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 100%);
+		margin-top: -1px;
+	}
+
+	&--shadow &__wrap-main {
+		@extend  .box-shadow-1;
+
+		.fancybox-content > & {
+			box-shadow: none;
+		}
+	}
+
+	&--block {
+		display: block !important;
+	}
+
+	& & {
+		border: 1px solid $body-bg;
+	}
+}
+
+.section-head {
+	&__title {
+		h4,
+		.h4 {
+			margin-bottom: 0;
+			margin-top: .25rem;
+		}
+
+		a {
+			color: $body-color;
+
+			@include hover-focus {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__controls {
+
+	}
+
+	@include media-breakpoint-up(sm) {
+		display: flex;
+
+		&__title {
+			flex: 0 1 auto;
+
+			h4 {
+				margin: 0;
+			}
+		}
+
+		&__controls {
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+}

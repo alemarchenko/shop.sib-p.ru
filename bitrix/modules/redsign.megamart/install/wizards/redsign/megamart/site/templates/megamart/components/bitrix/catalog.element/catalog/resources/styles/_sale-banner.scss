@@ -1,0 +1,139 @@
+.sale-banner {
+	align-items: center;
+	background-image: linear-gradient(-51deg, #634197 0%, #863875 100%);
+	color: color-yiq(#863875);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	padding: map-get($spacers, 4) 0 map-get($spacers, 3);
+	position: relative;
+
+	@include media-breakpoint-up(sm) {
+		flex-direction: row;
+	}
+
+	&-icon {
+		font-size: 3rem;
+		margin-right: map-get($spacers, 5);
+
+		@include media-breakpoint-up(sm) {
+			flex-direction: row;
+		}
+	}
+
+	&-head {
+		display: flex;
+		font-size: $small-font-size;
+		margin-bottom: map-get($spacers, 4);
+		padding: 0 map-get($spacers, 4);
+		text-transform: uppercase;
+		
+		@include media-breakpoint-up(md) {
+			font-size: 1.15rem;
+		}
+	}
+
+	&-title {
+		font-size: $h4-font-size;
+		font-weight: $font-weight-bold;
+		line-height: 1;
+	}
+
+	&-timer {
+		display: flex;
+		padding: 0 map-get($spacers, 4);
+
+		&-item {
+			margin-right: 1.25rem;
+			text-align: center;
+		}
+
+		&-item:last-child {
+			margin-right: 0;
+		}
+
+		&-item:last-child &-item-cell:after {
+			display: none;
+		}
+
+		&-item-cell {
+			background-color: rgba(255, 255, 255, .2);
+			border-radius: 0.375rem;
+			font-size: $h3-font-size;
+			margin-bottom: -1*map-get($spacers, 2);
+			padding: 0.625rem 0.875rem;
+			position: relative;
+
+			&:before {
+				background-color: rgba(255, 255, 255, .2);
+				border-top-left-radius: 0.375rem;
+				border-top-right-radius: 0.375rem;
+				bottom: 45%;
+				content: '';
+				left: 0.0625rem;
+				position: absolute;
+				right: 0.0625rem;
+				top: 9.52381%;
+			}
+
+			&:after {
+				content: ':';
+				display: inline-block;
+				left: 100%;
+				position: absolute;
+				width: 1.25rem;
+			}
+		}
+	}
+
+	&-bg,
+	&-bg-1,
+	&-bg-2,
+	&-bg-3,
+	&-bg-4 {
+		background-image: linear-gradient(80deg, $black 0%, $white 100%);
+		bottom: 0;
+		margin: auto;
+		opacity: 0.2;
+		position: absolute;
+		top: 0;
+		transform: rotate(28deg);
+	}
+
+	&-bg-1 {
+		height: 183.63636%; // 202px;
+		left: 14.19019%; // 191px;
+		width: 10.84695%; // 146px;
+	}
+
+	&-bg-2 {
+		height: 144.54545%; // 159px;
+		left: 26.07726%; // 351px;
+		width: 4.53195%; // 61px;
+	}
+
+	&-bg-3 {
+		height: 183.63636%; // 202px;
+		right: 3.34324%;
+		width: 10.84695%; // 146px;
+	}
+
+	&-bg-4 {
+		height: 144.54545%; // 159px;
+		right: -2.22883%; // 351px;
+		width: 4.53195%; // 61px;
+	}
+
+
+	@include media-breakpoint-up(sm) {
+		flex-direction: row;
+
+		&-head,
+		&-timer {
+			padding: 0 map-get($spacers, 3);
+			margin-bottom: 0;
+
+		}
+	}
+}

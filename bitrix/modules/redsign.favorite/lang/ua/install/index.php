@@ -1,0 +1,7 @@
+<?
+$MESS["REDSIGN.FAVORITE.INSTALL_NAME"] = "Вибране";
+$MESS["REDSIGN.FAVORITE.INSTALL_DESCRIPTION"] = "Майстер установки модуля";
+$MESS["REDSIGN.FAVORITE.INSTALL_TITLE"] = "Установка модуля";
+$MESS["REDSIGN.FAVORITE.UNINSTALL_TITLE"] = "Видалення модуля";
+$MESS["REDSIGN.FAVORITE.SPER_PARTNER"] = "ALFA Systems";
+$MESS["REDSIGN.FAVORITE.PARTNER_URI"] = "https://www.redsign.ru";

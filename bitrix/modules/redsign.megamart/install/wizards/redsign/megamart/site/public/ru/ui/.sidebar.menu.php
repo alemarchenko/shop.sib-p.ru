@@ -1,0 +1,69 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Базовые элементы дизайна", 
+		"#SITE_DIR#ui/base/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обертка", 
+		"#SITE_DIR#ui/wrapper/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	
+	Array(
+		"Формы", 
+		"#SITE_DIR#ui/forms/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Cлайдеры", 
+		"#SITE_DIR#ui/sliders/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Всплывающие окна", 
+		"#SITE_DIR#ui/popup/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Компоненты", 
+		"#SITE_DIR#ui/components/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Готовые сниппеты", 
+		"#SITE_DIR#ui/snippets/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Утилиты", 
+		"#SITE_DIR#ui/utils/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Иконки", 
+		"#SITE_DIR#ui/icons/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	
+);
+?>

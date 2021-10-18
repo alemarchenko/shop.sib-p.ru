@@ -1,0 +1,5 @@
+{
+  "main.min.js": "/main.min.js",
+  "manifest.js": "/manifest.js",
+  "vendor.min.js": "/vendor.min.js"
+}

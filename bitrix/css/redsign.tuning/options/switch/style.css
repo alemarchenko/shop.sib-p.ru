@@ -1,0 +1,259 @@
+/*
+$secondary-color: #70aa70 !default;
+$secondary-color: #ff5500 !default;
+
+$main-font-size: 13px;
+
+$header-bg-color: $secondary-color;
+
+$main-border: 1px solid #e6e6e6;
+
+$sidebar-tab-text-color: #000;
+$sidebar-tab-text-color-active: $secondary-color;
+
+$sidebar-menu-text-color: #555555;
+$sidebar-menu-text-color-active: #555555;
+
+$option-name: #414243 !default;
+$option-title-color: #444c7a;
+$svg-color: #636363 !default;
+
+$input-background: #fff !default;
+
+$input-disabled-color: rgba(0,0,0, .42) !default;
+$input-disabled-solid-color: #949494 !default;
+$input-border: 1px solid #d2d2d2 !default;
+$input-border-hover: 1px solid $header-bg-color !default;
+
+$radio-fill-color: $secondary-color !default;
+$radio-empty-color: #5a5a5a !default;
+$radio-border: 2px solid $radio-fill-color !default;
+
+$switch-bg-color: $secondary-color !default;
+$switch-checked-lever-bg: desaturate(lighten($switch-bg-color, 25%), 25%) !default;
+$switch-unchecked-bg: #F1F1F1 !default;
+$switch-unchecked-lever-bg: rgba(0,0,0,.38) !default;
+$switch-radius: 15px !default;
+
+$spinner-default-color: $secondary-color !default;
+*/
+/* Switch
+   ========================================================================== */
+/* line 6, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch,
+.rstuning .switch * {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none; }
+
+/* line 12, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch label {
+  cursor: pointer; }
+
+/* line 16, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+  /* line 21, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+  .rstuning .switch label input[type=checkbox]:checked + .lever {
+    background-color: #ff5500; }
+    /* line 24, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+    .rstuning .switch label input[type=checkbox]:checked + .lever:before, .rstuning .switch label input[type=checkbox]:checked + .lever:after {
+      left: 18px; }
+    /* line 28, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+    .rstuning .switch label input[type=checkbox]:checked + .lever:after {
+      background-color: #fff; }
+
+/* line 34, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch label .lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 14px;
+  background-color: #7d8698;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: 0 16px; }
+  /* line 47, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+  .rstuning .switch label .lever:before, .rstuning .switch label .lever:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 0;
+    top: -3px;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease, transform .1s ease; }
+  /* line 59, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+  .rstuning .switch label .lever:before {
+    background-color: rgba(255, 255, 255, 0.15); }
+  /* line 63, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+  .rstuning .switch label .lever:after {
+    background-color: #fff;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); }
+
+/* line 70, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,
+.rstuning input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+  transform: scale(2.4);
+  background-color: rgba(255, 255, 255, 0.15); }
+
+/* line 76, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning input[type=checkbox]:not(:disabled) ~ .lever:active:before,
+.rstuning input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
+  transform: scale(2.4);
+  background-color: rgba(0, 0, 0, 0.08); }
+
+/* line 83, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch input[type=checkbox][disabled] + .lever {
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.12); }
+
+/* line 88, source/style/sass/lib/materializecss/components/forms/_switches.scss */
+.rstuning .switch label input[type=checkbox][disabled] + .lever:after,
+.rstuning .switch label input[type=checkbox][disabled]:checked + .lever:after {
+  background-color: #949494; }
+
+/* line 8, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch.active .rstuning__option__switch-borders {
+  border: 1px solid #ff5500; }
+
+/* line 13, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch.active .rstuning__option__switch-image img {
+  opacity: 1; }
+
+/* line 19, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch-borders {
+  padding: 13px 24px;
+  border: 1px solid #dde3e7;
+  border-radius: 5px;
+  transition: all 0.3s ease; }
+
+/* line 27, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 13px; }
+  @media (max-width: 577px) {
+    /* line 27, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+    .rstuning .rstuning__option__switch-name {
+      font-size: 20px; } }
+  /* line 36, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-name.mod-small {
+    font-size: 16px;
+    font-weight: normal; }
+    @media (max-width: 577px) {
+      /* line 36, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+      .rstuning .rstuning__option__switch-name.mod-small {
+        font-size: 16px; } }
+  /* line 45, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-name.mod-extra-small {
+    font-size: 12px;
+    font-weight: normal; }
+    @media (max-width: 577px) {
+      /* line 45, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+      .rstuning .rstuning__option__switch-name.mod-extra-small {
+        font-size: 12px; } }
+
+/* line 55, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch-unchecked {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* line 61, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch-image {
+  text-align: center;
+  cursor: default; }
+  /* line 65, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-image.mod-mt-11 {
+    margin-top: 11px; }
+  /* line 69, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-image.mod-mt-16 {
+    margin-top: 16px; }
+  /* line 73, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-image.mod-mb-11 {
+    margin-bottom: 11px; }
+  /* line 77, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch-image img {
+    will-change: opacity;
+    max-width: 100%;
+    opacity: .5;
+    transition: all .3s ease-out; }
+
+/* line 85, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch input + .lever,
+.rstuning .rstuning__option__switch input:checked + .lever {
+  display: inline-block;
+  width: 44px !important;
+  margin: 0 !important;
+  box-shadow: inset 0px 2px 3px 0px rgba(25, 26, 27, 0.66) !important;
+  border: none; }
+  /* line 93, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch input + .lever:before, .rstuning .rstuning__option__switch input + .lever:after,
+  .rstuning .rstuning__option__switch input:checked + .lever:before,
+  .rstuning .rstuning__option__switch input:checked + .lever:after {
+    width: 24px !important;
+    height: 24px !important;
+    top: -5px !important;
+    box-shadow: 2.046px 2.194px 6px 0px rgba(0, 0, 0, 0.38) !important; }
+  /* line 101, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch input + .lever.mod-bottom-2,
+  .rstuning .rstuning__option__switch input:checked + .lever.mod-bottom-2 {
+    bottom: 2px; }
+  /* line 105, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch input + .lever.mod-mt-15,
+  .rstuning .rstuning__option__switch input:checked + .lever.mod-mt-15 {
+    margin-top: 15px !important; }
+  /* line 109, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__switch input + .lever.mod-mb-7,
+  .rstuning .rstuning__option__switch input:checked + .lever.mod-mb-7 {
+    margin-bottom: 7px !important; }
+
+/* line 115, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch input + .lever:before, .rstuning .rstuning__option__switch input + .lever:after {
+  left: -2px !important; }
+
+/* line 121, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch input:checked + .lever:before, .rstuning .rstuning__option__switch input:checked + .lever:after {
+  left: 20px !important; }
+
+/* line 132, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__switch input[type=checkbox]:not(:disabled) ~ .lever:active::before, .rstuning .rstuning__option__switch input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before {
+  transform: scale(1.85);
+  background-color: rgba(255, 85, 0, 0.3);
+  box-shadow: none !important; }
+
+/* line 152, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__dd .rstuning__option:first-of-type .rstuning__option__switch {
+  border-top: 1px solid #dde3e7; }
+
+/* line 159, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__dd .rstuning__option__switch {
+  padding: 18px 27px 18px 28px;
+  border-bottom: 1px solid #dde3e7;
+  background-color: #f8f9fa; }
+  /* line 164, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__dd .rstuning__option__switch.active {
+    background-color: transparent; }
+  /* line 168, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+  .rstuning .rstuning__option__dd .rstuning__option__switch .label {
+    display: block;
+    width: 100%; }
+
+/* line 179, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__dd__ghost .rstuning__option__switch {
+  background-color: #f8f9fa; }
+
+/* line 185, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__dd__ghost .label * {
+  opacity: 0 !important; }
+
+/* line 193, source/style/sass/css/redsign.tuning/options/switch/style.scss */
+.rstuning .rstuning__option__dd__fallback .rstuning__option__switch, .rstuning .rstuning__option__dd__fallback .rstuning__option__switch.active {
+  background-color: #fff;
+  box-shadow: 0 10px 32px 0 rgba(84, 133, 169, 0.3); }
