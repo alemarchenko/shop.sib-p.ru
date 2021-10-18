@@ -1,0 +1,8 @@
+<?php
+$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS'] = 'Настройка баннеров';
+
+$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS.TYPE']= 'Вид главного баннера';
+	$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS.TYPE_UNDERLAY'] = 'Подложка';
+	$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS.TYPE_WIDE'] = 'Широкий';
+	$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS.TYPE_CENTER'] = 'Центр';
+	$MESS['RS_MM_TUNING_PARAM_TAB_BANNERS.TYPE_SIDEBANNERS'] = 'По центру с боковыми баннерами';

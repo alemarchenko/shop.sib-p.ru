@@ -1,0 +1,496 @@
+.btn-primary, .footer-subscribe__button,
+.btn-primary.disabled, .disabled.footer-subscribe__button, .btn-primary:disabled, .footer-subscribe__button:disabled,
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.page-item.active .page-link,
+.badge-primary,
+.progress-bar,
+.list-group-item.active,
+.btn-quantity > span,
+.btn-outline-secondary-primary:hover,
+.btn-outline-secondary-primary:not(:disabled):not(.disabled):active, .btn-outline-secondary-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-secondary-primary.dropdown-toggle,
+.bmd-radio::before,
+label.bmd-custom-radio-inline > input[type="radio"]:checked ~ .bmd-radio::before,
+  .bmd-custom-radio > label > input[type="radio"]:checked ~ .bmd-radio::before,
+.c-button-control__quantity,
+.c-icon-count__quantity,
+.c-letter,
+.rs-banner-loader span, .panel-loader span,
+.c-sticker,
+.nav-slide .nav-slide-line,
+.l-head--type3 .b-header-user__icon,
+  .l-head--type3 .b-header-user__letter,
+  .l-head--type5 .b-header-user__icon,
+  .l-head--type5 .b-header-user__letter,
+.l-head--type5 .search-form__button,
+.menu-search-button--primary,
+.butt:hover,
+.butt.hover,
+.b-sidebar-nav__link:hover, .b-sidebar-nav__link:active, .b-sidebar-nav__link:focus,
+  .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+.project-item__props:after,
+.review-item__userdata-name,
+.shop-card:hover .shop-card__go-button,
+.b-employee__position:after,
+.b-employee-social-icon--fill,
+.b-employee-social-icon:before,
+.b-employee-social-icon:hover:before,
+.mmenu-type1-item--primary > .mmenu-type1-item__link,
+.mmenu-vertical-item--light > .mmenu-vertical-item__link,
+.basket-item-highlighted,
+.l-timeline__items:after,
+.owl-dot.active, 
+.owl-carousel button.owl-dot.active,
+.bx-filter .bx-ui-slider-pricebar-v,
+.bx-filter .bx-ui-slider-handle,
+.owl-prev:hover, .owl-next:hover,
+ol.custom-list-ol > li:after,
+ul.custom-list-ul li:before,
+.product-cat-image-slider-control.active:after,
+.nav-wrap .scroll-arrow:hover {
+  background-color: #2866af;
+}
+
+.bmd-form-control {
+  background-image: linear-gradient(to top, #2866af 2px, rgba(255, 86, 5, 0) 2px), linear-gradient(to top, rgb(189, 189, 189) 1px, rgba(189, 189, 189, 0) 1px)
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: #77a7e0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 102, 175, 0.25);
+}
+
+.bg-primary,
+.product-detail-slider-dots--wide .owl-dot.active::after {
+    background-color: #2866af !important;
+}
+
+.custom-range::-webkit-slider-thumb,
+.custom-range::-moz-range-thumb,
+.custom-range::-ms-thumb, {
+    background-color: #2866af;
+}
+
+.btn-primary, .footer-subscribe__button,
+.btn-primary.disabled, .disabled.footer-subscribe__button, .btn-primary:disabled, .footer-subscribe__button:disabled,
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle,
+.page-item.active .page-link,
+.list-group-item.active,
+.btn-outline-secondary-primary:hover,
+.btn-outline-secondary-primary:not(:disabled):not(.disabled):active, .btn-outline-secondary-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-secondary-primary.dropdown-toggle,
+label.bmd-custom-radio-inline > input[type="radio"]:checked ~ .bmd-radio::after,
+  .bmd-custom-radio > label > input[type="radio"]:checked ~ .bmd-radio::after,
+.bmd-custom-checkbox > label input[type="checkbox"]:checked + .checkbox-decorator .check,
+  label.bmd-custom-checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check,
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle,
+.page-item.active .page-link,
+.list-group-item.active,
+.border-primary,
+.btn-outline-secondary-primary:hover,
+.btn-outline-secondary-primary:not(:disabled):not(.disabled):active, .btn-outline-secondary-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-secondary-primary.dropdown-toggle,
+label.bmd-custom-radio-inline > input[type="radio"]:checked ~ .bmd-radio::after,
+  .bmd-custom-radio > label > input[type="radio"]:checked ~ .bmd-radio::after,
+.bmd-custom-checkbox > label input[type="checkbox"]:checked + .checkbox-decorator .check,
+  label.bmd-custom-checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check,
+.shop-card:hover .shop-card__go-button,
+.sale-order-detail .sale-order-payment-change-pp-list .sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container,
+.sale-order-payment-change-pp-list .sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container,
+.b-employee-social-icon--fill,
+.sale-acountpay-pp-company.bx-selected .sale-acountpay-pp-company-graf-container,
+.basket-item-custom-block-photo-item:hover,
+.b-timeline-item__title:after,
+.owl-prev:hover, .owl-next:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.product-cat-button-container .is-incart .btn-primary,
+.product-cat-button-container .is-incart .btn-primary:not(:disabled):not(.disabled):hover,
+.product-cat-button-container .is-incart .btn-primary:not(:disabled):not(.disabled):active,
+.butt:hover,
+.butt.hover,
+.nav-wrap .scroll-arrow:hover {
+  border-color: #2866af;
+}
+
+.border-primary {
+    border-color: ##COLOR_1# !important;
+}
+
+.btn.is-loading {
+	border-top-color: #2866af;
+}
+
+.btn-outline-primary,
+.btn-outline-primary.disabled, .btn-outline-primary:disabled,
+.c-icon-count:hover, .c-icon:hover, .b-header-user--r-lg .b-header-user__icon:hover, .c-icon-count:focus, .c-icon:focus, .b-header-user--r-lg .b-header-user__icon:focus,
+.bmd-form-group.is-focused [class*=" bmd-label"],
+.bmd-form-group.is-focused [class^=bmd-label],
+.bmd-custom-checkbox > label input[type="checkbox"]:checked + .checkbox-decorator .check,
+  label.bmd-custom-checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check,
+.bmd-custom-checkbox > label input[type="checkbox"]:checked + .checkbox-decorator .check:before,
+  label.bmd-custom-checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check:before,
+.c-icon-count.has-items:hover,
+.c-icon.active,
+.c-sticker,
+.trash-anim-icon:hover,
+.nav-scrollspy:not(.active) .nav-item:first-child .nav-link,
+.nav-scrollspy .nav-link:hover,
+.nav-scrollspy .nav-link:active,
+.nav-scrollspy .nav-link.active,
+.nav-slide .nav-link:hover, .nav-slide .nav-link:active, .nav-slide .nav-link.active,
+.l-head.color-light.is-underlay .menu-search-button--transparent:hover,
+  .l-head.color-light.is-underlay .mmenu-type1-item--transparent:hover > .mmenu-type1-item__link,
+  .l-head.color-light.is-underlay .mmenu-vertical-item--transparent:hover > .mmenu-vertical-item__link,
+  .l-head.color-light.is-underlay .mmenu-type1-item--inheader:hover > .mmenu-type1-item__link,
+.l-head--type9 .mmenu-type1-item.mmenu-type1-item--light:active > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--light:focus > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--light:hover > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--dark:active > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--dark:focus > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--dark:hover > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--light.is-selected > .mmenu-type1-item__link,
+  .l-head--type9 .mmenu-type1-item.mmenu-type1-item--dark.is-selected > .mmenu-type1-item__link,
+  .l-head--type9 .menu-search-button--dark:hover,
+  .l-head--type9 .menu-search-button--light:hover,
+  .l-head--type9 .menu-search-button--dark:focus,
+  .l-head--type9 .menu-search-button--light:focus,
+  .l-head--type9 .menu-search-button--dark:active,
+  .l-head--type9 .menu-search-button--light:active,
+.l-head--type10 .menu-search-button:hover,
+  .l-head--type10 .menu-search-button:focus,
+.menu-search-button--transparent:hover, .menu-search-button--transparent:focus,
+.search-popup__form-button,
+.compact-search-button,
+.search-form__button,
+.basket-empty__icon,
+.b-sidebar-nav__submenu .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+  .b-sidebar-nav__submenu .b-sidebar-nav__link:hover,
+  .b-sidebar-nav__submenu .b-sidebar-nav__link:active,
+  .b-sidebar-nav__submenu .b-sidebar-nav__link:focus,
+.b-error-page__code,
+.bx-no-touch .product-cat-action:hover, .product-cat-action.checked,
+.product-cat-scu-item-text-container.btn-link:hover, .product-cat-scu-item-text-container.btn-link.checked,
+.shop-list-item__icon,
+.shop-list-item__prop .icon-svg,
+.b-news-list-tile__info-slogan,
+.b-news-list-line__info-slogan,
+.text-primary,
+.cl a,
+.shop-list-item .product-cat-limit-quantity::before,
+.b-ask-question--line .b-ask-question__mark,
+.sale-personal-section-item,
+.sale-personal-section-item__link:hover, .sale-personal-section-item__link:focus,
+.sale-personal-section-item__icon,
+.mmenu-type1-item.mmenu-type1-item--transparent:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--transparent:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--transparent:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--transparent.is-selected > .mmenu-type1-item__link,
+.mmenu-type1-item.mmenu-type1-item--inheader:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--inheader:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--inheader:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--inheader.is-selected > .mmenu-type1-item__link,
+.mmenu-wide-item__line,
+.mmenu-vertical-item .more-item .mmenu-vertical-item__link,
+.mmenu-vertical-item--transparent:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--transparent:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--transparent:hover > .mmenu-vertical-item__link,
+.basket-items-list-wrapper-compact .basket-item-property-scu-text .basket-item-scu-list .basket-item-scu-item:hover, .basket-items-list-wrapper-compact .basket-item-property-scu-text .basket-item-scu-list .basket-item-scu-item:focus,
+.basket-items-list-wrapper-compact .basket-item-property-scu-text .basket-item-scu-list .basket-item-scu-item.selected,
+.product-cat-parent > a,
+    .product-cat-parent > a:hover,
+.bx-soa-section-title-icon,
+.b-news-list-tile__info,
+.blockquote-custom:before,
+.btn-link-extra-primary:hover,
+.bx-filter-horizontal .bx-filter-parameters-box-drop-all,
+.bx-filter-horizontal .bx-filter-chosed-box__modef-value,
+.bx-filter-horizontal .bx-filter-chosed-box__modef-reset,
+.bx-filter-horizontal .bx-filter-chosed-box__modef-reset:hover, .bx-filter-horizontal .bx-filter-chosed-box__modef-reset:active, .bx-filter-horizontal .bx-filter-chosed-box__modef-reset:focus,
+.brand-collection-item__parent > a, .brand-collection-item__parent > a:hover {
+  color: #2866af;
+}
+
+body .cl a,
+.text-primary,
+.l-head.color-light.is-underlay .l-head__inner-search .menu-search-button:hover {
+    color: #2866af !important;
+}
+
+.overlay.is-loading:after,
+hr.title-delimiter,
+.overlay.is-loading:after,
+hr.title-delimiter,
+.review-item__userdata-name:before {
+  border-top-color: #2866af !important;
+}
+.b-sidebar-nav__link:hover, .b-sidebar-nav__link:active, .b-sidebar-nav__link:focus,
+  .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+.b-sidebar-nav__link:hover, .b-sidebar-nav__link:active, .b-sidebar-nav__link:focus,
+  .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link {
+  border-left-color: #2866af !important;
+}
+.b-sidebar-nav__link:hover, .b-sidebar-nav__link:active, .b-sidebar-nav__link:focus,
+  .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+.b-sidebar-nav__link:hover, .b-sidebar-nav__link:active, .b-sidebar-nav__link:focus,
+  .b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+.basket-coupon-block-coupon-btn {
+  border-right-color: #2866af;
+}
+.basket-coupon-block-coupon-btn {
+  border-bottom-color: #2866af !important;
+}
+
+.bx-filter-horizontal .bx-filter-parameters-box.bx-filter-using .bx-filter-parameters-box-title {
+  border-color: #2866af;
+  color: #2866af;
+}
+@media (min-width: 1200px){
+  
+}
+@media (min-width: 380px){
+  
+}
+@media (min-width: 576px){
+  
+}
+@media (min-width: 768px){
+  .l-compact-header__block--menu .hamburger.is-active,
+    .l-compact-header__block--menu .hamburger.is-active {
+      background-color: #2866af !important;
+    }
+	
+	.compact-search .bmd-form-group .bmd-form-control:focus {
+		border-color: #77a7e0;
+		box-shadow: 0 0 0 0.2rem rgba(40, 102, 175, 0.25);
+	}
+
+  .bx-filter-horizontal .bx-filter-parameters-box-title:hover, .bx-filter-horizontal .bx-filter-parameters-box-title:active, .bx-filter-horizontal .bx-filter-parameters-box-title:focus {
+    border-color: #2866af;
+    color: #2866af;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.footer-subscribe__button:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.footer-subscribe__button:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-primary.dropdown-toggle:focus, 
+.show > .dropdown-toggle.footer-subscribe__button:focus {
+	box-shadow: 0 0 0 0px rgba(40, 102, 175, 0.25);
+}
+
+.compact-search__button,
+.compact-search__button .icon-svg,
+.compact-search__button,
+.compact-search__button .icon-svg {
+  color: #2866af !important;
+}
+.product-detail-slider-dots .owl-dot.active {
+  border-color: #2866af !important;
+}
+
+.btn-primary:hover, .footer-subscribe__button:hover,
+.btn-primary:hover, .footer-subscribe__button:hover {
+  border-color: #1f4e85;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .footer-subscribe__button:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .footer-subscribe__button:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle,
+  .show > .dropdown-toggle.footer-subscribe__button,
+.badge-primary[href]:hover, .badge-primary[href]:focus,
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus,
+.menu-search-button--primary:hover, .menu-search-button--primary:focus,
+.menu-search-button--dark:hover, .menu-search-button--dark:focus,
+.menu-search-button--light:hover, .menu-search-button--light:focus,
+.btn-primary:not(:disabled):not(.disabled):active, .footer-subscribe__button:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .footer-subscribe__button:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle,
+  .show > .dropdown-toggle.footer-subscribe__button,
+.badge-primary[href]:hover, .badge-primary[href]:focus,
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus,
+.menu-search-button--primary:hover, .menu-search-button--primary:focus,
+.menu-search-button--dark:hover, .menu-search-button--dark:focus,
+.menu-search-button--light:hover, .menu-search-button--light:focus,
+.mmenu-type1-item.mmenu-type1-item--primary:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary.is-selected > .mmenu-type1-item__link,
+.mmenu-type1-item.mmenu-type1-item--dark:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark.is-selected > .mmenu-type1-item__link,
+.mmenu-type1-item.mmenu-type1-item--light:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light.is-selected > .mmenu-type1-item__link,
+.mmenu-vertical-item--primary > .mmenu-vertical-item__link,
+.mmenu-vertical-item--primary:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--primary:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--primary:hover > .mmenu-vertical-item__link,
+.mmenu-vertical-item--dark:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--dark:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--dark:hover > .mmenu-vertical-item__link,
+.mmenu-vertical-item--light:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--light:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--light:hover > .mmenu-vertical-item__link  {
+  background-color: #1f4e85;
+}
+a.text-primary:hover, a.text-primary:focus,
+a.text-primary:hover, a.text-primary:focus,
+.compact-search-button:hover {
+  color: #1f4e85 !important;
+}
+
+.btn-primary:hover, 
+.footer-subscribe__button:hover {
+  background-color: #215490;
+}
+
+
+.mmenu-type1-item--primary > .mmenu-type1-item__link,
+.mmenu-vertical-item--light > .mmenu-vertical-item__link,
+.mmenu-type1-item.mmenu-type1-item--primary:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--primary.is-selected > .mmenu-type1-item__link,
+.mmenu-type1-item.mmenu-type1-item--dark:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--dark.is-selected > .mmenu-type1-item__link,
+.mmenu-type1-item.mmenu-type1-item--light:active > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light:focus > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light:hover > .mmenu-type1-item__link,
+  .mmenu-type1-item.mmenu-type1-item--light.is-selected > .mmenu-type1-item__link,
+.mmenu-vertical-item--primary > .mmenu-vertical-item__link,
+.mmenu-vertical-item--primary:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--primary:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--primary:hover > .mmenu-vertical-item__link,
+.mmenu-vertical-item--dark:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--dark:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--dark:hover > .mmenu-vertical-item__link,
+.mmenu-vertical-item--light:active > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--light:focus > .mmenu-vertical-item__link,
+  .mmenu-vertical-item--light:hover > .mmenu-vertical-item__link,
+  .btn-primary,
+.review-item__userdata-name,
+.c-icon-count__quantity,
+.footer-subscribe__button,
+.menu-search-button--primary,
+.menu-search-button--primary:hover,
+.btn-outline-primary:hover,
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.b-sidebar-nav__link:hover, 
+.b-sidebar-nav__link:active,
+.b-sidebar-nav__link:focus,
+.b-sidebar-nav__item.is-selected > .b-sidebar-nav__link,
+.btn-outline-secondary-primary:hover,
+.badge.badge-primary,
+.c-button-control__quantity,
+.btn-quantity > span,
+.c-letter,
+.c-letter:hover,
+.shop-card:hover .shop-card__go-button  {
+    color: #ffffff;
+}
+
+.c-button-control.c-button-control__bottom-panel:hover .c-button-control__icon {
+      color: #2866af;
+}
+
+.owl-prev:hover svg, .owl-next:hover svg,
+.nav-wrap .scroll-arrow:hover svg {
+    fill: #ffffff;
+}
+.rs-banners-container .owl-prev:hover svg.rs-banner-nav,
+ .rs-banners-container .owl-next:hover svg.rs-banner-nav {
+	fill: #2866af;
+}
+.compare-non svg{ 
+	fill:#2866af;
+}
+
+.btn-outline-secondary-primary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary-primary:not(:disabled):not(.disabled).active {
+	color: #ffffff;
+}
+
+@keyframes loaderBlock {
+	0%, 30% {
+		transform: rotate(0);
+	}
+	55% {
+		background-color: #4d8cd6;
+	}
+	100% {
+		transform: rotate(90deg);
+
+	}
+}
+@keyframes loaderBlockInverse {
+	0%, 20% {
+		transform: rotate(0);
+	}
+	55% {
+		background-color: #4d8cd6;
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}
+body .rstuning a.active,
+body .rstuning a:hover,
+body .rstuning a:focus,
+body .rstuning a:active {
+	color: #2866af; }
+body .rstuning__tabs__link.active > span,
+body .rstuning__tabs__link:hover > span {
+	color: #2866af; }
+body .rstuning .spinner-layer {
+	border-color: #2866af; }
+body .rstuning__close-button__link svg {
+	fill: #2866af; }
+body .rstuning__hamburger.is-active .rstuning__hamburger-inner,
+body .rstuning__hamburger.is-active .rstuning__hamburger-inner::before,
+body .rstuning__hamburger.is-active .rstuning__hamburger-inner::after {
+	background-color: #2866af; }
+body .rstuning__hamburger-inner,
+body .rstuning__hamburger-inner:before,
+body .rstuning__hamburger-inner:after {
+	background-color: #2866af; }
+body .rstuning__option__radio.mod-images input:hover + label .rstuning__option__radio__div,
+body .rstuning__option__radio.mod-images input:checked + label .rstuning__option__radio__div,
+body .rstuning__option__radio.mod-buttons input:hover + label .rstuning__option__radio__div,
+body .rstuning__option__radio.mod-buttons input:checked + label .rstuning__option__radio__div {
+    border-color: #2866af; }
+body .rstuning__option__colorpicker__alone-color:hover .rstuning__option__colorpicker__before-paint,
+body .rstuning__option__colorpicker__alone-color.active .rstuning__option__colorpicker__before-paint {
+	border-color: #2866af; }
+body .rstuning__selectbox.open .rstuning__selectbox__value {
+	border-color: #2866af; }
+body .rstuning__selectbox__value:hover {
+	border-color: #2866af; }
+body .rstuning__selectbox__value > svg {
+	fill: #2866af;}
+body .rstuning .rstuning__option__dd__fallback .rstuning__option__dd__drag svg {
+    stroke: #2866af; }
+body .rstuning .switch label input[type=checkbox]:checked + .lever {
+	background-color: #2866af; }
+body .rstuning .rstuning__option__switch.active .rstuning__option__switch-borders {
+	border-color: #2866af; }

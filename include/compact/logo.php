@@ -1,0 +1,1 @@
+<img src="/include/logo.png" alt="ООО ГК СибПроект лого">

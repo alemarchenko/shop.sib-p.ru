@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Обертка";
+$arDirProperties = Array(
+
+);
+?>

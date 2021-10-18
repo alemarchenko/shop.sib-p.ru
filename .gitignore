@@ -1,0 +1,11 @@
+/bitrix
+/logs
+/upload
+/.htaccess
+/.htaccess.restore
+/urlrewrite.php
+/*.log
+/*.sql
+/*.txt
+/*.xml
+/*.dt
